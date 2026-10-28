@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 850" width="1600" height="850" role="img" aria-labelledby="title desc">
+<title id="title">HTML form submission with application/x-www-form-urlencoded data</title>
+<desc id="desc">An HTML form with sample values and a mouse cursor clicking Add task flows to a POST request body containing application slash x-www-form-urlencoded data, and then to a server. A long arrow below shows the POST request.</desc>
+<defs>
+  <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1685e3"/><stop offset="1" stop-color="#1261ba"/></linearGradient>
+  <linearGradient id="blueLight" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#b6dcf9"/><stop offset="1" stop-color="#7fb7e8"/></linearGradient>
+  <linearGradient id="teal" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#129f9a"/><stop offset="1" stop-color="#048780"/></linearGradient>
+  <linearGradient id="orange" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#ff7623"/><stop offset="1" stop-color="#f05b1c"/></linearGradient>
+  <linearGradient id="requestBlue" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#2590f3"/><stop offset="1" stop-color="#0d67d0"/></linearGradient>
+  <style>
+    .ink{fill:#082b52} .label{font:700 28px Arial,sans-serif;fill:#132b46} .value{font:25px Arial,sans-serif;fill:#10243f}
+    .medium{font:700 28px Arial,sans-serif;fill:#082b52} .white{fill:#fff}
+  </style>
+</defs>
+<!-- HTML form browser card -->
+<rect x="12" y="44" width="485" height="650" rx="36" fill="#fff" stroke="#082b52" stroke-width="8"/>
+<path d="M48 44H461Q497 44 497 80V111H12V80Q12 44 48 44Z" fill="url(#blue)"/>
+<circle cx="53" cy="78" r="15" fill="#ff5d52"/><circle cx="96" cy="78" r="15" fill="#ffca38"/><circle cx="139" cy="78" r="15" fill="#7ff359"/>
+<rect x="44" y="130" width="421" height="61" rx="17" fill="url(#blueLight)"/>
+<text x="254" y="172" text-anchor="middle" class="ink" font-family="Arial,sans-serif" font-size="39" font-weight="700">HTML form</text>
+<text x="44" y="235" class="label">New task</text>
+<rect x="44" y="250" width="421" height="60" rx="14" fill="#fff" stroke="#687582" stroke-width="3"/>
+<text x="63" y="290" class="value">Review semantic HTML</text>
+<text x="44" y="357" class="label">Priority</text>
+<rect x="44" y="372" width="421" height="55" rx="14" fill="#fff" stroke="#687582" stroke-width="3"/>
+<text x="63" y="409" class="value">High</text><path d="M432 393l17 0-9 12Z" fill="#082b52"/>
+<text x="44" y="474" class="label">Due date</text>
+<rect x="44" y="489" width="421" height="59" rx="14" fill="#fff" stroke="#687582" stroke-width="3"/>
+<text x="63" y="528" class="value">2026-11-10</text>
+<rect x="404" y="506" width="36" height="31" rx="3" fill="none" stroke="#082b52" stroke-width="3"/>
+<path d="M404 516h36M413 501v11M431 501v11" stroke="#082b52" stroke-width="3" fill="none"/>
+<rect x="70" y="582" width="369" height="80" rx="17" fill="url(#orange)"/>
+<text x="250" y="634" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="39" font-weight="700">Add task</text>
+<!-- Click cursor -->
+<path d="M363 628L363 700L383 681L399 717L416 709L397 677L425 675Z" fill="#fff" stroke="#101820" stroke-width="5" stroke-linejoin="round"/>
+<path d="M422 591l6 -19M437 601l17 -14M437 618l20 3" stroke="#f4de00" stroke-width="8" stroke-linecap="round"/>
+<!-- Arrow from form to request body -->
+<path d="M497 386H539V371L580 412L539 452V436H497Z" fill="#16a0f3" stroke="#082b52" stroke-width="6" stroke-linejoin="round"/>
+<!-- POST body outer -->
+<rect x="581" y="109" width="594" height="535" rx="37" fill="#fff" stroke="#082b52" stroke-width="8"/>
+<path d="M618 109H1138Q1175 109 1175 146V198H581V146Q581 109 618 109Z" fill="url(#blue)"/>
+<text x="878" y="173" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="49" font-weight="700">POST body</text>
+<!-- URL-encoded body inner box -->
+<rect x="605" y="229" width="546" height="383" rx="33" fill="#fff" stroke="#082b52" stroke-width="6"/>
+<path d="M638 229H1118Q1151 229 1151 262V303H605V262Q605 229 638 229Z" fill="url(#teal)"/>
+<text x="878" y="282" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="43" font-weight="700">Encoded form data</text>
+
+<text x="631" y="338" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#082b52">Content-Type:</text>
+<rect x="631" y="349" width="494" height="48" rx="12" fill="#fff" stroke="#6c7680" stroke-width="3"/>
+<text x="649" y="380" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#16243b">application/x-www-form-urlencoded</text>
+
+<text x="631" y="430" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#082b52">Request body:</text>
+<rect x="631" y="443" width="494" height="133" rx="16" fill="#fff" stroke="#6c7680" stroke-width="3"/>
+<text x="655" y="484" font-family="Courier New, monospace" font-size="24" font-weight="700" fill="#16243b">task=Review+semantic+HTML&amp;</text>
+<text x="655" y="521" font-family="Courier New, monospace" font-size="24" font-weight="700" fill="#16243b">priority=High&amp;</text>
+<text x="655" y="558" font-family="Courier New, monospace" font-size="24" font-weight="700" fill="#16243b">dueDate=2026-11-10</text>
+<!-- Arrow from body to server -->
+<path d="M1175 383H1211V366L1254 409L1211 452V435H1175Z" fill="#16a0f3" stroke="#082b52" stroke-width="6" stroke-linejoin="round"/>
+<!-- Server rack -->
+<g stroke="#082b52" stroke-width="7">
+<rect x="1266" y="232" width="310" height="104" rx="32" fill="url(#blue)"/>
+<rect x="1266" y="325" width="310" height="104" rx="28" fill="url(#blue)"/>
+<rect x="1266" y="418" width="310" height="104" rx="28" fill="url(#blue)"/>
+<path d="M1266 491H1576V582Q1576 615 1543 615H1299Q1266 615 1266 582Z" fill="url(#blueLight)"/>
+<rect x="1303" y="615" width="42" height="20" rx="3" fill="#2377b5"/>
+<rect x="1501" y="615" width="42" height="20" rx="3" fill="#2377b5"/>
+</g>
+<g stroke="#082b52" stroke-width="11" stroke-linecap="round">
+<path d="M1308 284H1436M1308 377H1436M1308 470H1436"/>
+</g>
+<g fill="#8af554" stroke="#082b52" stroke-width="6"><circle cx="1524" cy="284" r="22"/><circle cx="1524" cy="377" r="22"/><circle cx="1524" cy="470" r="22"/></g>
+<text x="1421" y="578" text-anchor="middle" fill="#082b52" font-family="Arial,sans-serif" font-size="51" font-weight="700">Server</text>
+<!-- One overall network request arrow below the three objects -->
+<path d="M65 758Q65 741 85 741H1483V718L1561 786L1483 847V821H85Q65 821 65 803Z" fill="url(#requestBlue)" stroke="#082b52" stroke-width="7" stroke-linejoin="round"/>
+<text x="813" y="797" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="49" font-weight="700">POST request</text>
+</svg>

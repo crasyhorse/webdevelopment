@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="760" viewBox="0 0 2200 760" fill="none">
+  <defs>
+    <linearGradient id="btnFill" x1="150" y1="120" x2="2050" y2="610" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFE600"/>
+      <stop offset="0.58" stop-color="#FFC400"/>
+      <stop offset="1" stop-color="#FFAE00"/>
+    </linearGradient>
+    <linearGradient id="rimFill" x1="120" y1="560" x2="2080" y2="640" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF4A1E"/>
+      <stop offset="1" stop-color="#E82D17"/>
+    </linearGradient>
+    <linearGradient id="shadowFill" x1="110" y1="600" x2="2120" y2="700" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#090A12"/>
+      <stop offset="0.6" stop-color="#111522"/>
+      <stop offset="1" stop-color="#1D2131"/>
+    </linearGradient>
+    <radialGradient id="dotOrange" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(320 540) rotate(0) scale(360 220)">
+      <stop stop-color="#FF5B1D" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#FF5B1D" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="dotOrangeR" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1880 180) rotate(0) scale(340 210)">
+      <stop stop-color="#FF7A00" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#FF7A00" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadow" x="0" y="0" width="2200" height="760" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="textShadow" x="0" y="0" width="2200" height="760" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="18" dy="18" stdDeviation="0" flood-color="#FF9800" flood-opacity="0.95"/>
+    </filter>
+    <clipPath id="buttonClip">
+      <rect x="56" y="55" width="2088" height="598" rx="288"/>
+    </clipPath>
+    <pattern id="dotsLeft" width="34" height="34" patternUnits="userSpaceOnUse">
+      <circle cx="8" cy="8" r="5.5" fill="#FF7A00" fill-opacity="0.58"/>
+    </pattern>
+    <pattern id="dotsRight" width="38" height="38" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="6.5" fill="#FF7A00" fill-opacity="0.62"/>
+    </pattern>
+    <style>
+      .comic-text {
+        font-family: Arial Black, Impact, Haettenschweiler, 'Arial Rounded MT Bold', sans-serif;
+        font-size: 282px;
+        font-weight: 900;
+        letter-spacing: 1px;
+      }
+    </style>
+  </defs>
+
+  <!-- layered base -->
+  <g filter="url(#softShadow)">
+    <rect x="44" y="68" width="2112" height="610" rx="300" fill="#000000"/>
+    <rect x="68" y="102" width="2064" height="590" rx="290" fill="url(#shadowFill)"/>
+    <rect x="54" y="500" width="2092" height="138" rx="70" fill="url(#rimFill)"/>
+
+    <!-- main button -->
+    <rect x="56" y="55" width="2088" height="568" rx="284" fill="url(#btnFill)" stroke="#000000" stroke-width="12"/>
+
+    <!-- internal art clipped to button -->
+    <g clip-path="url(#buttonClip)">
+      <ellipse cx="370" cy="530" rx="360" ry="225" fill="url(#dotOrange)"/>
+      <ellipse cx="1880" cy="180" rx="340" ry="210" fill="url(#dotOrangeR)"/>
+      <rect x="80" y="280" width="350" height="290" fill="url(#dotsLeft)" opacity="0.72"/>
+      <rect x="1610" y="95" width="430" height="215" fill="url(#dotsRight)" opacity="0.72"/>
+
+      <!-- glossy highlights -->
+      <path d="M162 174C233 114 333 82 541 80C583 80 597 121 568 136C529 158 453 164 338 181C262 192 195 205 153 219C111 233 94 208 109 184C119 168 137 151 162 174Z" fill="#ffffff" fill-opacity="0.92"/>
+      <rect x="610" y="85" width="130" height="32" rx="16" fill="#ffffff" fill-opacity="0.9"/>
+      <path d="M995 57C1277 42 1702 49 1986 78C2015 81 2014 110 1986 111C1667 122 1264 124 1009 112C977 111 963 89 995 57Z" fill="#FFF2A8" fill-opacity="0.8"/>
+      <ellipse cx="143" cy="238" rx="28" ry="18" transform="rotate(-40 143 238)" fill="#ffffff" fill-opacity="0.9"/>
+    </g>
+
+    <!-- comic accent rays -->
+    <g fill="#FFF0B8" stroke="#000000" stroke-width="8" stroke-linejoin="round">
+      <path d="M205 290L245 234L312 315Z"/>
+      <path d="M182 370L187 327L312 346L306 390Z"/>
+      <path d="M1992 294L1952 238L1886 318Z"/>
+      <path d="M2014 375L2010 331L1887 349L1891 394Z"/>
+    </g>
+
+    <!-- text shadow pass -->
+    <text x="1104" y="500" text-anchor="middle" class="comic-text" fill="#FFFFFF" stroke="#000000" stroke-width="32" stroke-linejoin="round" paint-order="stroke fill" filter="url(#textShadow)">Questions</text>
+    <!-- crisp text pass -->
+    <text x="1104" y="500" text-anchor="middle" class="comic-text" fill="#FFFFFF" stroke="#000000" stroke-width="24" stroke-linejoin="round" paint-order="stroke fill">Questions</text>
+  </g>
+</svg>

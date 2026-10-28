@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+  <defs>
+    <style>
+      .subtitle { font: 700 24px Arial, Helvetica, sans-serif; fill: #111827; }
+      .small { font: 500 16px Arial, Helvetica, sans-serif; fill: #4b5563; }
+      .measureG { font: 700 26px Arial, Helvetica, sans-serif; fill: #16a34a; }
+      .measureB { font: 700 26px Arial, Helvetica, sans-serif; fill: #2563eb; }
+      .caption { font: 700 18px Arial, Helvetica, sans-serif; fill: #111827; }
+    </style>
+    <marker id="arrowg" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L12,6 L0,12 z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrowb" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L12,6 L0,12 z" fill="#2563eb"/>
+    </marker>
+  </defs>
+  <rect width="1400" height="760" fill="#ffffff"/>
+
+  <g transform="translate(140,70)">
+    <text class="subtitle" x="290" y="0" text-anchor="middle">Without viewport metadata</text>
+    <rect x="130" y="40" width="320" height="580" rx="48" fill="#ffffff" stroke="#334155" stroke-width="8"/>
+    <rect x="220" y="58" width="140" height="18" rx="9" fill="#cbd5e1"/>
+    <circle cx="290" cy="590" r="18" fill="#e2e8f0" stroke="#94a3b8"/>
+    <rect x="162" y="118" width="256" height="438" rx="18" fill="#f8fafc" stroke="#e5e7eb"/>
+
+    <!-- Full-height wide content -->
+    <rect x="162" y="118" width="420" height="438" rx="18" fill="#d1fae5" stroke="#16a34a" stroke-width="4"/>
+    <rect x="188" y="168" width="190" height="22" rx="8" fill="#86efac"/>
+    <rect x="188" y="221" width="360" height="16" rx="8" fill="#86efac"/>
+    <rect x="188" y="258" width="336" height="16" rx="8" fill="#86efac"/>
+    <rect x="188" y="295" width="310" height="16" rx="8" fill="#86efac"/>
+    <rect x="188" y="370" width="110" height="36" rx="10" fill="#4ade80"/>
+
+    <!-- 980px width measurement -->
+    <line x1="162" y1="92" x2="582" y2="92" stroke="#16a34a" stroke-width="4" marker-start="url(#arrowg)" marker-end="url(#arrowg)"/>
+    <text class="measureG" x="372" y="76" text-anchor="middle">980px</text>
+
+    <text class="caption" x="290" y="660" text-anchor="middle">Wide virtual/layout viewport</text>
+    <text class="small" x="290" y="686" text-anchor="middle">Desktop-oriented page scaled down to fit the phone</text>
+  </g>
+
+  <g transform="translate(720,70)">
+    <text class="subtitle" x="290" y="0" text-anchor="middle">With viewport metadata</text>
+    <rect x="130" y="40" width="320" height="580" rx="48" fill="#ffffff" stroke="#334155" stroke-width="8"/>
+    <rect x="220" y="58" width="140" height="18" rx="9" fill="#cbd5e1"/>
+    <circle cx="290" cy="590" r="18" fill="#e2e8f0" stroke="#94a3b8"/>
+    <rect x="162" y="118" width="256" height="438" rx="18" fill="#f8fafc" stroke="#e5e7eb"/>
+
+    <!-- Full-height fitting content -->
+    <rect x="162" y="118" width="256" height="438" rx="18" fill="#dbeafe" stroke="#2563eb" stroke-width="4"/>
+    <rect x="188" y="168" width="150" height="22" rx="8" fill="#93c5fd"/>
+    <rect x="188" y="221" width="190" height="16" rx="8" fill="#93c5fd"/>
+    <rect x="188" y="258" width="178" height="16" rx="8" fill="#93c5fd"/>
+    <rect x="188" y="295" width="162" height="16" rx="8" fill="#93c5fd"/>
+    <rect x="188" y="370" width="94" height="36" rx="10" fill="#60a5fa"/>
+
+    <!-- 390px width measurement -->
+    <line x1="162" y1="92" x2="418" y2="92" stroke="#2563eb" stroke-width="4" marker-start="url(#arrowb)" marker-end="url(#arrowb)"/>
+    <text class="measureB" x="290" y="76" text-anchor="middle">390px</text>
+
+    <text class="caption" x="290" y="660" text-anchor="middle">Device-width layout viewport</text>
+    <text class="small" x="290" y="686" text-anchor="middle">Responsive content fits the phone width</text>
+  </g>
+
+  <line x1="700" y1="90" x2="700" y2="700" stroke="#e5e7eb" stroke-width="3"/>
+</svg>
