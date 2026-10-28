@@ -1,0 +1,97 @@
+[
+  {
+    "lines": [
+      "@layer base, components;",
+      "@layer components {",
+      "  .task-list__item { background: #FFFFFF; }",
+      "}",
+      "@layer base {",
+      "  #tasks .task-list__item { background: #E8EDF2; }",
+      "}"
+    ],
+    "badLine": 4,
+    "reason": "Layer order beats specificity: base comes before components, so the ID rule in base still loses. The misplaced assumption is that the ID selector wins — move the rule to a later layer or fix the layer order instead.",
+    "corrected": [
+      "@layer base, components;",
+      "@layer components {",
+      "  .task-list__item { background: #FFFFFF; }",
+      "}",
+      "@layer components {",
+      "  #tasks .task-list__item { background: #E8EDF2; }",
+      "}"
+    ]
+  },
+  {
+    "lines": [
+      "@layer base {",
+      "  body { font-family: Arial, sans-serif; }",
+      "}",
+      "@import url(\"tokens.css\");"
+    ],
+    "badLine": 3,
+    "reason": "@import must appear before all other rules in a stylesheet, including at-rules like @layer. After the @layer block it is ignored entirely.",
+    "corrected": [
+      "@import url(\"tokens.css\");",
+      "@layer base {",
+      "  body { font-family: Arial, sans-serif; }",
+      "}"
+    ]
+  },
+  {
+    "lines": [
+      ".task-manager {",
+      "  .task-list {",
+      "    .task-list__item {",
+      "      color: red;",
+      "    }",
+      "  }",
+      "}"
+    ],
+    "badLine": 2,
+    "reason": "Every nesting level adds descendant specificity: this flattens to .task-manager .task-list .task-list__item — the spiral again. A flat single-class selector keeps the architecture maintainable.",
+    "corrected": [
+      ".task-list__item {",
+      "  color: red;",
+      "}"
+    ]
+  },
+  {
+    "lines": [
+      ".task-form__submit { background: #263C55 !important; }",
+      "@layer components {",
+      "  .task-form__submit { background: #4C7186; }",
+      "}"
+    ],
+    "badLine": 0,
+    "reason": "The unlayered !important rule beats the layered rule, so the component style never applies. Remove the !important and let the layer order decide.",
+    "corrected": [
+      ".task-form__submit { background: #263C55; }",
+      "@layer components {",
+      "  .task-form__submit { background: #4C7186; }",
+      "}"
+    ]
+  },
+  {
+    "lines": [
+      "@layer base {",
+      "  h2 { color: #263C55; }",
+      "}",
+      "@layer components {",
+      "  .task-manager__title { color: #FFFFFF; }",
+      "}",
+      "/* h2.task-manager__title stays #263C55 */"
+    ],
+    "badLine": 3,
+    "reason": "The layer order declaration is missing at the top of the file. Without an explicit order, layers win in the order they are first encountered — fragile and file-order dependent. Declare @layer base, components; first.",
+    "corrected": [
+      "@layer base, components;",
+      "@layer base {",
+      "  h2 { color: #263C55; }",
+      "}",
+      "@layer components {",
+      "  .task-manager__title { color: #FFFFFF; }",
+      "}",
+      "/* h2.task-manager__title is #FFFFFF: components wins */"
+    ]
+  }
+]

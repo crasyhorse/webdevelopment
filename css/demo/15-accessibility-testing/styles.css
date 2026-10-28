@@ -1,0 +1,13 @@
+* { box-sizing: border-box; }
+body { font-family: Arial, Helvetica, sans-serif; color: #263C55; background: #FFFFFF; margin: 1rem; }
+.audit { width: 50rem; }
+.audit__muted { color: #AAAAAA; }
+.status__item { padding: .5rem; }
+.status__item--high { background: #EBC08F; }
+.status__item--low { background: #C8D59A; }
+.task-form__actions { display: flex; flex-direction: row-reverse; justify-content: flex-end; gap: .5rem; }
+.task-form__input { font: inherit; }
+.task-form__submit, .task-form__reset { padding: 1px; font-size: 12px; }
+.task-form__input:focus, .task-form__submit:focus, .task-form__reset:focus { outline: none; }
+.audit__clipped { height: 2rem; overflow: hidden; }
+

@@ -1,0 +1,77 @@
+/* The semantic HTML and native form behavior remain intact. */
+body { margin: 0; background: #f2f6fb; font-family: Arial, sans-serif; color: #263c55; }
+
+/* Task Manager block and elements */
+.task-manager { max-width: 880px; margin: 1.5rem auto; padding: 1.5rem; background: white; border-radius: 12px; }
+.task-manager__title { color: #245f9f; }
+.task-manager__intro { color: #56738c; }
+
+/* Task list block, item element, and semantic variants */
+.task-list { padding-left: 0; list-style: none; }
+.task-list__item { margin: .55rem 0; padding: .65rem .9rem; background: #edf5ff; border-left: 4px solid #85a7c8; border-radius: 5px; }
+.task-list__item--high-priority { background: #fff1dc; border-left-color: #a65a0b; }
+.task-list__item--completed { text-decoration: line-through; color: #345f45; background: #e6f4e9; border-left-color: #32834c; }
+/* Decorative only: the text and modifier still communicate status. */
+.task-list__item--completed::before { content: "✓ "; color: #27664a; }
+
+/* Independent form block and elements */
+.task-form { max-width: 520px; }
+.task-form__label { display: block; margin-top: 1rem; }
+.task-form__input { padding: .4rem; }
+.task-form__submit { padding: .55rem 1rem; border: 0; border-radius: 5px; background: #245f9f; color: white; cursor: pointer; }
+.task-form__submit:hover { background: #174978; }
+.task-form__submit:focus-visible { outline: 3px solid #ad6a08; outline-offset: 3px; }
+
+/* Attributes stay meaningful: BEM is not a replacement for native HTML. */
+input[required] { border: 2px solid #317aa6; }
+input[type="date"] { background: #edf5ff; }
+
+/* Exercise 05 — Floats: the featured task remains part of the same BEM Task Manager. */
+.task-list__item--featured { display: flow-root; }
+.task-list__icon {
+  display: block;
+  float: left;
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  font-size: 1.75rem;
+  text-align: center;
+  color: #245f9f;
+  background: #dceafa;
+  border-radius: .45rem;
+  margin-right: 12px;
+}
+.task-list__description { margin-top: 0; }
+.task-list__action {
+  display: block;
+  clear: both;
+  padding: .45rem .8rem;
+  border: 0;
+  border-radius: .35rem;
+  background: #245f9f;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+.task-list__action:focus-visible { outline: 3px solid #ad6a08; outline-offset: 3px; }
+
+/* Exercise 06 — Responsive units on the SAME Task Manager from Exercise 05. */
+.task-manager { width: 88%; max-width: 55rem; }
+.task-manager__hero {
+  width: 75vw;
+  max-width: 100%;
+  min-height: 18vh;
+  background: #e7f1fd;
+  border-radius: .6rem;
+  padding: 1rem;
+}
+.task-list__actions { clear: both; display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; }
+.task-list__action { display: inline-block; clear: none; padding: .5em 1em; }
+.task-list__action--small { font-size: .875rem; }
+.task-list__action--large { font-size: 1.5rem; }
+
+/* Headings retain a consistent, readable accent throughout the workshop. */
+h2 { color: #245f9f; }
+
+/* Keep the responsive Task Manager within its container before the box-model reset. */
+.task-manager, .task-manager__hero { box-sizing: border-box; }

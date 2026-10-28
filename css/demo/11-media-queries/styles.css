@@ -1,0 +1,7 @@
+* { box-sizing: border-box; }
+body { margin: 1rem; min-height: 130vh; font: 1rem Arial, sans-serif; color: #263C55; }
+.page-header { position: sticky; top: 0; padding: .75rem; background: #A8C8D9; }
+.dashboard { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 3fr) minmax(0, 1fr); grid-template-areas: "nav tasks stats"; gap: 1rem; margin-top: 1rem; }
+.dashboard__nav { grid-area: nav; background: #C8D59A; padding: .75rem; }
+.dashboard__tasks { grid-area: tasks; background: #E1ECF2; padding: .75rem; }
+.dashboard__stats { grid-area: stats; background: #E7D89B; padding: .75rem; }

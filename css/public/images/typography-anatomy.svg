@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 770 260" role="img">
+  <title>Typeface anatomy — schematic Latin glyph metrics</title>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      fill: #263C55;
+    }
+    .label {
+      font-size: 20px;
+    }
+    .guide {
+      stroke: #8095AA;
+      stroke-width: 1.5;
+      stroke-dasharray: 5 4;
+      fill: none;
+    }
+  </style>
+  <g class="guide">
+    <path d="M20 69 H520 L555 30 H570" />
+    <path d="M20 75 H520 L555 66 H570" />
+    <path d="M20 99 H520 L555 103 H570" />
+    <path d="M20 178 H570" />
+    <path d="M20 209 H520 L555 228 H570" />
+  </g>
+  <text x="30" y="178" font-size="150">H x b p</text>
+  <g class="label">
+    <text x="580" y="36">Ascender</text>
+    <text x="580" y="72">Cap height</text>
+    <text x="580" y="109">x-height</text>
+    <text x="580" y="184">Baseline</text>
+    <text x="580" y="234">Descender</text>
+  </g>
+</svg>

@@ -1,0 +1,44 @@
+{
+  "leftHeader": "CSS technique",
+  "rightHeader": "Requirement",
+  "pairs": [
+    {
+      "id": "media",
+      "left": "@media",
+      "right": "Change layout at a viewport breakpoint"
+    },
+    {
+      "id": "wrap",
+      "left": "flex-wrap",
+      "right": "Move action buttons onto another line"
+    },
+    {
+      "id": "grid",
+      "left": "repeat(auto-fit, …)",
+      "right": "Choose the number of grid columns automatically"
+    },
+    {
+      "id": "clamp",
+      "left": "clamp()",
+      "right": "Bound a continuously changing heading size"
+    },
+    {
+      "id": "container",
+      "left": "@container",
+      "right": "Adapt a card to its own ancestor’s width"
+    },
+    {
+      "id": "image",
+      "left": "max-width: 100%",
+      "right": "Keep an image within its container"
+    }
+  ],
+  "rightOrder": [
+    "container",
+    "image",
+    "wrap",
+    "media",
+    "clamp",
+    "grid"
+  ]
+}

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 185" role="img">
+  <title>Row tracks: 40px and 80px</title>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      fill: #263C55;
+    }
+    .strong {
+      font-weight: 700;
+      font-size: 18px;
+    }
+    .muted {
+      font-size: 15px;
+    }
+    .line {
+      stroke: #8095AA;
+      stroke-width: 1.5;
+      fill: none;
+    }
+    .split {
+      stroke: #526B80;
+      stroke-width: 1.5;
+      stroke-dasharray: 5 4;
+    }
+  </style>
+  <rect x="85" y="43" width="300" height="40" fill="#A8C8D9" stroke="#4C7186" stroke-width="1.5"/>
+  <rect x="85" y="83" width="300" height="80" fill="#EBC08F" stroke="#9A6A2C" stroke-width="1.5"/>
+  <path class="split" d="M235 43V163"/>
+  <path class="line" d="M79 43H72V83H79 M79 83H72V163H79"/>
+  <text class="strong" x="63" y="69" text-anchor="end" style="font-family:DejaVu Sans Mono, Consolas, monospace;">40px</text>
+  <text class="strong" x="63" y="129" text-anchor="end" style="font-family:DejaVu Sans Mono, Consolas, monospace;">80px</text>
+  <text class="muted" x="235" y="181" text-anchor="middle"><tspan font-family="DejaVu Sans Mono, Consolas, monospace">120px</tspan> total track height</text>
+</svg>

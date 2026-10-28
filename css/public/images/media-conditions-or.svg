@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 485 180" role="img" aria-labelledby="title desc">
+  <title id="title">Alternative media queries</title>
+  <desc id="desc">At 800 by 250 only the height query matches, so actions stack vertically; at 800 by 500 neither query matches and actions stay in a row.</desc>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      fill: #263C55;
+      font-weight: 400;
+    }
+    .heading {
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .annotation {
+      font-size: 16px;
+      fill: #526B80;
+    }
+    .code {
+      font-family: "DejaVu Sans Mono", Consolas, monospace;
+    }
+    .frame {
+      fill: #F3F6F9;
+      stroke: #8095AA;
+      stroke-width: 2;
+      stroke-dasharray: 6 4;
+    }
+  </style>
+  <text x="242" y="21" text-anchor="middle" class="heading">At least one query must match</text>
+  <text x="125" y="43" text-anchor="middle" class="code" style="font-size: 15px;">800 × 250px</text>
+  <text x="125" y="63" text-anchor="middle" class="annotation" style="font-size: 15px;">Matches (height)</text>
+  <rect x="80" y="73" width="90" height="100" rx="4" class="frame" />
+  <rect x="98" y="78" width="54" height="23" rx="4" fill="#A8C8D9" stroke="#4C7186" stroke-width="2" />
+  <text x="125" y="95" text-anchor="middle" style="font-size: 15px;">A</text>
+  <rect x="98" y="109" width="54" height="23" rx="4" fill="#EBC08F" stroke="#9A6A2C" stroke-width="2" />
+  <text x="125" y="126" text-anchor="middle" style="font-size: 15px;">B</text>
+  <rect x="98" y="140" width="54" height="23" rx="4" fill="#C8D59A" stroke="#6C7D2C" stroke-width="2" />
+  <text x="125" y="157" text-anchor="middle" style="font-size: 15px;">C</text>
+  <text x="366" y="43" text-anchor="middle" class="code" style="font-size: 15px;">800 × 500px</text>
+  <text x="366" y="63" text-anchor="middle" class="annotation" style="font-size: 15px;">No match</text>
+  <rect x="268" y="92" width="196" height="41" rx="4" class="frame" />
+  <rect x="276" y="101" width="54" height="23" rx="4" fill="#A8C8D9" stroke="#4C7186" stroke-width="2" />
+  <text x="303" y="118" text-anchor="middle" style="font-size: 15px;">A</text>
+  <rect x="338" y="101" width="54" height="23" rx="4" fill="#EBC08F" stroke="#9A6A2C" stroke-width="2" />
+  <text x="365" y="118" text-anchor="middle" style="font-size: 15px;">B</text>
+  <rect x="400" y="101" width="54" height="23" rx="4" fill="#C8D59A" stroke="#6C7D2C" stroke-width="2" />
+  <text x="427" y="118" text-anchor="middle" style="font-size: 15px;">C</text>
+</svg>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accessibility Testing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="audit">
+    <h1>Accessibility practice (intentional problems)</h1>
+    <h3>Tasks</h3>
+    <p class="audit__muted">Review the pull request before Friday.</p>
+    <div class="status" aria-label="Task list">
+      <p class="status__item status__item--high">Review pull request</p>
+      <p class="status__item status__item--low">Update documentation</p>
+    </div>
+    <form class="task-form">
+      <input class="task-form__input" id="task-name" name="task" type="text">
+      <div class="task-form__actions">
+        <button class="task-form__submit" type="submit">Add task</button>
+        <button class="task-form__reset" type="reset">Reset</button>
+      </div>
+    </form>
+    <p class="audit__clipped">This longer description is deliberately clipped when text grows or the viewport becomes narrow. All information should remain available.</p>
+  </main>
+</body>
+</html>

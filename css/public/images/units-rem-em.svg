@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="640" viewBox="0 0 860 640" role="img" aria-labelledby="title desc">
+  <title id="title">Nested em versus rem font-size</title>
+  <desc id="desc">The root font size is 16 pixels. With nested em units, the parent is 24 pixels and the child becomes 36 pixels. With rem units, both parent and child are 24 pixels because they use the same root reference.</desc>
+  <defs>
+    <style>
+      text {
+        font-family: Arial, Helvetica, sans-serif;
+        fill: #263C55;
+      }
+      .heading {
+        font-weight: 700;
+        font-size: 30px;
+      }
+      .small {
+        font-size: 18px;
+      }
+      .tiny {
+        font-size: 16px;
+      }
+      .panel-label {
+        font-weight: 700;
+        font-size: 22px;
+      }
+      .number {
+        font-weight: 700;
+        font-size: 29px;
+      }
+      .root {
+        fill: #F3F6F9;
+        stroke: #8095AA;
+        stroke-width: 2.5;
+      }
+      .parent {
+        fill: #C2D8E4;
+        stroke: #4C7186;
+        stroke-width: 3;
+      }
+      .child-em {
+        fill: #F1D3B1;
+        stroke: #9A6A2C;
+        stroke-width: 3;
+      }
+      .child-rem {
+        fill: #D8E2B8;
+        stroke: #6C7D2C;
+        stroke-width: 3;
+      }
+      .em-note {
+        fill: #263C55;
+      }
+      .rem-note {
+        fill: #263C55;
+      }
+    </style>
+  </defs>
+  <rect x="8" y="8" width="844" height="624" rx="18" fill="#fff" stroke="#CAD5E0" stroke-width="2"/>
+  <text x="215" y="48" text-anchor="middle" class="heading">Nested em</text>
+  <text x="645" y="48" text-anchor="middle" class="heading">Nested rem</text>
+  <rect x="28" y="78" width="374" height="470" rx="13" class="root"/>
+  <rect x="458" y="78" width="374" height="470" rx="13" class="root"/>
+  <text x="48" y="112" class="small">Root font-size: 16px</text>
+  <text x="478" y="112" class="small">Root font-size: 16px</text>
+  <rect x="54" y="150" width="322" height="170" rx="10" class="parent"/>
+  <rect x="484" y="150" width="322" height="170" rx="10" class="parent"/>
+  <text x="215" y="193" text-anchor="middle" class="panel-label">Parent</text>
+  <text x="645" y="193" text-anchor="middle" class="panel-label">Parent</text>
+  <text x="215" y="236" text-anchor="middle" class="number" style="font-family:DejaVu Sans Mono, Consolas, monospace;">24px</text>
+  <text x="645" y="236" text-anchor="middle" class="number" style="font-family:DejaVu Sans Mono, Consolas, monospace;">24px</text>
+  <text x="215" y="268" text-anchor="middle" class="small">1.5 × 16px</text>
+  <text x="645" y="268" text-anchor="middle" class="small">1.5 × 16px</text>
+  <rect x="84" y="350" width="262" height="145" rx="10" class="child-em"/>
+  <rect x="514" y="350" width="262" height="145" rx="10" class="child-rem"/>
+  <text x="215" y="390" text-anchor="middle" class="panel-label">Nested child</text>
+  <text x="645" y="390" text-anchor="middle" class="panel-label">Nested child</text>
+  <text x="215" y="433" text-anchor="middle" class="number" style="font-family:DejaVu Sans Mono, Consolas, monospace;">36px</text>
+  <text x="645" y="433" text-anchor="middle" class="number" style="font-family:DejaVu Sans Mono, Consolas, monospace;">24px</text>
+  <text x="215" y="465" text-anchor="middle" class="small">1.5 × 24px</text>
+  <text x="645" y="465" text-anchor="middle" class="small">1.5 × 16px</text>
+  <text x="215" y="585" text-anchor="middle" class="panel-label em-note">Compounds when nested</text>
+  <text x="645" y="585" text-anchor="middle" class="panel-label rem-note">Same root reference</text>
+  <text x="430" y="614" text-anchor="middle" class="tiny">Both examples start at the same 16px root, but only em grows again inside the parent.</text>
+</svg>

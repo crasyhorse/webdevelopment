@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 300" role="img">
+  <title>One Big Stylesheet vs. Organized Files</title>
+  <desc>Left: a single long stylesheet with tangled arrows between related rules. Right: the same rules organized into a small file tree: tokens, base, and one file per component block.</desc>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      fill: #263C55;
+      font-size: 20px;
+    }
+    .heading { font-size: 24px; font-weight: 700; }
+    .annotation { font-size: 16px; fill: #526B80; }
+    .code { font-family: "DejaVu Sans Mono", Consolas, monospace; font-size: 15px; }
+  </style>
+  <rect x="8" y="8" width="374" height="284" rx="8" fill="#FAFBFC" stroke="#CAD5E0" stroke-width="2" />
+  <text x="24" y="42" class="heading">styles.css — 220 lines</text>
+  <rect x="24" y="58" width="342" height="216" rx="6" fill="#FFFFFF" stroke="#CAD5E0" stroke-width="2" />
+  <text x="40" y="84" class="code">/* Exercise 05 — floats */</text>
+  <text x="40" y="108" class="code">.task-list__item { … }</text>
+  <text x="40" y="132" class="code">/* Exercise 07 — box model */</text>
+  <text x="40" y="156" class="code">.task-list__item { … }</text>
+  <text x="40" y="180" class="code">/* Exercise 11 — media queries */</text>
+  <text x="40" y="204" class="code">.task-manager { … }</text>
+  <text x="40" y="228" class="code">/* Exercise 14 — visual design */</text>
+  <text x="40" y="252" class="code">.task-list__item { … }</text>
+  <path d="M 300 102 C 340 130 260 150 300 174" fill="none" stroke="#9A6A2C" stroke-width="2" stroke-dasharray="5 4" />
+  <path d="M 290 198 C 240 220 330 236 280 258" fill="none" stroke="#9A6A2C" stroke-width="2" stroke-dasharray="5 4" />
+  <rect x="398" y="8" width="374" height="284" rx="8" fill="#FAFBFC" stroke="#CAD5E0" stroke-width="2" />
+  <text x="414" y="42" class="heading">Organized by block</text>
+  <rect x="414" y="58" width="342" height="216" rx="6" fill="#FFFFFF" stroke="#CAD5E0" stroke-width="2" />
+  <text x="430" y="84" class="code">css/</text>
+  <text x="446" y="108" class="code">tokens.css</text>
+  <text x="446" y="132" class="code">base.css</text>
+  <text x="446" y="156" class="code">task-manager.css</text>
+  <text x="446" y="180" class="code">task-list.css</text>
+  <text x="446" y="204" class="code">task-form.css</text>
+  <text x="446" y="228" class="code">task-summary.css</text>
+  <text x="430" y="258" class="annotation">Each block lives in exactly one file.</text>
+</svg>

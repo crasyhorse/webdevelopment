@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 265" role="img">
+  <title>Responsive clamp</title>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      fill: #263C55;
+      font-weight: 400;
+    }
+    .code {
+      font-family: "DejaVu Sans Mono", Consolas, monospace;
+    }
+  </style>
+  <path d="M65 210 L570 210" stroke="#8095AA" stroke-width="2" fill="none" />
+  <path d="M65 210 L65 20" stroke="#8095AA" stroke-width="2" fill="none" />
+  <text x="315" y="255" text-anchor="middle" font-size="16">Viewport width</text>
+  <text x="65" y="14" text-anchor="start" font-size="16">Size</text>
+  <path d="M65 138 L570 138" stroke="#8095AA" stroke-width="2" fill="none" stroke-dasharray="6 4" />
+  <text x="55" y="143" text-anchor="end" font-size="14" class="code">24px</text>
+  <path d="M65 66 L570 66" stroke="#8095AA" stroke-width="2" fill="none" stroke-dasharray="6 4" />
+  <text x="55" y="71" text-anchor="end" font-size="14" class="code">48px</text>
+  <text x="65.0" y="232" text-anchor="middle" font-size="14" class="code">320</text>
+  <text x="175.46875" y="232" text-anchor="middle" font-size="14" class="code">600</text>
+  <text x="412.1875" y="232" text-anchor="middle" font-size="14" class="code">1200</text>
+  <text x="570.0" y="232" text-anchor="middle" font-size="14" class="code">1600</text>
+  <path d="M65.0 138 H175.46875 L412.1875 66 H570.0" fill="none" stroke="#4C7186" stroke-width="4" />
+  <text x="113" y="125" text-anchor="middle" font-size="15">Minimum</text>
+  <text x="300" y="85" text-anchor="middle" font-size="15">Preferred</text>
+  <text x="500" y="50" text-anchor="middle" font-size="15">Maximum</text>
+</svg>

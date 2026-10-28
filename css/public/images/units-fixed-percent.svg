@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 640" width="860" height="640" role="img" aria-labelledby="title desc">
+  <title id="title">Fixed and percentage widths in wide and narrow parents</title>
+  <desc id="desc">At 400px parent width, both a 300px fixed child and a 75 percent child are 300px wide. When the parent shrinks to 240px, the fixed child stays 300px and overflows, while the percentage child becomes 180px and still fits.</desc>
+  <defs>
+    <style>
+      text {
+        font-family: Arial, Helvetica, sans-serif;
+        fill: #263C55;
+      }
+      .hdr {
+        font-size: 24px;
+        font-weight: 700;
+      }
+      .sub {
+        font-size: 19px;
+        font-weight: 700;
+      }
+      .lbl {
+        font-size: 19px;
+        font-weight: 700;
+      }
+      .info {
+        font-size: 17px;
+      }
+      .parent {
+        fill: #F3F6F9;
+        stroke: #526B80;
+        stroke-width: 2.5;
+        stroke-dasharray: 8 6;
+      }
+      .fixed {
+        fill: #C2D8E4;
+        stroke: #4C7186;
+        stroke-width: 2.5;
+      }
+      .fluid {
+        fill: #D8E2B8;
+        stroke: #6C7D2C;
+        stroke-width: 2.5;
+      }
+    </style>
+  </defs>
+  <rect width="860" height="640" fill="#fff"/>
+  <text x="215" y="40" text-anchor="middle" class="hdr">Fixed: width 300px</text>
+  <text x="645" y="40" text-anchor="middle" class="hdr">Fluid: width 75%</text>
+  <text x="25" y="90" class="sub">Parent: 400px</text>
+  <rect x="25" y="110" width="375" height="150" rx="8" class="parent"/>
+  <rect x="40" y="138" width="281.25" height="83" rx="5" class="fixed"/>
+  <text x="181" y="171" text-anchor="middle" class="lbl" style="font-family:DejaVu Sans Mono, Consolas, monospace;">300px</text>
+  <text x="181" y="196" text-anchor="middle" class="info">fits</text>
+  <text x="455" y="90" class="sub">Parent: 400px</text>
+  <rect x="455" y="110" width="375" height="150" rx="8" class="parent"/>
+  <rect x="470" y="138" width="281.25" height="83" rx="5" class="fluid"/>
+  <text x="610" y="171" text-anchor="middle" class="lbl" style="font-family:DejaVu Sans Mono, Consolas, monospace;">300px</text>
+  <text x="610" y="196" text-anchor="middle" class="info">75% × 400px</text>
+  <line x1="20" y1="299" x2="840" y2="299" stroke="#CAD5E0" stroke-width="2"/>
+  <text x="430" y="334" text-anchor="middle" class="hdr">Both parents shrink to 240px</text>
+  <text x="25" y="384" class="sub">Parent: 240px</text>
+  <rect x="25" y="406" width="225" height="150" rx="8" class="parent"/>
+  <rect x="40" y="433" width="281.25" height="83" rx="5" class="fixed"/>
+  <line x1="250" y1="414" x2="250" y2="542" stroke="#9A6A2C" stroke-width="2.5" stroke-dasharray="5 5"/>
+  <text x="181" y="469" text-anchor="middle" class="lbl" style="font-family:DejaVu Sans Mono, Consolas, monospace;">300px</text>
+  <text x="181" y="494" text-anchor="middle" class="info">still 300px</text>
+  <text x="281" y="552" fill="#9A6A2C" text-anchor="middle" style="font-size:16px;font-weight:700;">Overflow!</text>
+  <text x="455" y="384" class="sub">Parent: 240px</text>
+  <rect x="455" y="406" width="225" height="150" rx="8" class="parent"/>
+  <rect x="470" y="433" width="168.75" height="83" rx="5" class="fluid"/>
+  <text x="554" y="469" text-anchor="middle" class="lbl" style="font-family:DejaVu Sans Mono, Consolas, monospace;">180px</text>
+  <text x="554" y="494" text-anchor="middle" class="info">75% × 240px</text>
+  <text x="554" y="552" text-anchor="middle" style="font-size:16px;font-weight:700;fill:#6C7D2C;">Fits</text>
+  <text x="430" y="613" text-anchor="middle" style="font-size:17px;fill:#526B80;">Dashed outline = parent · colored box = child</text>
+</svg>

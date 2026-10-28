@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 320" role="img">
+  <title>Custom Properties Inherit and Re-scope</title>
+  <desc>An element tree in which --accent declared on the root is inherited by all elements; one card re-declares it, so only its subtree uses the new value.</desc>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      fill: #263C55;
+      font-size: 20px;
+    }
+    .heading { font-size: 24px; font-weight: 700; }
+    .annotation { font-size: 16px; fill: #526B80; }
+    .code { font-family: "DejaVu Sans Mono", Consolas, monospace; font-size: 16px; }
+  </style>
+  <rect x="8" y="8" width="764" height="304" rx="8" fill="#FAFBFC" stroke="#CAD5E0" stroke-width="2" />
+  <rect x="40" y="32" width="700" height="64" rx="8" fill="#E8EDF2" stroke="#8095AA" stroke-width="2" />
+  <text x="56" y="60" class="code">:root { --accent: #4C7186; }</text>
+  <text x="56" y="84" class="annotation">html — every element inherits --accent</text>
+  <line x1="220" y1="96" x2="220" y2="128" stroke="#8095AA" stroke-width="2" />
+  <line x1="560" y1="96" x2="560" y2="128" stroke="#8095AA" stroke-width="2" />
+  <rect x="80" y="128" width="280" height="144" rx="8" fill="#A8C8D9" stroke="#4C7186" stroke-width="2" />
+  <text x="96" y="156" class="code">.task-card</text>
+  <text x="96" y="182" class="annotation">inherits --accent: #4C7186</text>
+  <rect x="104" y="216" width="232" height="40" rx="6" fill="#FFFFFF" stroke="#4C7186" stroke-width="2" />
+  <text x="120" y="242" class="code">border: var(--accent)</text>
+  <rect x="420" y="128" width="280" height="144" rx="8" fill="#EBC08F" stroke="#9A6A2C" stroke-width="2" />
+  <text x="436" y="156" class="code">.task-card--urgent {</text>
+  <text x="452" y="180" class="code">  --accent: #8C7428;</text>
+  <text x="436" y="204" class="code">}</text>
+  <rect x="444" y="216" width="232" height="40" rx="6" fill="#FFFFFF" stroke="#9A6A2C" stroke-width="2" />
+  <text x="460" y="242" class="code">border: var(--accent)</text>
+  <text x="390" y="300" class="annotation" text-anchor="middle">Same var(--accent) — two values: the subtree of the re-declaring element uses its own.</text>
+</svg>

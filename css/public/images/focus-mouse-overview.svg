@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 216" role="img">
+  <title>Mouse Users See the Whole Page</title>
+  <desc>A fully visible Task Manager page with a mouse cursor pointing at a control; the whole interface is visible at a glance.</desc>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      fill: #263C55;
+      font-size: 20px;
+    }
+    .heading { font-size: 24px; font-weight: 700; }
+    .annotation { font-size: 16px; fill: #526B80; }
+    .detail { font-size: 14px; fill: #526B80; }
+  </style>
+  <rect x="8" y="8" width="374" height="200" rx="8" fill="#FAFBFC" stroke="#CAD5E0" stroke-width="2" />
+  <rect x="24" y="24" width="342" height="30" rx="6" fill="#E8EDF2" />
+  <text x="38" y="45" class="heading">Task Manager</text>
+  <rect x="24" y="68" width="196" height="30" rx="6" fill="#FFFFFF" stroke="#CAD5E0" stroke-width="2" />
+  <text x="38" y="89" class="detail">Search tasks…</text>
+  <rect x="240" y="68" width="126" height="30" rx="6" fill="#A8C8D9" stroke="#4C7186" stroke-width="2" />
+  <text x="303" y="89" text-anchor="middle">Add task</text>
+  <rect x="24" y="112" width="342" height="26" rx="6" fill="#FFFFFF" stroke="#CAD5E0" stroke-width="2" />
+  <text x="38" y="130" class="detail">Review pull request</text>
+  <rect x="24" y="146" width="342" height="26" rx="6" fill="#FFFFFF" stroke="#CAD5E0" stroke-width="2" />
+  <text x="38" y="164" class="detail">Update documentation</text>
+  <rect x="24" y="180" width="342" height="26" rx="6" fill="#FFFFFF" stroke="#CAD5E0" stroke-width="2" />
+  <text x="38" y="198" class="detail">Inspect keyboard focus</text>
+  <path d="M 310 92 L 310 112 L 315 107 L 319 116 L 323 114 L 319 105 L 326 104 Z" fill="#263C55" stroke="#FAFBFC" stroke-width="1.5" />
+</svg>

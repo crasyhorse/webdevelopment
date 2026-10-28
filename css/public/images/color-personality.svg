@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 360" role="img">
+  <title>Four illustrative palettes with different intended visual personalities</title>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      fill: #263C55;
+      font-size: 20px;
+    }
+    .heading {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .detail {
+      font-size: 16px;
+      fill: #526B80;
+    }
+    .code {
+      font-family: "DejaVu Sans Mono", Consolas, monospace;
+      font-size: 17px;
+    }
+  </style>
+  <text x="12" y="35" class="heading" style="font-size: 20px;">Calm &amp; approachable</text>
+  <rect x="12" y="44" width="160" height="39" rx="3" fill="#F5F2EB" stroke="#CAD5E0" stroke-width="2" />
+  <rect x="184" y="44" width="160" height="39" rx="3" fill="#DCE5D4" stroke="#CAD5E0" stroke-width="2" />
+  <rect x="356" y="44" width="160" height="39" rx="3" fill="#A4B99F" stroke="#CAD5E0" stroke-width="2" />
+  <rect x="528" y="44" width="160" height="39" rx="3" fill="#708A69" stroke="#CAD5E0" stroke-width="2" />
+  <rect x="700" y="44" width="160" height="39" rx="3" fill="#344C36" stroke="#CAD5E0" stroke-width="2" />
+  <text x="12" y="122" class="heading" style="font-size: 20px;">Professional &amp; restrained</text>
+  <rect x="12" y="131" width="160" height="39" rx="3" fill="#F3F6F9" stroke="#CAD5E0" stroke-width="2" />
+  <rect x="184" y="131" width="160" height="39" rx="3" fill="#C2D8E4" stroke="#CAD5E0" stroke-width="2" />
+  <rect x="356" y="131" width="160" height="39" rx="3" fill="#7FA1B4" stroke="#CAD5E0" stroke-width="2" />
+  <rect x="528" y="131" width="160" height="39" rx="3" fill="#245F9F" stroke="#CAD5E0" stroke-width="2" />
+  <rect x="700" y="131" width="160" height="39" rx="3" fill="#263C55" stroke="#CAD5E0" stroke-width="2" />
+  <text x="12" y="209" class="heading" style="font-size: 20px;">Energetic &amp; playful</text>
+  <rect x="12" y="218" width="160" height="39" rx="3" fill="#FFF2DE" stroke="#CAD5E0" stroke-width="2" />
+  <rect x="184" y="218" width="160" height="39" rx="3" fill="#F7C44B" stroke="#CAD5E0" stroke-width="2" />
+  <rect x="356" y="218" width="160" height="39" rx="3" fill="#F58B60" stroke="#CAD5E0" stroke-width="2" />
+  <rect x="528" y="218" width="160" height="39" rx="3" fill="#8364C4" stroke="#CAD5E0" stroke-width="2" />
+  <rect x="700" y="218" width="160" height="39" rx="3" fill="#382B59" stroke="#CAD5E0" stroke-width="2" />
+  <text x="12" y="296" class="heading" style="font-size: 20px;">Minimal &amp; elegant</text>
+  <rect x="12" y="305" width="160" height="39" rx="3" fill="#F7F5F0" stroke="#CAD5E0" stroke-width="2" />
+  <rect x="184" y="305" width="160" height="39" rx="3" fill="#DDD6CA" stroke="#CAD5E0" stroke-width="2" />
+  <rect x="356" y="305" width="160" height="39" rx="3" fill="#B7A484" stroke="#CAD5E0" stroke-width="2" />
+  <rect x="528" y="305" width="160" height="39" rx="3" fill="#70685E" stroke="#CAD5E0" stroke-width="2" />
+  <rect x="700" y="305" width="160" height="39" rx="3" fill="#292725" stroke="#CAD5E0" stroke-width="2" />
+</svg>

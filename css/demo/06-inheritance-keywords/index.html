@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task Manager — CSS inheritance keywords</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="task-manager">
+    <h1>Task Manager — Inheritance Keywords</h1>
+    <p>Inspect the cards using DevTools and compare their computed styles.</p>
+    <section class="task-card" aria-labelledby="example-title">
+      <h2 id="example-title">Parent has <code>color: navy; padding: 24px;</code></h2>
+      <div class="example-row">
+        <p class="example-card example-inherit"><strong>inherit</strong> copies the parent's color and padding.</p>
+        <p class="example-card example-initial"><strong>initial</strong> resets color and padding to CSS initial values.</p>
+        <p class="example-card example-unset"><strong>unset</strong> inherits color but resets padding.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

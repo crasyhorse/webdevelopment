@@ -1,0 +1,68 @@
+/* Demo 17 — Cascade Layers
+   Starting state: the "spiral" situation, no layers yet.
+   The experiments in README.md introduce @layer step by step. */
+
+/* Base styles — the "design system" team wrote these long ago. */
+body {
+  margin: 0;
+  padding: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #E8EDF2;
+  color: #263C55;
+}
+
+.task-manager {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background: #FAFBFC;
+  border-radius: .75rem;
+}
+
+.task-manager__header {
+  background: #263C55;
+  color: #FFFFFF;
+  padding: 1rem 1.25rem;
+  border-radius: .5rem;
+}
+
+.task-manager__title {
+  margin: 0;
+  color: #FFFFFF;
+}
+
+.task-manager__note {
+  color: #526B80;
+}
+
+.task-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.task-list__item {
+  padding: .6rem .9rem;
+  margin: .4rem 0;
+  background: #FFFFFF;
+  border-left: 4px solid #8095AA;
+  border-radius: .4rem;
+}
+
+/* --- The conflict to investigate ------------------------------------- */
+
+/* The component team wants every panel title in brand blue. */
+.panel__title {
+  color: #125BD4;
+}
+
+/* An old theme rule with an ID "just to be safe" beats it. */
+#special-heading {
+  color: #9A6A2C;
+}
+
+/* A utility that cannot win without !important. */
+.task-list__item--highlight {
+  background: #F8E9D8;
+  border-left-color: #9A6A2C;
+  color: #8C7428 !important;
+}

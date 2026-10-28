@@ -1,0 +1,53 @@
+@layer components {
+  .task-form {
+    width: 100%;
+    max-width: 32rem;
+    padding: max(.75rem, 1vw);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: .65rem;
+  }
+
+  .task-form__label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 700;
+  }
+
+  .task-form__input, .task-form__select {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    min-height: 2.75rem;
+    padding: .5rem .65rem;
+    border: 1px solid var(--text-muted);
+    border-radius: .4rem;
+    font: inherit;
+
+    &:focus-visible {
+      outline: 3px solid var(--focus-ring);
+      outline-offset: 3px;
+      box-shadow: 0 0 0 3px var(--focus-halo);
+    }
+  }
+
+  .task-form__submit {
+    min-height: 2.75rem;
+    padding: .5em 1em;
+    border: 0;
+    border-radius: .5rem;
+    background: var(--accent);
+    color: var(--header-text);
+    cursor: pointer;
+
+    &:hover {
+      background: var(--accent-hover);
+    }
+
+    &:focus-visible {
+      outline: 3px solid var(--focus-ring);
+      outline-offset: 3px;
+      box-shadow: 0 0 0 3px var(--focus-halo);
+    }
+  }
+}

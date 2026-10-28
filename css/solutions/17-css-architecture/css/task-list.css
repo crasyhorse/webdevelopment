@@ -1,0 +1,117 @@
+@layer components {
+  .task-list {
+    padding-left: 0;
+    list-style: none;
+    border: 1px solid var(--border);
+    border-radius: .5rem;
+    /* Exercise 15: prefer unobscured content over a fixed-height scroll box. */
+    max-height: none;
+    overflow: visible;
+  }
+
+  .task-list__item {
+    margin: .5rem 0;
+    padding: .75rem 1rem;
+    background: var(--surface);
+    border-left: 4px solid var(--item-accent);
+    border-radius: .5rem;
+    box-shadow: 0 2px 6px var(--shadow);
+  }
+
+  .task-list__item--high-priority {
+    --item-bg: var(--status-high-bg);
+    --item-accent: var(--status-high-accent);
+    background: var(--item-bg);
+    border-left-color: var(--item-accent);
+  }
+
+  .task-list__item--completed {
+    --item-bg: var(--status-done-bg);
+    --item-accent: var(--status-done-accent);
+    text-decoration: line-through;
+    color: var(--text);
+    background: var(--item-bg);
+    border-left-color: var(--item-accent);
+  }
+
+  /* Decorative only: the text and modifier still communicate status. */
+  .task-list__item--completed::before {
+    content: "✓ ";
+    color: var(--text);
+  }
+
+  .task-list__item--featured {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: .75rem;
+    padding-top: .75rem;
+  }
+
+  .task-list__icon {
+    display: block;
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    font-size: 1.75rem;
+    text-align: center;
+    color: var(--accent);
+    background: var(--surface-muted);
+    border-radius: .45rem;
+    flex: 0 0 3.5rem;
+  }
+
+  .task-list__body {
+    flex: 1 1 12rem;
+    min-width: 0;
+  }
+
+  .task-list__description {
+    margin-top: 0;
+    max-inline-size: 65ch;
+  }
+
+  .task-list__badge {
+    position: static;
+    max-width: 100%;
+    background: var(--status-high-bg);
+    color: var(--text);
+    border: 1px solid var(--status-high-accent);
+    border-radius: .3rem;
+  }
+
+  .task-list__actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 8rem), 1fr));
+    gap: .6rem;
+    align-items: center;
+  }
+
+  .task-list__action {
+    display: inline-block;
+    min-width: 0;
+    min-height: 2.75rem;
+    max-width: 100%;
+    padding: .5em 1em;
+    border: 0;
+    border-radius: .5rem;
+    background: var(--accent);
+    color: var(--header-text);
+    font: inherit;
+    cursor: pointer;
+    overflow-wrap: anywhere;
+
+    &:hover {
+      background: var(--accent-hover);
+    }
+
+    &:focus-visible {
+      outline: 3px solid var(--focus-ring);
+      outline-offset: 3px;
+      box-shadow: 0 0 0 3px var(--focus-halo);
+    }
+  }
+
+  .task-list__action--small { font-size: .875rem; }
+  .task-list__action--large { font-size: 1.5rem; }
+}

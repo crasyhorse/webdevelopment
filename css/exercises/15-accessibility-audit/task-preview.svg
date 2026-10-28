@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="240" viewBox="0 0 900 240" role="img" aria-label="Task Manager attachment preview">
+  <rect width="900" height="240" rx="18" fill="#d9eafa"/>
+  <rect x="28" y="30" width="844" height="180" rx="15" fill="#ffffff" stroke="#4177a6" stroke-width="4"/>
+  <rect x="64" y="62" width="320" height="22" rx="11" fill="#4177a6"/>
+  <rect x="64" y="105" width="730" height="16" rx="8" fill="#c7ddea"/>
+  <rect x="64" y="140" width="630" height="16" rx="8" fill="#c7ddea"/>
+  <rect x="64" y="175" width="510" height="16" rx="8" fill="#c7ddea"/>
+</svg>

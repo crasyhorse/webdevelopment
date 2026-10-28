@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="470" viewBox="0 0 860 470" role="img" aria-labelledby="title desc">
+  <title id="title">Collapsing vertical margins</title>
+  <desc id="desc">A heading box with a bottom margin of 24 pixels sits above a paragraph box with a top margin of 16 pixels. The margins overlap in the same space, creating one 24 pixel gap rather than adding to 40 pixels.</desc>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      fill: #263C55;
+    }
+    .heading {
+      font-size: 28px;
+      font-weight: 700;
+    }
+    .label {
+      font-size: 23px;
+      font-weight: 700;
+    }
+    .detail {
+      font-size: 19px;
+    }
+    .measure {
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .result {
+      font-size: 24px;
+      font-weight: 700;
+      fill: #263C55;
+    }
+  </style>
+  <rect x="10" y="10" width="840" height="450" rx="18" fill="#FAFBFC" stroke="#CAD5E0" stroke-width="2"/>
+  <text x="430" y="52" text-anchor="middle" class="heading">Vertical margins collapse</text>
+  <!-- Adjacent blocks in normal flow -->
+  <rect x="120" y="94" width="430" height="95" rx="12" fill="#E1ECF2" stroke="#4C7186" stroke-width="3"/>
+  <text x="335" y="149" text-anchor="middle" class="label">Heading box</text>
+  <!-- The whole gap is the larger 24px bottom margin; the shorter 16px top margin occupies part of that same space. -->
+  <rect x="120" y="189" width="430" height="96" fill="#EBC08F"/>
+  <rect x="120" y="221" width="430" height="64" fill="#F1D3B1" fill-opacity=".6"/>
+  <text x="335" y="213" text-anchor="middle" class="detail">Overlapping margin area</text>
+  <rect x="120" y="285" width="430" height="95" rx="12" fill="#ECF0DC" stroke="#6C7D2C" stroke-width="3"/>
+  <text x="335" y="340" text-anchor="middle" class="label">Paragraph box</text>
+  <!-- Margin measurement brackets are side by side and never overlap the labels. -->
+  <path d="M573 189 H585 M579 189 V285 M573 285 H585" stroke="#263C55" stroke-width="2.5" fill="none"/>
+  <path d="M622 221 H634 M628 221 V285 M622 285 H634" stroke="#9A6A2C" stroke-width="2.5" fill="none"/>
+  <text x="650" y="197" class="measure" style="font-family:DejaVu Sans Mono, Consolas, monospace;">24px</text>
+  <text x="650" y="220" class="detail" style="font-family:DejaVu Sans Mono, Consolas, monospace;">margin-bottom</text>
+  <text x="650" y="258" class="measure" style="font-family:DejaVu Sans Mono, Consolas, monospace;">16px</text>
+  <text x="650" y="281" class="detail" style="font-family:DejaVu Sans Mono, Consolas, monospace;">margin-top</text>
+  <text x="430" y="424" text-anchor="middle" class="result">Actual gap: 24px, not 40px</text>
+</svg>

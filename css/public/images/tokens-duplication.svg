@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 300" role="img">
+  <title>Duplicated Values vs. One Token</title>
+  <desc>Left: a stylesheet repeating the same blue value in four declarations. Right: the same stylesheet declaring one custom property and referencing it with var() in four places.</desc>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      fill: #263C55;
+      font-size: 20px;
+    }
+    .heading { font-size: 24px; font-weight: 700; }
+    .annotation { font-size: 16px; fill: #526B80; }
+    .code { font-family: "DejaVu Sans Mono", Consolas, monospace; font-size: 16px; }
+    .value { fill: #8C7428; }
+    .token { fill: #4C7186; }
+  </style>
+  <rect x="8" y="8" width="374" height="284" rx="8" fill="#FAFBFC" stroke="#CAD5E0" stroke-width="2" />
+  <text x="24" y="42" class="heading">Repeated literals</text>
+  <text x="24" y="80" class="code">.task-manager__header {</text>
+  <text x="40" y="104" class="code">  background: <tspan class="value">#125BD4</tspan>;</text>
+  <text x="24" y="128" class="code">}</text>
+  <text x="24" y="156" class="code">.task-form__submit {</text>
+  <text x="40" y="180" class="code">  background: <tspan class="value">#125BD4</tspan>;</text>
+  <text x="24" y="204" class="code">}</text>
+  <text x="24" y="232" class="code">.task-card--selected {</text>
+  <text x="40" y="256" class="code">  border-color: <tspan class="value">#125BD4</tspan>;</text>
+  <text x="24" y="280" class="code">}</text>
+  <rect x="398" y="8" width="374" height="284" rx="8" fill="#FAFBFC" stroke="#CAD5E0" stroke-width="2" />
+  <text x="414" y="42" class="heading">One named value</text>
+  <text x="414" y="80" class="code">:root {</text>
+  <text x="430" y="104" class="code">  <tspan class="token">--color-primary</tspan>: #125BD4;</text>
+  <text x="414" y="128" class="code">}</text>
+  <text x="414" y="156" class="code">.task-manager__header {</text>
+  <text x="430" y="180" class="code">  background: <tspan class="token">var(--color-primary)</tspan>;</text>
+  <text x="414" y="204" class="code">}</text>
+  <text x="414" y="232" class="code">.task-form__submit {</text>
+  <text x="430" y="256" class="code">  background: <tspan class="token">var(--color-primary)</tspan>;</text>
+  <text x="414" y="280" class="code">}</text>
+</svg>

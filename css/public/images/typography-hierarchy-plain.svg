@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 270" role="img">
+  <title>Typography Hierarchy Plain</title>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      fill: #263C55;
+      font-size: 20px;
+    }
+    .heading { font-size: 24px; font-weight: 700; }
+    .detail { font-size: 16px; fill: #526B80; }
+    .code { font-family: "DejaVu Sans Mono", Consolas, monospace; font-size: 17px; }
+  </style>
+  <rect x="10" y="10" width="400" height="250" rx="8" fill="#FAFBFC" stroke="#CAD5E0" stroke-width="2" />
+  <text x="30" y="48" class="" style="font-size: 19px; font-weight: 400;">Task Manager</text>
+  <text x="30" y="82" class="" style="font-size: 19px; font-weight: 400;">Your active tasks</text>
+  <text x="30" y="128" class="" style="font-size: 19px; font-weight: 400;">Review pull request</text>
+  <text x="30" y="160" class="" style="font-size: 19px; font-weight: 400;">Due tomorrow</text>
+  <text x="30" y="205" class="" style="font-size: 19px; font-weight: 400;">Update documentation</text>
+  <text x="30" y="235" class="" style="font-size: 19px; font-weight: 400;">Due Friday</text>
+
+</svg>

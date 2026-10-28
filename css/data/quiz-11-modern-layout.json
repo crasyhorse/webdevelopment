@@ -1,0 +1,112 @@
+[
+  {
+    "question": "Which position value keeps the original space when offset?",
+    "answers": [
+      "absolute",
+      "relative",
+      "fixed",
+      "none"
+    ],
+    "correctIndex": 1,
+    "explanation": "Relative positioning preserves the original flow space."
+  },
+  {
+    "question": "What usually anchors an absolute badge to its card?",
+    "answers": [
+      "display: block",
+      "position: relative on the card",
+      "margin: auto",
+      "z-index: 99"
+    ],
+    "correctIndex": 1,
+    "explanation": "A positioned ancestor normally establishes the containing block."
+  },
+  {
+    "question": "Which property distributes free space along the flex main axis?",
+    "answers": [
+      "align-items",
+      "gap",
+      "justify-content",
+      "grid-area"
+    ],
+    "correctIndex": 2,
+    "explanation": "justify-content controls main-axis distribution."
+  },
+  {
+    "question": "What changes the main axis to the block axis?",
+    "answers": [
+      "flex-direction: column",
+      "flex-wrap: wrap",
+      "align-self: center",
+      "display: block"
+    ],
+    "correctIndex": 0,
+    "explanation": "Column follows the block axis."
+  },
+  {
+    "question": "What does flex: 0 0 3rem mean?",
+    "answers": [
+      "Grow, shrink and basis are all 3rem",
+      "No grow, no shrink, basis 3rem",
+      "Three equal columns",
+      "Minimum height 3rem"
+    ],
+    "correctIndex": 1,
+    "explanation": "The shorthand sets grow, shrink and basis."
+  },
+  {
+    "question": "Which value permits an additional flex line?",
+    "answers": [
+      "nowrap",
+      "stretch",
+      "wrap",
+      "row"
+    ],
+    "correctIndex": 2,
+    "explanation": "flex-wrap: wrap permits new lines."
+  },
+  {
+    "question": "Which unit shares available grid track space?",
+    "answers": [
+      "px",
+      "vh",
+      "em",
+      "fr"
+    ],
+    "correctIndex": 3,
+    "explanation": "Fractional tracks share available space."
+  },
+  {
+    "question": "What does grid-column: 1 / -1 span?",
+    "answers": [
+      "All explicit columns",
+      "Only the first column",
+      "All rows",
+      "The viewport"
+    ],
+    "correctIndex": 0,
+    "explanation": "The last negative line refers to the last explicit grid line."
+  },
+  {
+    "question": "Which layout is most appropriate for aligned dashboard rows and columns?",
+    "answers": [
+      "float",
+      "Grid",
+      "absolute positioning",
+      "inline"
+    ],
+    "correctIndex": 1,
+    "explanation": "Grid coordinates rows and columns."
+  },
+  {
+    "question": "Does visual reordering change keyboard focus order?",
+    "answers": [
+      "Always",
+      "Only for Grid",
+      "No",
+      "Only for Flexbox"
+    ],
+    "correctIndex": 2,
+    "explanation": "DOM order remains important for keyboard and assistive technology."
+  }
+]

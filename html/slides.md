@@ -1,5 +1,7 @@
 ---
 theme: hep
+addons:
+  - ./shared
 title: Web Development Workshop · Part 1 - HTML
 preTitle: Web Development Workshop · Part 1 - HTML
 info: A brief introduction to semantic HTML

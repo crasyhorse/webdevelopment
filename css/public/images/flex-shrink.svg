@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 295" role="img">
+  <title>Flex shrink</title>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      fill: #263C55;
+      font-size: 17px;
+    }
+    .head {
+      font-size: 21px;
+      font-weight: 700;
+    }
+    .small {
+      font-size: 15px;
+    }
+    .frame {
+      fill: #F3F6F9;
+      stroke: #8095AA;
+      stroke-width: 2;
+      stroke-dasharray: 6 4;
+    }
+  </style>
+  <text x="215" y="23" text-anchor="middle" class="head" style="font-family:DejaVu Sans Mono, Consolas, monospace;">flex-shrink: 1</text>
+  <text x="215" y="47" text-anchor="middle" class="small">Container: <tspan font-family="DejaVu Sans Mono, Consolas, monospace">140px</tspan> · no gap</text>
+  <text x="24" y="78">Starting sizes: <tspan font-family="DejaVu Sans Mono, Consolas, monospace">flex-basis: 100px</tspan></text>
+  <rect x="24" y="89" width="175.0" height="58" rx="4" class="frame"/>
+  <rect x="24" y="95" width="125" height="46" rx="4" fill="#A8C8D9" stroke="#4C7186" stroke-width="1.5"/>
+  <text x="86.5" y="124" text-anchor="middle" class="" style="font-family:DejaVu Sans Mono, Consolas, monospace;">100px</text>
+  <rect x="149" y="95" width="125" height="46" rx="4" fill="#C8D59A" stroke="#6C7D2C" stroke-width="1.5"/>
+  <text x="211.5" y="124" text-anchor="middle" class="" style="font-family:DejaVu Sans Mono, Consolas, monospace;">100px</text>
+  <path d="M199.0 85 V151" stroke="#9A6A2C" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="236.5" y="166" text-anchor="middle" class="small">60px excess</text>
+  <text x="215" y="185" text-anchor="middle" class="head">↓  −30px per item</text>
+  <text x="24" y="211">Final sizes</text>
+  <rect x="24" y="220" width="175.0" height="58" rx="4" class="frame"/>
+  <rect x="24.0" y="226" width="87.5" height="46" rx="4" fill="#A8C8D9" stroke="#4C7186" stroke-width="1.5"/>
+  <text x="67.75" y="255" text-anchor="middle" class="" style="font-family:DejaVu Sans Mono, Consolas, monospace;">70px</text>
+  <rect x="111.5" y="226" width="87.5" height="46" rx="4" fill="#C8D59A" stroke="#6C7D2C" stroke-width="1.5"/>
+  <text x="155.25" y="255" text-anchor="middle" class="" style="font-family:DejaVu Sans Mono, Consolas, monospace;">70px</text>
+</svg>

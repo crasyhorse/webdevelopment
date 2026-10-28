@@ -9,5 +9,5 @@ class: content-offset
 
 <Button 
     url="https://github.com/crasyhorse/webdevelopment/tree/html/html/quizz/quizz-01.md" 
-    type="quizz"
+    type="quiz"
 />

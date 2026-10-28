@@ -1,0 +1,13 @@
+/* Exercise 17 — CSS architecture entry point.
+   The layer order line is the whole architecture in one line.
+   @import must precede all other rules; the @layer order declaration is the
+   single exception allowed above it. */
+
+@layer reset, tokens, base, components;
+
+@import url("css/tokens.css");
+@import url("css/base.css");
+@import url("css/task-manager.css");
+@import url("css/task-list.css");
+@import url("css/task-form.css");
+@import url("css/task-summary.css");

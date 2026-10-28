@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 284 800 132" role="img">
+  <title>Flex justify space between</title>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      fill: #263C55;
+      font-size: 22px;
+    }
+    .head {
+      font-weight: 700;
+      font-size: 25px;
+    }
+    .small {
+      font-size: 18px;
+    }
+    .frame {
+      fill: #F3F6F9;
+      stroke: #8095AA;
+      stroke-width: 2;
+      stroke-dasharray: 7 5;
+    }
+    .item {
+      fill: #A8C8D9;
+      stroke: #4C7186;
+      stroke-width: 2;
+    }
+    .accent {
+      fill: #C8D59A;
+      stroke: #6C7D2C;
+      stroke-width: 2;
+    }
+    .orange {
+      fill: #EBC08F;
+      stroke: #9A6A2C;
+      stroke-width: 2;
+    }
+  </style>
+  <text x="400" y="312" text-anchor="middle" class="head" style="font-family:DejaVu Sans Mono, Consolas, monospace;">space-between</text>
+  <rect x="10" y="324" width="780" height="80" rx="7" class="frame"/>
+  <rect x="25" y="337" width="85" height="54" rx="7" class="item"/>
+  <text x="67.5" y="371.0" text-anchor="middle" class="">1</text>
+  <rect x="355" y="337" width="85" height="54" rx="7" class="item"/>
+  <text x="397.5" y="371.0" text-anchor="middle" class="">2</text>
+  <rect x="685" y="337" width="85" height="54" rx="7" class="item"/>
+  <text x="727.5" y="371.0" text-anchor="middle" class="">3</text>
+</svg>

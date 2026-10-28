@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 20 800 132" role="img">
+  <title>Flex justify start</title>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      fill: #263C55;
+      font-size: 22px;
+    }
+    .head {
+      font-weight: 700;
+      font-size: 25px;
+    }
+    .small {
+      font-size: 18px;
+    }
+    .frame {
+      fill: #F3F6F9;
+      stroke: #8095AA;
+      stroke-width: 2;
+      stroke-dasharray: 7 5;
+    }
+    .item {
+      fill: #A8C8D9;
+      stroke: #4C7186;
+      stroke-width: 2;
+    }
+    .accent {
+      fill: #C8D59A;
+      stroke: #6C7D2C;
+      stroke-width: 2;
+    }
+    .orange {
+      fill: #EBC08F;
+      stroke: #9A6A2C;
+      stroke-width: 2;
+    }
+  </style>
+  <text x="400" y="48" text-anchor="middle" class="head" style="font-family:DejaVu Sans Mono, Consolas, monospace;">flex-start</text>
+  <rect x="10" y="60" width="780" height="80" rx="7" class="frame"/>
+  <rect x="25" y="73" width="85" height="54" rx="7" class="item"/>
+  <text x="67.5" y="107.0" text-anchor="middle" class="">1</text>
+  <rect x="115" y="73" width="85" height="54" rx="7" class="item"/>
+  <text x="157.5" y="107.0" text-anchor="middle" class="">2</text>
+  <rect x="205" y="73" width="85" height="54" rx="7" class="item"/>
+  <text x="247.5" y="107.0" text-anchor="middle" class="">3</text>
+</svg>

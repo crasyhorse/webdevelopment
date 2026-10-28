@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 155" role="img">
+  <title>Media max width</title>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      fill: #263C55;
+      font-weight: 400;
+    }
+    .code {
+      font-family: "DejaVu Sans Mono", Consolas, monospace;
+    }
+  </style>
+  <rect x="45" y="35" width="256.0" height="30" rx="4" fill="#C8D59A" stroke="#6C7D2C" stroke-width="2" />
+  <path d="M45 85 L460 85" stroke="#8095AA" stroke-width="2" fill="none" />
+  <text x="173.0" y="56" text-anchor="middle" font-size="18" font-weight="700">Matches</text>
+  <path d="M45.0 78 L45.0 92" stroke="#8095AA" stroke-width="2" fill="none" />
+  <text x="45.0" y="113" text-anchor="middle" font-size="15" class="code">0px</text>
+  <path d="M173.0 78 L173.0 92" stroke="#8095AA" stroke-width="2" fill="none" />
+  <text x="173.0" y="113" text-anchor="middle" font-size="15" class="code">384px</text>
+  <path d="M301.0 78 L301.0 92" stroke="#8095AA" stroke-width="2" fill="none" />
+  <text x="301.0" y="113" text-anchor="middle" font-size="15" class="code">768px</text>
+  <path d="M445.0 78 L445.0 92" stroke="#8095AA" stroke-width="2" fill="none" />
+  <text x="445.0" y="113" text-anchor="middle" font-size="15" class="code">1200px</text>
+  <circle cx="301.0" cy="85" r="5" fill="#6C7D2C" />
+  <text x="245" y="145" text-anchor="middle" font-size="16">Viewport width (CSS pixels)</text>
+</svg>

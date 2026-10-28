@@ -1,0 +1,35 @@
+@layer components {
+  /* The query containers are declared with the component they wrap. */
+  #tasks, .task-manager__stats {
+    container-type: inline-size;
+    container-name: task-summary;
+  }
+
+  .task-summary {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: .75rem;
+    margin-block: .75rem;
+    border: 1px solid var(--border);
+    border-radius: .5rem;
+    background: var(--surface-muted);
+    overflow-wrap: anywhere;
+  }
+
+  .task-summary__title {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .task-summary__count { margin: 0; }
+
+  @container task-summary (min-width: 25rem) {
+    .task-summary {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}

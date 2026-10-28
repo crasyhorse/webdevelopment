@@ -1,0 +1,44 @@
+{
+  "leftHeader": "Goal",
+  "rightHeader": "Declaration site",
+  "pairs": [
+    {
+      "id": "global",
+      "left": "Make a token available to the entire page",
+      "right": "Declare it on :root"
+    },
+    {
+      "id": "subtree",
+      "left": "Give one card and its children a different accent",
+      "right": "Re-declare the token on the card block"
+    },
+    {
+      "id": "fallback",
+      "left": "Keep a declaration working when a token is missing",
+      "right": "Add a fallback as the second var() argument"
+    },
+    {
+      "id": "theme",
+      "left": "Switch every component to a dark palette at once",
+      "right": "Re-declare the token set under [data-theme=\"dark\"]"
+    },
+    {
+      "id": "os",
+      "left": "Follow the operating system's color preference",
+      "right": "Re-declare tokens inside a prefers-color-scheme media query"
+    },
+    {
+      "id": "conflict",
+      "left": "Two rules declare the same token on one element",
+      "right": "The normal cascade decides: origin, specificity, order"
+    }
+  ],
+  "rightOrder": [
+    "theme",
+    "fallback",
+    "conflict",
+    "global",
+    "subtree",
+    "os"
+  ]
+}

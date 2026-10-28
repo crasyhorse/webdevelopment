@@ -1,0 +1,70 @@
+[
+  {
+    "question": "At a viewport width of 768px, which media conditions match: (min-width: 768px) and (max-width: 768px)?",
+    "answers": [
+      "Only min-width",
+      "Only max-width",
+      "Both",
+      "Neither"
+    ],
+    "correctIndex": 2,
+    "explanation": "Both comparisons include equality."
+  },
+  {
+    "question": "Which approach starts with a narrow layout and adds columns as space increases?",
+    "answers": [
+      "Mobile-first",
+      "Desktop-first",
+      "Fixed layout",
+      "Absolute positioning"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mobile-first progressively enhances the base layout."
+  },
+  {
+    "question": "What does (min-width: 48rem) and (min-height: 32rem) require?",
+    "answers": [
+      "Either feature matches",
+      "Both features match",
+      "Exactly one feature matches",
+      "Only width matters"
+    ],
+    "correctIndex": 1,
+    "explanation": "and requires both conditions."
+  },
+  {
+    "question": "When should you choose a new breakpoint?",
+    "answers": [
+      "For every phone model",
+      "Only at 1024px",
+      "When content no longer fits comfortably",
+      "Whenever a new CSS class is added"
+    ],
+    "correctIndex": 2,
+    "explanation": "Content-driven breakpoints adapt to the actual layout needs."
+  },
+  {
+    "question": "At a viewport width of 60rem, which gap wins?",
+    "code": ".dashboard { gap: 1rem; }\n@media (min-width: 48rem) {\n  .dashboard { gap: 2rem; }\n}\n.dashboard { gap: 1.5rem; }",
+    "answers": [
+      "1rem",
+      "2rem",
+      "1.5rem",
+      "Both gaps are added together"
+    ],
+    "correctIndex": 2,
+    "explanation": "The matching media rule has the same specificity and cascade priority as the final unconditional rule. The final declaration wins by source order."
+  },
+  {
+    "question": "At a viewport width of 40rem, what is the gap?",
+    "code": ".dashboard { gap: 1rem; }\n.dashboard { gap: 1.5rem; }\n@media (min-width: 48rem) {\n  .dashboard { gap: 2rem; }\n}",
+    "answers": [
+      "1rem",
+      "2rem",
+      "1.5rem",
+      "0"
+    ],
+    "correctIndex": 2,
+    "explanation": "The min-width condition does not match, so its declarations do not participate. The last unconditional rule sets the gap to 1.5rem."
+  }
+]

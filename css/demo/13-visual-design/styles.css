@@ -1,0 +1,9 @@
+* { box-sizing: border-box; }
+body { margin: 1rem; font-family: Arial, Helvetica, sans-serif; color: #263C55; background: #FAFBFC; }
+.workshop { max-width: 65rem; margin: auto; }
+.article, .task-card { padding: 1rem; margin-block: 1rem; background: white; border: 1px solid #CAD5E0; }
+.article__title, .task-card__title { font-size: 1rem; font-weight: 400; }
+.article__text { line-height: 1; }
+.task-card__preview { height: 9rem; background-color: #E8EDF2; background-image: url("scene.svg"); background-repeat: no-repeat; background-position: center; }
+.task-card__action { font: inherit; padding: .5rem 1rem; }
+

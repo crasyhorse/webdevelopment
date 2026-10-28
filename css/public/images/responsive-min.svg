@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 165" role="img">
+  <title>Responsive min</title>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      fill: #263C55;
+      font-weight: 400;
+    }
+    .code {
+      font-family: "DejaVu Sans Mono", Consolas, monospace;
+    }
+  </style>
+  <text x="70" y="45" text-anchor="middle" font-size="18" class="code">100%</text>
+  <rect x="140" y="20" width="187.5" height="35" rx="4" fill="#A8C8D9" stroke="#4C7186" stroke-width="2" />
+  <text x="335.5" y="44" text-anchor="start" font-size="16" class="code">480px</text>
+  <text x="70" y="100" text-anchor="middle" font-size="18" class="code">40rem</text>
+  <rect x="140" y="75" width="250.0" height="35" rx="4" fill="#E7D89B" stroke="#8C7428" stroke-width="2" />
+  <text x="398.0" y="99" text-anchor="start" font-size="16" class="code">640px</text>
+  <text x="240" y="150" text-anchor="middle" font-size="19" class="code" font-weight="700">Result: 480px</text>
+</svg>

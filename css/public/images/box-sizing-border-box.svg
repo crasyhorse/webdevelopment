@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="680" viewBox="0 0 920 680" role="img" aria-labelledby="title desc">
+  <title id="title">CSS border-box sizing</title>
+  <desc id="desc"><tspan font-family="DejaVu Sans Mono, Consolas, monospace">width: 300px</tspan> → border-box width. There is 20px of padding and 4px of border on each side. Total width: 300px. Content width is 252px.</desc>
+  <defs>
+    <style>
+      text {
+        font-family: Arial, Helvetica, sans-serif;
+        fill: #263C55;
+      }
+      .heading {
+        font-size: 40px;
+        font-weight: 700;
+      }
+      .sub {
+        font-size: 27px;
+        font-weight: 700;
+      }
+      .note {
+        font-size: 24px;
+      }
+      .dim {
+        font-size: 30px;
+        font-weight: 700;
+      }
+      .content {
+        fill: #A8C8D9;
+        stroke: #4C7186;
+        stroke-width: 3;
+      }
+      .padding {
+        fill: #C8D59A;
+        stroke: #6C7D2C;
+        stroke-width: 3;
+      }
+      .border {
+        fill: #E7D89B;
+        stroke: #8C7428;
+        stroke-width: 3;
+      }
+      .bg {
+        fill: #FAFBFC;
+        stroke: #CAD5E0;
+        stroke-width: 2;
+      }
+    </style>
+  </defs>
+  <rect width="920" height="680" fill="#F3F6F9"/>
+  <rect x="24" y="22" width="872" height="636" rx="18" class="bg"/>
+  <text x="460" y="76" text-anchor="middle" class="heading" style="font-family:DejaVu Sans Mono, Consolas, monospace;">border-box</text>
+  <text x="460" y="114" text-anchor="middle" class="note"><tspan font-family="DejaVu Sans Mono, Consolas, monospace">width: 300px</tspan> → border-box width</text>
+  <!-- Three nested rectangles: 4px border (8 diagram units) and 20px padding (40 diagram units) on each side. -->
+  <rect x="160.0" y="168" width="600" height="330" rx="6" class="border"/>
+  <rect x="168.0" y="176" width="584" height="314" class="padding"/>
+  <rect x="208.0" y="216" width="504" height="234" class="content"/>
+  <text x="460" y="299" text-anchor="middle" class="sub">Content</text>
+  <text x="460" y="344" text-anchor="middle" class="heading" style="font-family:DejaVu Sans Mono, Consolas, monospace;">252px</text>
+  <text x="460" y="386" text-anchor="middle" class="note">20px padding each side</text>
+  <!-- Dimension line spans the border-box -->
+  <line x1="160.0" y1="531" x2="760.0" y2="531" stroke="#263C55" stroke-width="3"/>
+  <line x1="160.0" y1="516" x2="160.0" y2="546" stroke="#263C55" stroke-width="3"/>
+  <line x1="760.0" y1="516" x2="760.0" y2="546" stroke="#263C55" stroke-width="3"/>
+  <text x="460" y="578" text-anchor="middle" class="dim">Total width: 300px</text>
+  <text x="460" y="614" text-anchor="middle" class="note">300 - 20 - 20 - 4 - 4 = 252px</text>
+</svg>

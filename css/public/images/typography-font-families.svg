@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 174" role="img">
+  <title>Typography Font Families</title>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      fill: #263C55;
+      font-size: 20px;
+    }
+    .heading { font-size: 24px; font-weight: 700; }
+    .detail { font-size: 16px; fill: #526B80; }
+    .code { font-family: "DejaVu Sans Mono", Consolas, monospace; font-size: 17px; }
+  </style>
+  <rect x="12" y="12" width="274" height="150" rx="8" fill="#FAFBFC" stroke="#CAD5E0" stroke-width="2" />
+  <text x="24" y="42" class="heading" >Serif</text>
+  <text x="24" y="101" class="" style="font-family: Georgia, serif; font-size: 36px;">Aa Bb 123</text>
+  <text x="24" y="140" class="detail" >Finishing strokes</text>
+  <rect x="302" y="12" width="274" height="150" rx="8" fill="#FAFBFC" stroke="#CAD5E0" stroke-width="2" />
+  <text x="314" y="42" class="heading" >Sans-serif</text>
+  <text x="314" y="101" class="" style="font-family: Arial, Helvetica, sans-serif; font-size: 36px;">Aa Bb 123</text>
+  <text x="314" y="140" class="detail" >No serifs</text>
+  <rect x="592" y="12" width="274" height="150" rx="8" fill="#FAFBFC" stroke="#CAD5E0" stroke-width="2" />
+  <text x="604" y="42" class="heading" >Monospace</text>
+  <text x="604" y="101" class="" style="font-family: DejaVu Sans Mono, Consolas, monospace; font-size: 36px;">Aa Bb 123</text>
+  <text x="604" y="140" class="detail" >Equal advance widths</text>
+
+</svg>

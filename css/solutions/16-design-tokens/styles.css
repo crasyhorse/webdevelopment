@@ -1,0 +1,285 @@
+/* Exercise 16 — Design tokens.
+   Raw tokens name the palette, semantic tokens name interface roles.
+   Components consume semantic tokens only; the dark theme re-declares them. */
+
+:root {
+  /* Raw tokens — the palette from Part VII */
+  --color-slate-50: #FAFBFC;
+  --color-slate-100: #F3F6F9;
+  --color-slate-200: #E8EDF2;
+  --color-slate-300: #CAD5E0;
+  --color-slate-500: #8095AA;
+  --color-slate-700: #526B80;
+  --color-slate-900: #263C55;
+  --color-content-100: #E1ECF2;
+  --color-content-400: #7FA1B4;
+  --color-content-500: #4C7186;
+  --color-padding-100: #ECF0DC;
+  --color-border-400: #BEAB67;
+  --color-margin-100: #F8E9D8;
+  --color-white: #FFFFFF;
+
+  /* Semantic tokens — interface roles */
+  --page-bg: var(--color-slate-200);
+  --surface: var(--color-white);
+  --surface-muted: var(--color-slate-50);
+  --text: var(--color-slate-900);
+  --text-muted: var(--color-slate-700);
+  --heading: var(--color-slate-900);
+  --header-bg: var(--color-slate-900);
+  --header-text: var(--color-white);
+  --accent: var(--color-slate-900);
+  --accent-hover: var(--color-content-500);
+  --border: var(--color-slate-300);
+  --item-accent: var(--color-slate-500);
+  --status-high-bg: var(--color-margin-100);
+  --status-high-accent: var(--color-border-400);
+  --status-done-bg: var(--color-padding-100);
+  --status-done-accent: var(--color-content-400);
+  --focus-ring: var(--color-slate-900);
+  --focus-halo: var(--color-white);
+  --shadow: rgb(38 60 85 / 12%);
+}
+
+/* Dark theme — same names, different values. */
+[data-theme="dark"] {
+  --page-bg: #1D2C3F;
+  --surface: var(--color-slate-900);
+  --surface-muted: #31465E;
+  --text: var(--color-slate-100);
+  --text-muted: var(--color-slate-300);
+  --heading: var(--color-white);
+  --header-bg: #14202F;
+  --header-text: var(--color-white);
+  --accent: var(--color-content-400);
+  --accent-hover: var(--color-content-500);
+  --border: var(--color-slate-500);
+  --item-accent: var(--color-slate-300);
+  --focus-ring: var(--color-white);
+  --focus-halo: var(--color-slate-900);
+  --shadow: rgb(0 0 0 / 35%);
+}
+
+body { margin: 0; background: var(--page-bg); font-family: Arial, sans-serif; color: var(--text); }
+
+/* Task Manager block and elements */
+.task-manager { max-width: 880px; margin: 1.5rem auto; padding: 1.5rem; background: var(--surface); border-radius: 12px; }
+.task-manager__title { color: var(--heading); }
+.task-manager__intro { color: var(--text-muted); }
+
+/* Task list block, item element, and semantic variants */
+.task-list { padding-left: 0; list-style: none; }
+.task-list__item { margin: .55rem 0; padding: .65rem .9rem; background: var(--surface); border-left: 4px solid var(--item-accent); border-radius: 5px; }
+.task-list__item--high-priority { --item-bg: var(--status-high-bg); --item-accent: var(--status-high-accent); background: var(--item-bg); border-left-color: var(--item-accent); }
+.task-list__item--completed { --item-bg: var(--status-done-bg); --item-accent: var(--status-done-accent); text-decoration: line-through; color: var(--text); background: var(--item-bg); border-left-color: var(--item-accent); }
+/* Decorative only: the text and modifier still communicate status. */
+.task-list__item--completed::before { content: "✓ "; color: var(--text); }
+
+/* Independent form block and elements */
+.task-form { max-width: 520px; }
+.task-form__label { display: block; margin-top: 1rem; }
+.task-form__input { padding: .4rem; }
+.task-form__submit { padding: .55rem 1rem; border: 0; border-radius: 5px; background: var(--accent); color: var(--header-text); cursor: pointer; }
+.task-form__submit:hover { background: var(--accent-hover); }
+.task-form__submit:focus-visible { outline: 3px solid var(--focus-ring); outline-offset: 3px; }
+
+/* Attributes stay meaningful: BEM is not a replacement for native HTML. */
+input[required] { border: 2px solid var(--item-accent); }
+input[type="date"] { background: var(--surface-muted); }
+
+/* Exercise 05 — Floats: the featured task remains part of the same BEM Task Manager. */
+.task-list__item--featured { display: flow-root; }
+.task-list__icon {
+  display: block;
+  float: left;
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  font-size: 1.75rem;
+  text-align: center;
+  color: var(--accent);
+  background: var(--surface-muted);
+  border-radius: .45rem;
+  margin-right: 12px;
+}
+.task-list__description { margin-top: 0; }
+.task-list__action {
+  display: block;
+  clear: both;
+  padding: .45rem .8rem;
+  border: 0;
+  border-radius: .35rem;
+  background: var(--accent);
+  color: var(--header-text);
+  font: inherit;
+  cursor: pointer;
+}
+.task-list__action:focus-visible { outline: 3px solid var(--focus-ring); outline-offset: 3px; }
+
+/* Exercise 06 — Responsive units on the SAME Task Manager from Exercise 05. */
+.task-manager { width: 88%; max-width: 55rem; }
+.task-manager__hero {
+  width: 75vw;
+  max-width: 100%;
+  min-height: 18vh;
+  background: var(--surface-muted);
+  border-radius: .6rem;
+  padding: 1rem;
+}
+.task-list__actions { clear: both; display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; }
+.task-list__action { display: inline-block; clear: none; padding: .5em 1em; }
+.task-list__action--small { font-size: .875rem; }
+.task-list__action--large { font-size: 1.5rem; }
+
+/* Exercise 07 — Box model, overflow, responsive images and form controls. */
+*, *::before, *::after { box-sizing: border-box; }
+.task-manager { width: 88%; max-width: 55rem; padding: 1.5rem; }
+.task-list {
+  max-height: 19rem;
+  overflow-y: auto;
+  padding: .3rem .65rem .3rem .1rem;
+  border: 1px solid var(--border);
+  border-radius: .5rem;
+}
+.task-list__item { padding: .75rem 1rem; margin: .5rem 0; border-radius: .5rem; }
+.task-manager__attachment { max-width: 34rem; margin: 1.5rem 0; padding: 1rem; border: 1px solid var(--border); border-radius: .6rem; }
+.task-manager__preview { display: block; max-width: 100%; height: auto; }
+.task-manager__attachment figcaption { margin-top: .5rem; color: var(--text-muted); }
+.task-form { width: 100%; max-width: 32rem; padding: 1.25rem; border: 1px solid var(--border); border-radius: .65rem; }
+.task-form__input, .task-form__select {
+  display: block;
+  width: 100%;
+  min-height: 2.75rem;
+  padding: .5rem .65rem;
+  border: 1px solid var(--border);
+  border-radius: .4rem;
+  font: inherit;
+}
+.task-form__submit { min-height: 2.75rem; padding: .5em 1em; }
+.task-form__input:focus-visible, .task-form__select:focus-visible { outline: 3px solid var(--focus-ring); outline-offset: 3px; }
+
+/* Headings retain a consistent, readable accent throughout the workshop. */
+h2 { color: var(--heading); }
+
+/* The final stage inherits the responsive sizing from Exercise 06. */
+.task-manager, .task-manager__hero { box-sizing: border-box; }
+
+/* Exercise 08 */
+.task-list__item--featured { position: relative; padding-top: 3rem; }
+.task-list__badge { position: absolute; top: .5rem; right: .75rem; background: var(--status-high-bg); color: var(--text); border: 1px solid var(--status-high-accent); border-radius: .3rem; }
+.task-manager__header { position: sticky; top: 0; z-index: 2; background: var(--surface-muted); }
+
+/* Exercise 09 */
+.task-manager__nav { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; }
+.task-list__item--featured { display: flex; align-items: flex-start; gap: .75rem; }
+.task-list__icon { float: none; margin-right: 0; flex: 0 0 3.5rem; }
+.task-list__body { flex: 1 1 12rem; min-width: 0; }
+.task-list__actions { clear: none; display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; }
+.task-list__action { clear: none; }
+
+/* Exercise 10 */
+.task-manager { max-width: 76rem; }
+.task-manager__header { width: 100%; margin-bottom: 1rem; }
+.task-manager__main { display: grid; grid-template-columns: minmax(0, 1fr); grid-template-areas: "nav" "tasks" "stats"; gap: 1rem; min-width: 0; align-items: start; }
+.task-manager__sidebar { grid-area: nav; }
+#tasks { grid-area: tasks; min-width: 0; }
+.task-manager__stats { grid-area: stats; }
+.task-manager__sidebar, .task-manager__stats { padding: .75rem; background: var(--surface-muted); border-radius: .5rem; }
+
+/* Exercise 11 — Media queries */
+.task-manager { width: 100%; margin: 0 auto; padding: 1rem; }
+.task-manager__hero { width: 100%; min-height: 0; }
+.task-manager__main { overflow-wrap: anywhere; }
+.task-list__badge { max-width: 90%; }
+.task-list__action { max-width: 100%; overflow-wrap: anywhere; }
+.task-manager__header { position: static; }
+@media (min-width: 48rem) {
+  .task-manager { width: 94%; margin: 1.5rem auto; }
+  .task-manager__main {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+    grid-template-areas: "nav tasks" "stats stats";
+  }
+}
+@media (min-width: 64rem) {
+  .task-manager__main {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 3fr) minmax(0, 1fr);
+    grid-template-areas: "nav tasks stats";
+  }
+}
+@media (min-width: 48rem) and (min-height: 32rem) {
+  .task-manager__header { position: sticky; top: 0; }
+}
+
+/* Exercise 12 — Fluid sizing */
+.task-manager { width: min(94%, 76rem); padding: clamp(.75rem, .5rem + 1vw, 1.5rem); }
+.task-manager__title { font-size: clamp(1.5rem, 1rem + 2vw, 2.5rem); }
+.task-manager__main { gap: clamp(.75rem, .5rem + 1vw, 1.5rem); }
+.task-manager__attachment { width: min(100%, 34rem); }
+.task-list__actions { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 8rem), 1fr)); }
+.task-list__action { min-width: 0; }
+.task-form { padding: max(.75rem, 1vw); }
+.task-form__input, .task-form__select { min-width: 0; }
+
+/* Exercise 13 — Container queries */
+#tasks, .task-manager__stats {
+  container-type: inline-size;
+  container-name: task-summary;
+}
+.task-summary {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  padding: .75rem;
+  margin-block: .75rem;
+  border: 1px solid var(--border);
+  border-radius: .5rem;
+  background: var(--surface-muted);
+  overflow-wrap: anywhere;
+}
+.task-summary__title, .task-summary__count { margin: 0; }
+@container task-summary (min-width: 25rem) {
+  .task-summary {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/* Exercise 14 — Visual design */
+body { font-family: Arial, Helvetica, sans-serif; line-height: 1.5; background: var(--page-bg); color: var(--text); }
+.task-manager { background: var(--surface-muted); }
+.task-manager__header { background: var(--header-bg); color: var(--header-text); border-radius: .5rem; }
+.task-manager__title { color: var(--header-text); margin-block: 0 .35rem; line-height: 1.2; }
+.task-manager__intro { color: var(--color-content-100); margin-block: 0 .75rem; }
+.task-manager__nav a { color: var(--header-text); }
+h2 { color: var(--heading); font-size: 1.25rem; line-height: 1.3; }
+.task-summary__title { font-size: 1rem; font-weight: 700; }
+.task-list__item { background: var(--surface); border-radius: .5rem; box-shadow: 0 2px 6px var(--shadow); }
+.task-list__item--high-priority { background: var(--status-high-bg); }
+.task-list__item--completed { background: var(--status-done-bg); }
+.task-list__description { max-inline-size: 65ch; }
+.task-form { background: var(--surface); border-radius: .5rem; }
+.task-form__label { font-weight: 700; }
+.task-form__submit, .task-list__action { background: var(--accent); color: var(--header-text); font: inherit; border-radius: .5rem; }
+.task-form__submit:hover, .task-list__action:hover { background: var(--accent-hover); }
+.task-list__action--small { font-size: .875rem; }
+.task-list__action--large { font-size: 1.5rem; }
+.task-manager__attachment figcaption { color: var(--text-muted); }
+
+/* Exercise 15 — Accessibility improvements */
+.task-manager__skip-link { position: fixed; inset-inline-start: 1rem; top: -10rem; background: var(--surface); color: var(--text); padding: .75rem; z-index: 5; }
+.task-manager__skip-link:focus { top: 0; }
+/* A two-color cue works on both light and dark surfaces. */
+:focus-visible { outline: 3px solid var(--focus-ring); outline-offset: 3px; box-shadow: 0 0 0 3px var(--focus-halo); }
+.task-form__input:focus-visible, .task-form__select:focus-visible,
+.task-form__submit:focus-visible, .task-list__action:focus-visible { outline: 3px solid var(--focus-ring); outline-offset: 3px; box-shadow: 0 0 0 3px var(--focus-halo); }
+.task-form__input, .task-form__select { border-color: var(--text-muted); }
+input[required] { border-color: var(--text-muted); }
+.task-list__action { min-height: 2.75rem; }
+.task-manager__nav a, .task-manager__sidebar a { display: inline-block; min-height: 24px; padding-block: .25rem; }
+/* Prefer unobscured focus and reading order over a persistent header. */
+.task-manager__header { position: static; }
+.task-list { max-height: none; overflow: visible; }
+.task-list__item--featured { padding-top: .75rem; flex-wrap: wrap; }
+.task-list__badge { position: static; max-width: 100%; }
+.task-manager__main { overflow-wrap: anywhere; }

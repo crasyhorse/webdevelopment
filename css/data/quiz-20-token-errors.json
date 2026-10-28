@@ -1,0 +1,82 @@
+[
+  {
+    "lines": [
+      ":root {",
+      "  -color-primary: #125BD4;",
+      "}",
+      ".task-form__submit { background: var(--color-primary); }"
+    ],
+    "badLine": 1,
+    "reason": "A custom property name must start with two hyphens. The single-hyphen declaration is an unknown property and is dropped, so var(--color-primary) has no value.",
+    "corrected": [
+      ":root {",
+      "  --color-primary: #125BD4;",
+      "}",
+      ".task-form__submit { background: var(--color-primary); }"
+    ]
+  },
+  {
+    "lines": [
+      ".task-card {",
+      "  border-color: var(color-accent, #4C7186);",
+      "}"
+    ],
+    "badLine": 1,
+    "reason": "var() takes the full custom property name including both leading hyphens. color-accent without the dashes is not a custom property reference.",
+    "corrected": [
+      ".task-card {",
+      "  border-color: var(--color-accent, #4C7186);",
+      "}"
+    ]
+  },
+  {
+    "lines": [
+      ":root { --space: 8px; }",
+      ".task-card {",
+      "  padding: calc(var(--space) *2);",
+      "}"
+    ],
+    "badLine": 2,
+    "reason": "In calc(), the * operator must be surrounded by whitespace on both sides. Without it the expression is invalid and the declaration is dropped.",
+    "corrected": [
+      ":root { --space: 8px; }",
+      ".task-card {",
+      "  padding: calc(var(--space) * 2);",
+      "}"
+    ]
+  },
+  {
+    "lines": [
+      ".task-card { --accent: #8C7428 }",
+      ".task-card__badge { background: var(--accent); }",
+      ".task-card__title { color: var(--accent) }"
+    ],
+    "badLine": 0,
+    "reason": "The declaration inside the block is missing its semicolon, so the next declaration in the same block is parsed as part of it. Here the block has one declaration, but the missing semicolon is still a latent bug for the next edit.",
+    "corrected": [
+      ".task-card { --accent: #8C7428; }",
+      ".task-card__badge { background: var(--accent); }",
+      ".task-card__title { color: var(--accent) }"
+    ]
+  },
+  {
+    "lines": [
+      ":root { --text: #263C55; }",
+      "[data-theme=\"dark\"] { --text: #F3F6F9; }",
+      ".task-card__title {",
+      "  color: var(--text, inherit);",
+      "  background: var(--surface);",
+      "}"
+    ],
+    "badLine": 4,
+    "reason": "--surface is never declared anywhere, and there is no fallback, so the background declaration is invalid at computed-value time. Declare --surface for both themes or add a fallback.",
+    "corrected": [
+      ":root { --text: #263C55; --surface: #FFFFFF; }",
+      "[data-theme=\"dark\"] { --text: #F3F6F9; --surface: #263C55; }",
+      ".task-card__title {",
+      "  color: var(--text, inherit);",
+      "  background: var(--surface);",
+      "}"
+    ]
+  }
+]

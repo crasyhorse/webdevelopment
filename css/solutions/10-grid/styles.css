@@ -1,0 +1,126 @@
+/* The semantic HTML and native form behavior remain intact. */
+body { margin: 0; background: #f2f6fb; font-family: Arial, sans-serif; color: #263c55; }
+
+/* Task Manager block and elements */
+.task-manager { max-width: 880px; margin: 1.5rem auto; padding: 1.5rem; background: white; border-radius: 12px; }
+.task-manager__title { color: #245f9f; }
+.task-manager__intro { color: #56738c; }
+
+/* Task list block, item element, and semantic variants */
+.task-list { padding-left: 0; list-style: none; }
+.task-list__item { margin: .55rem 0; padding: .65rem .9rem; background: #edf5ff; border-left: 4px solid #85a7c8; border-radius: 5px; }
+.task-list__item--high-priority { background: #fff1dc; border-left-color: #a65a0b; }
+.task-list__item--completed { text-decoration: line-through; color: #345f45; background: #e6f4e9; border-left-color: #32834c; }
+/* Decorative only: the text and modifier still communicate status. */
+.task-list__item--completed::before { content: "✓ "; color: #27664a; }
+
+/* Independent form block and elements */
+.task-form { max-width: 520px; }
+.task-form__label { display: block; margin-top: 1rem; }
+.task-form__input { padding: .4rem; }
+.task-form__submit { padding: .55rem 1rem; border: 0; border-radius: 5px; background: #245f9f; color: white; cursor: pointer; }
+.task-form__submit:hover { background: #174978; }
+.task-form__submit:focus-visible { outline: 3px solid #ad6a08; outline-offset: 3px; }
+
+/* Attributes stay meaningful: BEM is not a replacement for native HTML. */
+input[required] { border: 2px solid #317aa6; }
+input[type="date"] { background: #edf5ff; }
+
+/* Exercise 05 — Floats: the featured task remains part of the same BEM Task Manager. */
+.task-list__item--featured { display: flow-root; }
+.task-list__icon {
+  display: block;
+  float: left;
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  font-size: 1.75rem;
+  text-align: center;
+  color: #245f9f;
+  background: #dceafa;
+  border-radius: .45rem;
+  margin-right: 12px;
+}
+.task-list__description { margin-top: 0; }
+.task-list__action {
+  display: block;
+  clear: both;
+  padding: .45rem .8rem;
+  border: 0;
+  border-radius: .35rem;
+  background: #245f9f;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+.task-list__action:focus-visible { outline: 3px solid #ad6a08; outline-offset: 3px; }
+
+/* Exercise 06 — Responsive units on the SAME Task Manager from Exercise 05. */
+.task-manager { width: 88%; max-width: 55rem; }
+.task-manager__hero {
+  width: 75vw;
+  max-width: 100%;
+  min-height: 18vh;
+  background: #e7f1fd;
+  border-radius: .6rem;
+  padding: 1rem;
+}
+.task-list__actions { clear: both; display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; }
+.task-list__action { display: inline-block; clear: none; padding: .5em 1em; }
+.task-list__action--small { font-size: .875rem; }
+.task-list__action--large { font-size: 1.5rem; }
+
+/* Exercise 07 — Box model, overflow, responsive images and form controls. */
+*, *::before, *::after { box-sizing: border-box; }
+.task-manager { width: 88%; max-width: 55rem; padding: 1.5rem; }
+.task-list {
+  max-height: 19rem;
+  overflow-y: auto;
+  padding: .3rem .65rem .3rem .1rem;
+  border: 1px solid #b1c7da;
+  border-radius: .5rem;
+}
+.task-list__item { padding: .75rem 1rem; margin: .5rem 0; border-radius: .5rem; }
+.task-manager__attachment { max-width: 34rem; margin: 1.5rem 0; padding: 1rem; border: 1px solid #b1c7da; border-radius: .6rem; }
+.task-manager__preview { display: block; max-width: 100%; height: auto; }
+.task-manager__attachment figcaption { margin-top: .5rem; color: #56738c; }
+.task-form { width: 100%; max-width: 32rem; padding: 1.25rem; border: 1px solid #b1c7da; border-radius: .65rem; }
+.task-form__input, .task-form__select {
+  display: block;
+  width: 100%;
+  min-height: 2.75rem;
+  padding: .5rem .65rem;
+  border: 1px solid #7e99b5;
+  border-radius: .4rem;
+  font: inherit;
+}
+.task-form__submit { min-height: 2.75rem; padding: .5em 1em; }
+.task-form__input:focus-visible, .task-form__select:focus-visible { outline: 3px solid #ad6a08; outline-offset: 3px; }
+
+/* Headings retain a consistent, readable accent throughout the workshop. */
+h2 { color: #245f9f; }
+
+/* The final stage inherits the responsive sizing from Exercise 06. */
+.task-manager, .task-manager__hero { box-sizing: border-box; }
+
+/* Exercise 08 */
+.task-list__item--featured { position: relative; padding-top: 3rem; }
+.task-list__badge { position: absolute; top: .5rem; right: .75rem; background: #fff1dc; color: #854b09; padding: .2rem .5rem; border: 1px solid #a65a0b; border-radius: .3rem; }
+.task-manager__header { position: sticky; top: 0; z-index: 2; background: #e7f1fd; }
+
+/* Exercise 09 */
+.task-manager__nav { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; }
+.task-list__item--featured { display: flex; align-items: flex-start; gap: .75rem; }
+.task-list__icon { float: none; margin-right: 0; flex: 0 0 3.5rem; }
+.task-list__body { flex: 1 1 12rem; min-width: 0; }
+.task-list__actions { clear: none; display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; }
+.task-list__action { clear: none; }
+
+/* Exercise 10 */
+.task-manager { max-width: 76rem; }
+.task-manager__header { width: 100%; margin-bottom: 1rem; }
+.task-manager__main { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 3fr) minmax(0, 1fr); grid-template-areas: "nav tasks stats"; gap: 1rem; min-width: 0; align-items: start; }
+.task-manager__sidebar { grid-area: nav; }
+#tasks { grid-area: tasks; min-width: 0; }
+.task-manager__stats { grid-area: stats; }
+.task-manager__sidebar, .task-manager__stats { padding: .75rem; background: #edf5ff; border-radius: .5rem; }

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 340" role="img">
+  <title>Tints shades and tones of blue</title>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      fill: #263C55;
+      font-size: 20px;
+    }
+    .heading {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .detail {
+      font-size: 16px;
+      fill: #526B80;
+    }
+    .code {
+      font-family: "DejaVu Sans Mono", Consolas, monospace;
+      font-size: 17px;
+    }
+  </style>
+  <text x="12" y="30" class="heading" style="font-size: 22px;">Tints — add white</text>
+  <rect x="12" y="40" width="160" height="47" rx="3" fill="#125BD4" stroke="#CAD5E0" stroke-width="2" />
+  <text x="92" y="106" class="code" text-anchor="middle" style="font-size: 16px;">#125BD4</text>
+  <rect x="184" y="40" width="160" height="47" rx="3" fill="#417CDD" stroke="#CAD5E0" stroke-width="2" />
+  <text x="264" y="106" class="code" text-anchor="middle" style="font-size: 16px;">#417CDD</text>
+  <rect x="356" y="40" width="160" height="47" rx="3" fill="#719DE5" stroke="#CAD5E0" stroke-width="2" />
+  <text x="436" y="106" class="code" text-anchor="middle" style="font-size: 16px;">#719DE5</text>
+  <rect x="528" y="40" width="160" height="47" rx="3" fill="#A0BDEE" stroke="#CAD5E0" stroke-width="2" />
+  <text x="608" y="106" class="code" text-anchor="middle" style="font-size: 16px;">#A0BDEE</text>
+  <rect x="700" y="40" width="160" height="47" rx="3" fill="#D0DEF6" stroke="#CAD5E0" stroke-width="2" />
+  <text x="780" y="106" class="code" text-anchor="middle" style="font-size: 16px;">#D0DEF6</text>
+  <text x="12" y="140" class="heading" style="font-size: 22px;">Shades — add black</text>
+  <rect x="12" y="150" width="160" height="47" rx="3" fill="#125BD4" stroke="#CAD5E0" stroke-width="2" />
+  <text x="92" y="216" class="code" text-anchor="middle" style="font-size: 16px;">#125BD4</text>
+  <rect x="184" y="150" width="160" height="47" rx="3" fill="#0E49AA" stroke="#CAD5E0" stroke-width="2" />
+  <text x="264" y="216" class="code" text-anchor="middle" style="font-size: 16px;">#0E49AA</text>
+  <rect x="356" y="150" width="160" height="47" rx="3" fill="#0B377F" stroke="#CAD5E0" stroke-width="2" />
+  <text x="436" y="216" class="code" text-anchor="middle" style="font-size: 16px;">#0B377F</text>
+  <rect x="528" y="150" width="160" height="47" rx="3" fill="#072455" stroke="#CAD5E0" stroke-width="2" />
+  <text x="608" y="216" class="code" text-anchor="middle" style="font-size: 16px;">#072455</text>
+  <rect x="700" y="150" width="160" height="47" rx="3" fill="#04122A" stroke="#CAD5E0" stroke-width="2" />
+  <text x="780" y="216" class="code" text-anchor="middle" style="font-size: 16px;">#04122A</text>
+  <text x="12" y="250" class="heading" style="font-size: 22px;">Tones — add gray</text>
+  <rect x="12" y="260" width="160" height="47" rx="3" fill="#125BD4" stroke="#CAD5E0" stroke-width="2" />
+  <text x="92" y="326" class="code" text-anchor="middle" style="font-size: 16px;">#125BD4</text>
+  <rect x="184" y="260" width="160" height="47" rx="3" fill="#2862C3" stroke="#CAD5E0" stroke-width="2" />
+  <text x="264" y="326" class="code" text-anchor="middle" style="font-size: 16px;">#2862C3</text>
+  <rect x="356" y="260" width="160" height="47" rx="3" fill="#3E6AB2" stroke="#CAD5E0" stroke-width="2" />
+  <text x="436" y="326" class="code" text-anchor="middle" style="font-size: 16px;">#3E6AB2</text>
+  <rect x="528" y="260" width="160" height="47" rx="3" fill="#5471A2" stroke="#CAD5E0" stroke-width="2" />
+  <text x="608" y="326" class="code" text-anchor="middle" style="font-size: 16px;">#5471A2</text>
+  <rect x="700" y="260" width="160" height="47" rx="3" fill="#6A7991" stroke="#CAD5E0" stroke-width="2" />
+  <text x="780" y="326" class="code" text-anchor="middle" style="font-size: 16px;">#6A7991</text>
+</svg>

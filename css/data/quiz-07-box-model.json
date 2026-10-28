@@ -1,0 +1,112 @@
+[
+  {
+    "question": "Which four areas make up the CSS box model, from the inside outward?",
+    "answers": [
+      "Content \u2192 padding \u2192 border \u2192 margin",
+      "Content \u2192 border \u2192 padding \u2192 margin",
+      "Margin \u2192 padding \u2192 content \u2192 border",
+      "Padding \u2192 content \u2192 margin \u2192 border"
+    ],
+    "correctIndex": 0,
+    "explanation": "The content area is surrounded by padding, then the border, then the outer margin."
+  },
+  {
+    "question": "What does padding do in the CSS box model?",
+    "answers": [
+      "Separates an element from neighboring elements",
+      "Creates space between content and the border",
+      "Sets the thickness of the border line",
+      "Changes the element's stacking order"
+    ],
+    "correctIndex": 1,
+    "explanation": "Padding creates inner space between the content and the border. Margin creates space outside the border."
+  },
+  {
+    "question": "What is the default box-sizing value for most HTML elements?",
+    "answers": [
+      "border-box",
+      "inherit",
+      "content-box",
+      "margin-box"
+    ],
+    "correctIndex": 2,
+    "explanation": "Most elements use content-box by default, although some form controls have browser defaults that use border-box."
+  },
+  {
+    "question": "A card has box-sizing: content-box, width: 300px, padding: 20px, and a 4px border. What is its total border-box width?",
+    "answers": [
+      "300px",
+      "324px",
+      "340px",
+      "348px"
+    ],
+    "correctIndex": 3,
+    "explanation": "The declared 300px is content width. Add left and right padding (40px) and borders (8px): 348px."
+  },
+  {
+    "question": "A card has box-sizing: border-box, width: 300px, padding: 20px, and a 4px border. How wide is its content area?",
+    "answers": [
+      "252px",
+      "260px",
+      "292px",
+      "348px"
+    ],
+    "correctIndex": 0,
+    "explanation": "The 300px includes padding and border. Subtract 40px padding and 8px border to get 252px content width."
+  },
+  {
+    "question": "For box-sizing: border-box, what does width: 300px describe?",
+    "answers": [
+      "Only the content width",
+      "The width through the outer border edges",
+      "The width including margins",
+      "Only the content and padding widths"
+    ],
+    "correctIndex": 1,
+    "explanation": "Border-box sizing includes content, padding and borders in the declared width; margins stay outside it."
+  },
+  {
+    "question": "A box has margin-left: 15px and margin-right: 25px. What happens to its border-box width?",
+    "answers": [
+      "It increases by 40px",
+      "It increases by 25px",
+      "It stays unchanged",
+      "It decreases by 40px"
+    ],
+    "correctIndex": 2,
+    "explanation": "Margins add outer spacing but do not change the border-box width itself."
+  },
+  {
+    "question": "A content-box element has width: 200px, padding-left: 10px, padding-right: 30px, and no border. What is its border-box width?",
+    "answers": [
+      "200px",
+      "210px",
+      "230px",
+      "240px"
+    ],
+    "correctIndex": 3,
+    "explanation": "In content-box sizing, padding adds to the declared content width: 200 + 10 + 30 = 240px."
+  },
+  {
+    "question": "Which CSS rule makes element widths include padding and borders throughout a page, including pseudo-elements?",
+    "answers": [
+      "*, *::before, *::after { box-sizing: border-box; }",
+      "* { box-sizing: content-box; }",
+      "body { width: border-box; }",
+      "html { box-sizing: margin-box; }"
+    ],
+    "correctIndex": 0,
+    "explanation": "The universal selector and both pseudo-element selectors apply border-box sizing to elements and their ::before/::after boxes."
+  },
+  {
+    "question": "A border-box element has width: 240px, padding: 16px on each side, and a 2px border on each side. What is its content width?",
+    "answers": [
+      "208px",
+      "204px",
+      "236px",
+      "276px"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract both sides of the padding (32px) and border (4px) from 240px: content width = 204px."
+  }
+]

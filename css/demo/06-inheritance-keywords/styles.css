@@ -1,0 +1,8 @@
+body { margin: 0; font-family: system-ui, sans-serif; background: #edf3fa; }
+.task-manager { max-width: 1050px; margin: 2rem auto; padding: 1rem; }
+.task-card { color: navy; padding: 24px; background: white; border: 2px solid #b0bed0; border-radius: 12px; }
+.example-row { padding: inherit; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+.example-card { background: #e3edf8; border: 1px solid #8caacb; border-radius: 8px; }
+.example-inherit { color: inherit; padding: inherit; }
+.example-initial { color: initial; padding: initial; }
+.example-unset { color: unset; padding: unset; }

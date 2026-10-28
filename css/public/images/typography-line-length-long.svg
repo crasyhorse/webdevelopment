@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 300" role="img" aria-labelledby="title">
+  <title id="title">Same paragraph in a wider text column</title>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      fill: #263C55;
+    }
+    .heading {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .detail {
+      font-size: 16px;
+      fill: #526B80;
+    }
+    .code {
+      font-family: "DejaVu Sans Mono", Consolas, monospace;
+      font-size: 17px;
+    }
+  </style>
+  <text x="220" y="27" class="heading" text-anchor="middle">Longer lines</text>
+  <rect x="8" y="42" width="424" height="250" rx="6" fill="#F3F6F9" stroke="#CAD5E0" stroke-width="1.5" />
+  <rect x="10" y="48" width="420" height="235" rx="4" fill="#FAFBFC" stroke="#8095AA" stroke-width="1.5" />
+  <text x="22" y="75.0" style="font-size: 17px;">A clear hierarchy helps readers find important</text>
+  <text x="22" y="100.5" style="font-size: 17px;">information. Good text spacing makes a</text>
+  <text x="22" y="126.0" style="font-size: 17px;">longer description easier to follow. A flexible</text>
+  <text x="22" y="151.5" style="font-size: 17px;">line length helps the same content fit both</text>
+  <text x="22" y="177.0" style="font-size: 17px;">small and large screens.</text>
+
+</svg>

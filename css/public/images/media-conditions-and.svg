@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 245" role="img" aria-labelledby="title desc">
+  <title id="title">Both media conditions must match</title>
+  <desc id="desc">At 500 by 350 CSS pixels the width and height conditions match and three actions stack. At 800 by 350 CSS pixels the width condition fails and actions remain in a row. Schematic component layouts.</desc>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      fill: #263C55;
+    }
+    .heading {
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .annotation {
+      font-size: 16px;
+      fill: #526B80;
+    }
+    .code {
+      font-family: "DejaVu Sans Mono", Consolas, monospace;
+    }
+    .frame {
+      fill: #F3F6F9;
+      stroke: #8095AA;
+      stroke-width: 2;
+      stroke-dasharray: 6 4;
+    }
+    .blue {
+      fill: #A8C8D9;
+      stroke: #4C7186;
+      stroke-width: 2;
+    }
+    .green {
+      fill: #C8D59A;
+      stroke: #6C7D2C;
+      stroke-width: 2;
+    }
+    .orange {
+      fill: #EBC08F;
+      stroke: #9A6A2C;
+      stroke-width: 2;
+    }
+  </style>
+  <text x="91" y="24" text-anchor="middle" class="code">500 × 350px</text>
+  <text x="91" y="47" text-anchor="middle" class="annotation">Both match</text>
+  <rect x="10" y="58" width="162" height="161" rx="5" class="frame" />
+  <rect x="18" y="66" width="146" height="43" rx="4" class="blue" />
+  <text x="91" y="93" text-anchor="middle">A</text>
+  <rect x="18" y="117" width="146" height="43" rx="4" class="orange" />
+  <text x="91" y="144" text-anchor="middle">B</text>
+  <rect x="18" y="168" width="146" height="43" rx="4" class="green" />
+  <text x="91" y="195" text-anchor="middle">C</text>
+  <text x="91" y="240" text-anchor="middle" class="code annotation">column</text>
+  <text x="342" y="24" text-anchor="middle" class="code">800 × 350px</text>
+  <text x="342" y="47" text-anchor="middle" class="annotation">Width fails</text>
+  <rect x="212" y="58" width="260" height="59" rx="5" class="frame" />
+  <rect x="220" y="66" width="76" height="43" rx="4" class="blue" />
+  <text x="258" y="93" text-anchor="middle">A</text>
+  <rect x="304" y="66" width="76" height="43" rx="4" class="orange" />
+  <text x="342" y="93" text-anchor="middle">B</text>
+  <rect x="388" y="66" width="76" height="43" rx="4" class="green" />
+  <text x="426" y="93" text-anchor="middle">C</text>
+  <text x="342" y="138" text-anchor="middle" class="code annotation">row</text>
+</svg>

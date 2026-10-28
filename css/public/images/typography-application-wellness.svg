@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 286" role="img">
+  <title>Wellness application</title>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      fill: #263C55;
+      font-size: 20px;
+    }
+    .heading {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .detail {
+      font-size: 16px;
+      fill: #526B80;
+    }
+    .code {
+      font-family: "DejaVu Sans Mono", Consolas, monospace;
+      font-size: 17px;
+    }
+  </style>
+  <rect x="4" y="4" width="292" height="246" rx="14" fill="#ECF0DC" stroke="#CAD5E0" stroke-width="2" />
+  <text x="150" y="29" class="heading" text-anchor="middle" style="font-size: 18px;">Wellness application</text>
+  <rect x="15" y="43" width="270" height="195" rx="14" fill="#FFFFFF" />
+  <text x="27" y="76" style="font-size: 23px; font-family: Lato, Arial, sans-serif; font-weight: 700;">A moment for you</text>
+  <text x="27" y="100" style="font-size: 15px; font-family: Lato, Arial, sans-serif;">Your daily wellbeing</text>
+  <rect x="27" y="115" width="246" height="57" rx="10" fill="#ECF0DC" />
+  <circle cx="59" cy="143" r="17" fill="#C8D59A" />
+  <text x="86" y="149" style="font-size: 17px; font-family: Lato, Arial, sans-serif;">Take a breath</text>
+  <rect x="27" y="186" width="246" height="36" rx="14" fill="#C8D59A" />
+  <text x="150" y="209" text-anchor="middle" style="font-size: 16px; fill: #263C55; font-family: Lato, Arial, sans-serif; font-weight: 700;">Begin session</text>
+  <text x="150" y="275" class="detail" text-anchor="middle" style="font-size: 15px;">Lato / humanist sans-serif</text>
+</svg>

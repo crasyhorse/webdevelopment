@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 248" role="img">
+  <title>Status Color Only</title>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      fill: #263C55;
+      font-size: 20px;
+    }
+    .heading { font-size: 24px; font-weight: 700; }
+    .detail { font-size: 16px; fill: #526B80; }
+    .code { font-family: "DejaVu Sans Mono", Consolas, monospace; font-size: 17px; }
+  </style>
+  <rect x="8" y="10" width="374" height="68" rx="8" fill="#EBC08F" stroke="#CAD5E0" stroke-width="2" />
+  <text x="22" y="38" class="" >Review pull request</text>
+  <rect x="8" y="88" width="374" height="68" rx="8" fill="#E7D89B" stroke="#CAD5E0" stroke-width="2" />
+  <text x="22" y="116" class="" >Update documentation</text>
+  <rect x="8" y="166" width="374" height="68" rx="8" fill="#C8D59A" stroke="#CAD5E0" stroke-width="2" />
+  <text x="22" y="194" class="" >Inspect keyboard focus</text>
+
+</svg>

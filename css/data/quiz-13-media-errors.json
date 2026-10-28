@@ -1,0 +1,76 @@
+[
+  {
+    "lines": [
+      ".dashboard { display: grid; grid-template-columns: 1fr; }",
+      "@media (min-width: 48) {",
+      "  .dashboard { grid-template-columns: 1fr 3fr; }",
+      "}"
+    ],
+    "badLine": 1,
+    "reason": "A nonzero width needs a valid length unit. Use 48rem, not the unitless number 48.",
+    "corrected": [
+      ".dashboard { display: grid; grid-template-columns: 1fr; }",
+      "@media (min-width: 48rem) {",
+      "  .dashboard { grid-template-columns: 1fr 3fr; }",
+      "}"
+    ]
+  },
+  {
+    "lines": [
+      "@media (min-width 768px) {",
+      "  .dashboard { gap: 2rem; }",
+      "}"
+    ],
+    "badLine": 0,
+    "reason": "The media feature and its value require a colon, just like a declaration.",
+    "corrected": [
+      "@media (min-width: 768px) {",
+      "  .dashboard { gap: 2rem; }",
+      "}"
+    ]
+  },
+  {
+    "lines": [
+      ".task-manager__header { position: static; }",
+      "@media (min-width: 48rem) & (min-height: 32rem) {",
+      "  .task-manager__header { position: sticky; top: 0; }",
+      "}"
+    ],
+    "badLine": 1,
+    "reason": "Use the media-query keyword and to require both conditions. A single ampersand is not valid media query syntax.",
+    "corrected": [
+      ".task-manager__header { position: static; }",
+      "@media (min-width: 48rem) and (min-height: 32rem) {",
+      "  .task-manager__header { position: sticky; top: 0; }",
+      "}"
+    ]
+  },
+  {
+    "lines": [
+      "@media (max-width: 30rem); (max-height: 24rem) {",
+      "  .task-manager__header { position: static; }",
+      "}"
+    ],
+    "badLine": 0,
+    "reason": "A semicolon ends an at-rule rather than separating its alternatives. Use a comma to apply the rules when either condition matches.",
+    "corrected": [
+      "@media (max-width: 30rem), (max-height: 24rem) {",
+      "  .task-manager__header { position: static; }",
+      "}"
+    ]
+  },
+  {
+    "lines": [
+      "@media (min-width: 64rem) {",
+      "  .dashboard { grid-template-columns: 1fr 3fr 1frr; }",
+      "}"
+    ],
+    "badLine": 1,
+    "reason": "The fractional Grid unit is fr, not frr. The invalid value causes the declaration to be ignored even if the media query matches.",
+    "corrected": [
+      "@media (min-width: 64rem) {",
+      "  .dashboard { grid-template-columns: 1fr 3fr 1fr; }",
+      "}"
+    ]
+  }
+]

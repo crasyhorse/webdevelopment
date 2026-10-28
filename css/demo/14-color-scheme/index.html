@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Creating a Color Scheme</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="workshop">
+    <h1>Creating a Color Scheme</h1>
+    <p>Blue and orange: from complementary hues to functional interface colors.</p>
+    <section class="palette" aria-labelledby="palette-title">
+      <h2 id="palette-title">Color variations</h2>
+      <p>Percentage of white, black or neutral gray mixed with the base color in sRGB.</p>
+      <h3>Blue — Tints</h3>
+      <div class="palette__row">
+          <div class="palette__sample"><span class="palette__swatch" style="background-color: #125BD4"></span><span>0% · #125BD4</span></div>
+          <div class="palette__sample"><span class="palette__swatch" style="background-color: #417CDD"></span><span>20% · #417CDD</span></div>
+          <div class="palette__sample"><span class="palette__swatch" style="background-color: #719DE5"></span><span>40% · #719DE5</span></div>
+          <div class="palette__sample"><span class="palette__swatch" style="background-color: #A0BDEE"></span><span>60% · #A0BDEE</span></div>
+          <div class="palette__sample"><span class="palette__swatch" style="background-color: #D0DEF6"></span><span>80% · #D0DEF6</span></div>
+      </div>
+      <h3>Blue — Shades</h3>
+      <div class="palette__row">
+          <div class="palette__sample"><span class="palette__swatch" style="background-color: #125BD4"></span><span>0% · #125BD4</span></div>
+          <div class="palette__sample"><span class="palette__swatch" style="background-color: #0E49AA"></span><span>20% · #0E49AA</span></div>
+          <div class="palette__sample"><span class="palette__swatch" style="background-color: #0B377F"></span><span>40% · #0B377F</span></div>
+          <div class="palette__sample"><span class="palette__swatch" style="background-color: #072455"></span><span>60% · #072455</span></div>
+          <div class="palette__sample"><span class="palette__swatch" style="background-color: #04122A"></span><span>80% · #04122A</span></div>
+      </div>
+      <h3>Blue — Tones</h3>
+      <div class="palette__row">
+          <div class="palette__sample"><span class="palette__swatch" style="background-color: #125BD4"></span><span>0% · #125BD4</span></div>
+          <div class="palette__sample"><span class="palette__swatch" style="background-color: #2862C3"></span><span>20% · #2862C3</span></div>
+          <div class="palette__sample"><span class="palette__swatch" style="background-color: #3E6AB2"></span><span>40% · #3E6AB2</span></div>
+          <div class="palette__sample"><span class="palette__swatch" style="background-color: #5471A2"></span><span>60% · #5471A2</span></div>
+          <div class="palette__sample"><span class="palette__swatch" style="background-color: #6A7991"></span><span>80% · #6A7991</span></div>
+      </div>
+      <h3>Orange — Tints</h3>
+      <div class="palette__row">
+          <div class="palette__sample"><span class="palette__swatch" style="background-color: #D48B12"></span><span>0% · #D48B12</span></div>
+          <div class="palette__sample"><span class="palette__swatch" style="background-color: #DDA241"></span><span>20% · #DDA241</span></div>
+          <div class="palette__sample"><span class="palette__swatch" style="background-color: #E5B971"></span><span>40% · #E5B971</span></div>
+          <div class="palette__sample"><span class="palette__swatch" style="background-color: #EED1A0"></span><span>60% · #EED1A0</span></div>
+          <div class="palette__sample"><span class="palette__swatch" style="background-color: #F6E8D0"></span><span>80% · #F6E8D0</span></div>
+      </div>
+      <h3>Orange — Shades</h3>
+      <div class="palette__row">
+          <div class="palette__sample"><span class="palette__swatch" style="background-color: #D48B12"></span><span>0% · #D48B12</span></div>
+          <div class="palette__sample"><span class="palette__swatch" style="background-color: #AA6F0E"></span><span>20% · #AA6F0E</span></div>
+          <div class="palette__sample"><span class="palette__swatch" style="background-color: #7F530B"></span><span>40% · #7F530B</span></div>
+          <div class="palette__sample"><span class="palette__swatch" style="background-color: #553807"></span><span>60% · #553807</span></div>
+          <div class="palette__sample"><span class="palette__swatch" style="background-color: #2A1C04"></span><span>80% · #2A1C04</span></div>
+      </div>
+      <h3>Orange — Tones</h3>
+      <div class="palette__row">
+          <div class="palette__sample"><span class="palette__swatch" style="background-color: #D48B12"></span><span>0% · #D48B12</span></div>
+          <div class="palette__sample"><span class="palette__swatch" style="background-color: #C38928"></span><span>20% · #C38928</span></div>
+          <div class="palette__sample"><span class="palette__swatch" style="background-color: #B2873E"></span><span>40% · #B2873E</span></div>
+          <div class="palette__sample"><span class="palette__swatch" style="background-color: #A28454"></span><span>60% · #A28454</span></div>
+          <div class="palette__sample"><span class="palette__swatch" style="background-color: #91826A"></span><span>80% · #91826A</span></div>
+      </div>
+    </section>
+    <section class="dashboard" aria-labelledby="dashboard-title">
+      <header class="dashboard__header"><h2 class="dashboard__title" id="dashboard-title">Task Manager</h2></header>
+      <div class="dashboard__body">
+        <nav class="dashboard__nav" aria-label="Task views">
+          <a class="dashboard__link" aria-current="page" href="#tasks">All tasks</a>
+          <a class="dashboard__link" href="#completed">Completed</a>
+        </nav>
+        <section class="dashboard__tasks" id="tasks" aria-labelledby="tasks-title">
+          <h3 id="tasks-title">Your tasks</h3>
+          <article class="task-card"><h4 class="task-card__title">Review pull request</h4><p>Due tomorrow</p><span class="task-card__status task-card__status--warning">High priority</span></article>
+          <article class="task-card" id="completed"><h4 class="task-card__title">Update documentation</h4><p>Finished today</p><span class="task-card__status task-card__status--success">Completed</span></article>
+          <button class="dashboard__action" type="button">Add task (example)</button>
+          <p class="dashboard__hint">Static design preview; the button is illustrative.</p>
+        </section>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 190" role="img" aria-labelledby="title desc">
+  <title id="title">Mobile-first progression</title>
+  <desc id="desc">The narrow base layout stacks navigation and tasks; a minimum-width query enhances it to two columns on a wider viewport. Schematic comparison.</desc>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      fill: #263C55;
+    }
+    .heading {
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .annotation {
+      font-size: 16px;
+      fill: #526B80;
+    }
+    .code {
+      font-family: "DejaVu Sans Mono", Consolas, monospace;
+    }
+    .frame {
+      fill: #F3F6F9;
+      stroke: #8095AA;
+      stroke-width: 2;
+      stroke-dasharray: 6 4;
+    }
+    .blue {
+      fill: #A8C8D9;
+      stroke: #4C7186;
+      stroke-width: 2;
+    }
+    .green {
+      fill: #C8D59A;
+      stroke: #6C7D2C;
+      stroke-width: 2;
+    }
+    .orange {
+      fill: #EBC08F;
+      stroke: #9A6A2C;
+      stroke-width: 2;
+    }
+  </style>
+  <text x="139" y="25" text-anchor="middle" class="heading">Narrow base layout</text>
+  <text x="139" y="49" text-anchor="middle" class="code annotation">600px</text>
+  <rect x="12" y="60" width="254" height="120" rx="5" class="frame" />
+  <rect x="20" y="68" width="238" height="48" rx="4" class="green" />
+  <text x="139" y="98" text-anchor="middle">Nav</text>
+  <rect x="20" y="124" width="238" height="48" rx="4" class="blue" />
+  <text x="139" y="154" text-anchor="middle">Tasks</text>
+  <path d="M280 120 H353 M345 113 L353 120 L345 127" stroke="#526B80" stroke-width="2" fill="none" />
+  <text x="554" y="25" text-anchor="middle" class="heading">Enhanced wide layout</text>
+  <text x="554" y="49" text-anchor="middle" class="code annotation">900px</text>
+  <rect x="363" y="60" width="382" height="120" rx="5" class="frame" />
+  <rect x="371" y="68" width="89.5" height="104" rx="4" class="green" />
+  <text x="415.75" y="126" text-anchor="middle">Nav</text>
+  <rect x="468.5" y="68" width="268.5" height="104" rx="4" class="blue" />
+  <text x="602.75" y="126" text-anchor="middle">Tasks</text>
+</svg>

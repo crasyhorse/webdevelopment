@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 316" role="img">
+  <title>Primary and neutral scales plus semantic colors</title>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      fill: #263C55;
+      font-size: 20px;
+    }
+    .heading {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .detail {
+      font-size: 16px;
+      fill: #526B80;
+    }
+    .code {
+      font-family: "DejaVu Sans Mono", Consolas, monospace;
+      font-size: 17px;
+    }
+  </style>
+  <text x="12" y="30" class="heading" style="font-size: 22px;">Primary scale</text>
+  <rect x="12" y="39" width="160" height="40" rx="3" fill="#EDF4FF" stroke="#CAD5E0" stroke-width="2" />
+  <text x="92" y="98" class="code" text-anchor="middle" style="font-size: 15px;">#EDF4FF</text>
+  <rect x="184" y="39" width="160" height="40" rx="3" fill="#A9C6F5" stroke="#CAD5E0" stroke-width="2" />
+  <text x="264" y="98" class="code" text-anchor="middle" style="font-size: 15px;">#A9C6F5</text>
+  <rect x="356" y="39" width="160" height="40" rx="3" fill="#125BD4" stroke="#CAD5E0" stroke-width="2" />
+  <text x="436" y="98" class="code" text-anchor="middle" style="font-size: 15px;">#125BD4</text>
+  <rect x="528" y="39" width="160" height="40" rx="3" fill="#0D3885" stroke="#CAD5E0" stroke-width="2" />
+  <text x="608" y="98" class="code" text-anchor="middle" style="font-size: 15px;">#0D3885</text>
+  <rect x="700" y="39" width="160" height="40" rx="3" fill="#071938" stroke="#CAD5E0" stroke-width="2" />
+  <text x="780" y="98" class="code" text-anchor="middle" style="font-size: 15px;">#071938</text>
+  <text x="12" y="127" class="heading" style="font-size: 22px;">Neutral scale</text>
+  <rect x="12" y="136" width="160" height="40" rx="3" fill="#FAFBFC" stroke="#CAD5E0" stroke-width="2" />
+  <text x="92" y="195" class="code" text-anchor="middle" style="font-size: 15px;">#FAFBFC</text>
+  <rect x="184" y="136" width="160" height="40" rx="3" fill="#E8EDF2" stroke="#CAD5E0" stroke-width="2" />
+  <text x="264" y="195" class="code" text-anchor="middle" style="font-size: 15px;">#E8EDF2</text>
+  <rect x="356" y="136" width="160" height="40" rx="3" fill="#CAD5E0" stroke="#CAD5E0" stroke-width="2" />
+  <text x="436" y="195" class="code" text-anchor="middle" style="font-size: 15px;">#CAD5E0</text>
+  <rect x="528" y="136" width="160" height="40" rx="3" fill="#526B80" stroke="#CAD5E0" stroke-width="2" />
+  <text x="608" y="195" class="code" text-anchor="middle" style="font-size: 15px;">#526B80</text>
+  <rect x="700" y="136" width="160" height="40" rx="3" fill="#263C55" stroke="#CAD5E0" stroke-width="2" />
+  <text x="780" y="195" class="code" text-anchor="middle" style="font-size: 15px;">#263C55</text>
+  <text x="12" y="228" class="heading" style="font-size: 22px;">Semantic roles</text>
+  <rect x="12" y="240" width="205" height="43" rx="3" fill="#39754A" />
+  <text x="114" y="304" class="detail" text-anchor="middle" style="font-size: 18px;">Success</text>
+  <rect x="228" y="240" width="205" height="43" rx="3" fill="#E7B44C" />
+  <text x="330" y="304" class="detail" text-anchor="middle" style="font-size: 18px;">Warning</text>
+  <rect x="444" y="240" width="205" height="43" rx="3" fill="#B73535" />
+  <text x="546" y="304" class="detail" text-anchor="middle" style="font-size: 18px;">Error</text>
+  <rect x="660" y="240" width="205" height="43" rx="3" fill="#125BD4" />
+  <text x="762" y="304" class="detail" text-anchor="middle" style="font-size: 18px;">Information</text>
+</svg>

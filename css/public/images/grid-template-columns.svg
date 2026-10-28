@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 185" role="img">
+  <title>Column tracks: 2fr and 1fr</title>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      fill: #263C55;
+    }
+    .strong {
+      font-weight: 700;
+      font-size: 18px;
+    }
+    .muted {
+      font-size: 15px;
+    }
+    .line {
+      stroke: #8095AA;
+      stroke-width: 1.5;
+      fill: none;
+    }
+    .split {
+      stroke: #526B80;
+      stroke-width: 1.5;
+      stroke-dasharray: 5 4;
+    }
+  </style>
+  <path class="line" d="M50 38V31H250V38 M250 38V31H350V38"/>
+  <text class="strong" x="150" y="23" text-anchor="middle" style="font-family:DejaVu Sans Mono, Consolas, monospace;">2fr = 200px</text>
+  <text class="strong" x="300" y="23" text-anchor="middle" style="font-family:DejaVu Sans Mono, Consolas, monospace;">1fr = 100px</text>
+  <rect x="50" y="43" width="200" height="120" fill="#A8C8D9" stroke="#4C7186" stroke-width="1.5"/>
+  <rect x="250" y="43" width="100" height="120" fill="#C8D59A" stroke="#6C7D2C" stroke-width="1.5"/>
+  <path class="split" d="M50 103H350"/>
+  <text class="muted" x="200" y="181" text-anchor="middle"><tspan font-family="DejaVu Sans Mono, Consolas, monospace">300px</tspan> available width</text>
+</svg>

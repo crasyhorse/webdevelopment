@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 310" role="img">
+  <title>Responsive grid</title>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      fill: #263C55;
+      font-weight: 400;
+    }
+    .code {
+      font-family: "DejaVu Sans Mono", Consolas, monospace;
+    }
+  </style>
+  <text x="340" y="22" text-anchor="middle" font-size="18" class="code">640px</text>
+  <rect x="20" y="30" width="640" height="70" rx="4" fill="#F3F6F9" stroke="#8095AA" stroke-width="2" stroke-dasharray="6 4" />
+  <rect x="20.0" y="30" width="202.66666666666666" height="60" rx="4" fill="#A8C8D9" stroke="#4C7186" stroke-width="2" />
+  <text x="121.33333333333333" y="68" text-anchor="middle" font-size="20">A</text>
+  <rect x="238.66666666666666" y="30" width="202.66666666666666" height="60" rx="4" fill="#C8D59A" stroke="#6C7D2C" stroke-width="2" />
+  <text x="340.0" y="68" text-anchor="middle" font-size="20">B</text>
+  <rect x="457.3333333333333" y="30" width="202.66666666666666" height="60" rx="4" fill="#E7D89B" stroke="#8C7428" stroke-width="2" />
+  <text x="558.6666666666666" y="68" text-anchor="middle" font-size="20">C</text>
+  <text x="340" y="142" text-anchor="middle" font-size="18" class="code">440px</text>
+  <rect x="20" y="150" width="440" height="146" rx="4" fill="#F3F6F9" stroke="#8095AA" stroke-width="2" stroke-dasharray="6 4" />
+  <rect x="20.0" y="150" width="212.0" height="60" rx="4" fill="#A8C8D9" stroke="#4C7186" stroke-width="2" />
+  <text x="126.0" y="188" text-anchor="middle" font-size="20">A</text>
+  <rect x="248.0" y="150" width="212.0" height="60" rx="4" fill="#C8D59A" stroke="#6C7D2C" stroke-width="2" />
+  <text x="354.0" y="188" text-anchor="middle" font-size="20">B</text>
+  <rect x="20.0" y="226" width="212.0" height="60" rx="4" fill="#E7D89B" stroke="#8C7428" stroke-width="2" />
+  <text x="126.0" y="264" text-anchor="middle" font-size="20">C</text>
+</svg>

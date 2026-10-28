@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo 12 — Intrinsic Layouts &amp; Fluid Sizing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="panel">
+    <h1 class="panel__title">Task Manager</h1>
+    <p>Resize the viewport and inspect computed sizes.</p>
+    <section class="demo-section" aria-labelledby="actions-heading">
+      <h2 id="actions-heading">Flexbox actions</h2>
+      <div class="actions">
+        <button class="actions__button" type="button">Add task</button>
+        <button class="actions__button" type="button">Review tasks</button>
+        <button class="actions__button" type="button">Show stats</button>
+      </div>
+    </section>
+    <section class="demo-section" aria-labelledby="grid-heading">
+      <h2 id="grid-heading">Grid tasks</h2>
+      <div class="task-grid">
+        <article class="task-grid__item">Review HTML</article>
+        <article class="task-grid__item">Review CSS</article>
+        <article class="task-grid__item">Test responsiveness</article>
+      </div>
+    </section>
+    <section class="demo-section" aria-labelledby="minimum-heading">
+      <h2 id="minimum-heading">Automatic minimum size</h2>
+      <div class="size-probe">
+        <span class="size-probe__status">Task ID</span>
+        <span class="size-probe__value">TASK20261119UNBROKENLONGIDENTIFIER</span>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

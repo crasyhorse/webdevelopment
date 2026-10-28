@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 320" role="img">
+  <title>Theme Swap by Re-declaring Tokens</title>
+  <desc>The same task card rendered in a light and a dark theme; both consume the same token names, but a selector re-declares the token values.</desc>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      fill: #263C55;
+      font-size: 20px;
+    }
+    .heading { font-size: 24px; font-weight: 700; }
+    .annotation { font-size: 16px; fill: #526B80; }
+    .code { font-family: "DejaVu Sans Mono", Consolas, monospace; font-size: 15px; }
+    .on-dark { fill: #F3F6F9; }
+    .on-dark.annotation { fill: #CAD5E0; }
+  </style>
+  <rect x="8" y="8" width="374" height="304" rx="8" fill="#FAFBFC" stroke="#CAD5E0" stroke-width="2" />
+  <text x="24" y="40" class="heading">Light theme</text>
+  <rect x="24" y="56" width="342" height="120" rx="8" fill="#FFFFFF" stroke="#CAD5E0" stroke-width="2" />
+  <rect x="24" y="56" width="342" height="32" rx="8" fill="#A8C8D9" />
+  <text x="40" y="78" class="code">.task-card</text>
+  <text x="40" y="116">Review pull request</text>
+  <rect x="40" y="132" width="120" height="28" rx="6" fill="#A8C8D9" stroke="#4C7186" stroke-width="2" />
+  <text x="100" y="151" text-anchor="middle" class="code">Add task</text>
+  <text x="24" y="208" class="code">:root {</text>
+  <text x="40" y="230" class="code">  --surface: #FFFFFF;</text>
+  <text x="40" y="252" class="code">  --text: #263C55;</text>
+  <text x="40" y="274" class="code">  --accent: #4C7186;</text>
+  <text x="24" y="296" class="code">}</text>
+  <rect x="398" y="8" width="374" height="304" rx="8" fill="#263C55" stroke="#526B80" stroke-width="2" />
+  <text x="414" y="40" class="heading on-dark">Dark theme</text>
+  <rect x="414" y="56" width="342" height="120" rx="8" fill="#526B80" stroke="#8095AA" stroke-width="2" />
+  <rect x="414" y="56" width="342" height="32" rx="8" fill="#4C7186" />
+  <text x="430" y="78" class="code on-dark">.task-card</text>
+  <text x="430" y="116" class="on-dark">Review pull request</text>
+  <rect x="430" y="132" width="120" height="28" rx="6" fill="#7FA1B4" stroke="#CAD5E0" stroke-width="2" />
+  <text x="490" y="151" text-anchor="middle" class="code">Add task</text>
+  <text x="414" y="208" class="code on-dark">[data-theme="dark"] {</text>
+  <text x="430" y="230" class="code on-dark">  --surface: #526B80;</text>
+  <text x="430" y="252" class="code on-dark">  --text: #F3F6F9;</text>
+  <text x="430" y="274" class="code on-dark">  --accent: #7FA1B4;</text>
+  <text x="414" y="296" class="code on-dark">}</text>
+</svg>

@@ -1,0 +1,120 @@
+@layer components {
+  .task-manager {
+    width: min(94%, 76rem);
+    margin: 0 auto;
+    padding: clamp(.75rem, .5rem + 1vw, 1.5rem);
+    background: var(--surface-muted);
+    border-radius: 12px;
+  }
+
+  .task-manager__header {
+    width: 100%;
+    margin-bottom: 1rem;
+    background: var(--header-bg);
+    color: var(--header-text);
+    border-radius: .5rem;
+    /* Prefer unobscured focus and reading order over a persistent header. */
+    position: static;
+  }
+
+  .task-manager__title {
+    margin-block: 0 .35rem;
+    color: var(--header-text);
+    font-size: clamp(1.5rem, 1rem + 2vw, 2.5rem);
+    line-height: 1.2;
+  }
+
+  .task-manager__intro {
+    margin-block: 0 .75rem;
+    color: var(--color-content-100);
+  }
+
+  .task-manager__hero {
+    width: 100%;
+    min-height: 0;
+    padding: 1rem;
+    background: var(--surface-muted);
+    border-radius: .6rem;
+  }
+
+  .task-manager__main {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "nav" "tasks" "stats";
+    gap: clamp(.75rem, .5rem + 1vw, 1.5rem);
+    min-width: 0;
+    align-items: start;
+    overflow-wrap: anywhere;
+  }
+
+  .task-manager__sidebar { grid-area: nav; }
+  .task-manager__stats { grid-area: stats; }
+  #tasks { grid-area: tasks; min-width: 0; }
+
+  .task-manager__sidebar, .task-manager__stats {
+    padding: .75rem;
+    background: var(--surface-muted);
+    border-radius: .5rem;
+  }
+
+  .task-manager__nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+    align-items: center;
+  }
+
+  .task-manager__nav a, .task-manager__sidebar a {
+    display: inline-block;
+    min-height: 24px;
+    padding-block: .25rem;
+    color: var(--header-text);
+  }
+
+  .task-manager__attachment {
+    width: min(100%, 34rem);
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: .6rem;
+  }
+
+  .task-manager__preview {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .task-manager__attachment figcaption {
+    margin-top: .5rem;
+    color: var(--text-muted);
+  }
+
+  .task-manager__skip-link {
+    position: fixed;
+    inset-inline-start: 1rem;
+    top: -10rem;
+    background: var(--surface);
+    color: var(--text);
+    padding: .75rem;
+    z-index: 5;
+  }
+
+  .task-manager__skip-link:focus { top: 0; }
+
+  @media (min-width: 48rem) {
+    .task-manager { margin: 1.5rem auto; }
+
+    .task-manager__main {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+      grid-template-areas: "nav tasks" "stats stats";
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .task-manager__main {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 3fr) minmax(0, 1fr);
+      grid-template-areas: "nav tasks stats";
+    }
+  }
+}

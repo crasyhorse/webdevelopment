@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 286" role="img">
+  <title>Online newspaper</title>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      fill: #263C55;
+      font-size: 20px;
+    }
+    .heading {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .detail {
+      font-size: 16px;
+      fill: #526B80;
+    }
+    .code {
+      font-family: "DejaVu Sans Mono", Consolas, monospace;
+      font-size: 17px;
+    }
+  </style>
+  <rect x="4" y="4" width="292" height="246" rx="0" fill="#FAFBFC" stroke="#CAD5E0" stroke-width="2" />
+  <text x="150" y="29" class="heading" text-anchor="middle" style="font-size: 18px;">Online newspaper</text>
+  <rect x="15" y="43" width="270" height="195" rx="0" fill="#FFFFFF" />
+  <text x="27" y="76" style="font-size: 23px; font-family: Georgia, DejaVu Serif, serif; font-weight: 700;">The Daily Review</text>
+  <text x="27" y="100" style="font-size: 15px; font-family: Georgia, DejaVu Serif, serif;">A city in transition</text>
+  <rect x="27" y="114" width="246" height="3" rx="0" fill="#263C55" />
+  <rect x="27" y="128" width="70" height="42" rx="0" fill="#CAD5E0" />
+  <text x="106" y="141" class="detail" style="font-size: 14px; font-family: Georgia, DejaVu Serif, serif;">Local voices</text>
+  <text x="106" y="159" class="detail" style="font-size: 14px; font-family: Georgia, DejaVu Serif, serif;">and new perspectives</text>
+  <rect x="27" y="186" width="246" height="36" rx="0" fill="#263C55" />
+  <text x="150" y="209" text-anchor="middle" style="font-size: 16px; fill: #FFFFFF; font-family: Georgia, DejaVu Serif, serif; font-weight: 700;">Read article</text>
+  <text x="150" y="275" class="detail" text-anchor="middle" style="font-size: 15px;">Georgia / editorial serif</text>
+</svg>

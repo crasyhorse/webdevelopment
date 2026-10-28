@@ -1,0 +1,57 @@
+[
+  {
+    "question": "Does a Lighthouse accessibility score of 100 establish WCAG AA conformance?",
+    "answers": [
+      "Yes, on every browser",
+      "Yes, if the page is responsive",
+      "No, manual checks are also necessary",
+      "Only if there are no CSS warnings"
+    ],
+    "correctIndex": 2,
+    "explanation": "Automated checks cannot evaluate all requirements."
+  },
+  {
+    "question": "Does opacity: 0 remove a native button from keyboard navigation?",
+    "answers": [
+      "Yes, always",
+      "No, it can still receive focus",
+      "Only when its parent has opacity: 1",
+      "Only when it has a background"
+    ],
+    "correctIndex": 1,
+    "explanation": "Opacity affects rendering, not focusability."
+  },
+  {
+    "question": "What is the usual WCAG AA minimum for normal text contrast?",
+    "answers": [
+      "2:1",
+      "3:1",
+      "4.5:1",
+      "7:1"
+    ],
+    "correctIndex": 2,
+    "explanation": "Normal text generally requires 4.5:1; large text requires 3:1."
+  },
+  {
+    "question": "Is a bold, large paragraph equivalent to a semantic heading?",
+    "answers": [
+      "Yes, if bold",
+      "Yes, if larger than body text",
+      "Only with a shadow",
+      "No, visual styling does not establish heading semantics"
+    ],
+    "correctIndex": 3,
+    "explanation": "A heading element conveys structure to user agents."
+  },
+  {
+    "question": "How should task priority be conveyed?",
+    "answers": [
+      "Only by background hue",
+      "Only by opacity",
+      "By visible text or another non-color cue, optionally reinforced by color",
+      "Only by a shadow"
+    ],
+    "correctIndex": 2,
+    "explanation": "Meaning must not depend on color alone."
+  }
+]

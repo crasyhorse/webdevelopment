@@ -1,0 +1,60 @@
+@layer tokens {
+  :root {
+    /* Raw tokens — the palette from Part VII */
+    --color-slate-50: #FAFBFC;
+    --color-slate-100: #F3F6F9;
+    --color-slate-200: #E8EDF2;
+    --color-slate-300: #CAD5E0;
+    --color-slate-500: #8095AA;
+    --color-slate-700: #526B80;
+    --color-slate-900: #263C55;
+    --color-content-100: #E1ECF2;
+    --color-content-400: #7FA1B4;
+    --color-content-500: #4C7186;
+    --color-padding-100: #ECF0DC;
+    --color-border-400: #BEAB67;
+    --color-margin-100: #F8E9D8;
+    --color-white: #FFFFFF;
+
+    /* Semantic tokens — interface roles */
+    --page-bg: var(--color-slate-200);
+    --surface: var(--color-white);
+    --surface-muted: var(--color-slate-50);
+    --text: var(--color-slate-900);
+    --text-muted: var(--color-slate-700);
+    --heading: var(--color-slate-900);
+    --header-bg: var(--color-slate-900);
+    --header-text: var(--color-white);
+    --accent: var(--color-slate-900);
+    --accent-hover: var(--color-content-500);
+    --border: var(--color-slate-300);
+    --item-accent: var(--color-slate-500);
+    --status-high-bg: var(--color-margin-100);
+    --status-high-accent: var(--color-border-400);
+    --status-done-bg: var(--color-padding-100);
+    --status-done-accent: var(--color-content-400);
+    --focus-ring: var(--color-slate-900);
+    --focus-halo: var(--color-white);
+    --shadow: rgb(38 60 85 / 12%);
+  }
+
+  /* Dark theme — same names, different values. */
+  [data-theme="dark"] {
+    --page-bg: #1D2C3F;
+    --surface: var(--color-slate-900);
+    --surface-muted: #31465E;
+    --text: var(--color-slate-100);
+    --text-muted: var(--color-slate-300);
+    --heading: var(--color-white);
+    --header-bg: #14202F;
+    --header-text: var(--color-white);
+    --accent: var(--color-content-400);
+    --accent-hover: var(--color-content-500);
+    --border: var(--color-slate-500);
+    --item-accent: var(--color-slate-300);
+    --focus-ring: var(--color-white);
+    --focus-halo: var(--color-slate-900);
+    --shadow: rgb(0 0 0 / 35%);
+  }
+
+}

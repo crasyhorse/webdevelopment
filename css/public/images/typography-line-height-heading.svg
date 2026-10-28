@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 388" role="img" aria-labelledby="title">
+  <title id="title">Large heading at line heights 1.5 and 1.2</title>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      fill: #263C55;
+    }
+    .heading {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .detail {
+      font-size: 16px;
+      fill: #526B80;
+    }
+    .code {
+      font-family: "DejaVu Sans Mono", Consolas, monospace;
+      font-size: 17px;
+    }
+  </style>
+  <text x="12" y="24" class="heading">Large headings</text>
+  <rect x="8" y="35" width="424" height="164" rx="6" fill="#FAFBFC" stroke="#CAD5E0" stroke-width="1.5" />
+  <text x="20" y="60" class="code">Loose — line-height: 1.5</text>
+  <text x="20" y="105.0" style="font-size: 38px; font-weight: 700;">Manage</text>
+  <text x="20" y="162.0" style="font-size: 38px; font-weight: 700;">your tasks</text>
+  <rect x="8" y="216" width="424" height="164" rx="6" fill="#FAFBFC" stroke="#CAD5E0" stroke-width="1.5" />
+  <text x="20" y="241" class="code">Compact — line-height: 1.2</text>
+  <text x="20" y="286.0" style="font-size: 38px; font-weight: 700;">Manage</text>
+  <text x="20" y="331.6" style="font-size: 38px; font-weight: 700;">your tasks</text>
+
+</svg>

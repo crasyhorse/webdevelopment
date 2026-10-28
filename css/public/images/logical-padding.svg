@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 440" width="540" height="440" role="img" aria-labelledby="title desc">
+  <title id="title">padding-inline-start in left-to-right and right-to-left writing</title>
+  <desc id="desc">The green padding stays within the rounded blue card border. In right-to-left layouts logical inline-start moves to the right.</desc>
+  <defs>
+    <style>
+ text {font-family:Arial, Helvetica, sans-serif;fill:#263C55}
+ .top {font-size:25px;font-weight:700}
+ .axis {font-size:19px;font-weight:700}
+ .inside {font-size:23px;font-weight:700}
+ .small {font-size:18px}
+ .tiny {font-size:15px}
+ .key {font-size:16px}
+ .arabic {font-family:"Noto Sans Arabic","Noto Naskh Arabic",Arial, Helvetica, sans-serif;font-size:22px;font-weight:700}
+</style>
+    <clipPath id="clip0">
+      <rect x="81.5" y="56.5" width="357" height="101" rx="14.5"/>
+    </clipPath>
+    <clipPath id="clip1">
+      <rect x="81.5" y="222.5" width="357" height="101" rx="14.5"/>
+    </clipPath>
+  </defs>
+  <rect width="540" height="370" rx="18" fill="#FAFBFC"/>
+  <text x="30" y="42" class="axis">LTR →</text>
+  <rect x="80" y="55" width="360" height="104" rx="16" fill="#E1ECF2"/>
+  <g clip-path="url(#clip0)">
+    <rect x="80" y="55" width="60" height="104" fill="#C8D59A"/>
+  </g>
+  <rect x="80" y="55" width="360" height="104" rx="16" fill="none" stroke="#4C7186" stroke-width="3"/>
+  <text x="259" y="94" text-anchor="middle" class="inside">Task card</text>
+  <text x="259" y="122" text-anchor="middle" class="small">English / left-to-right</text>
+  <text x="259" y="145" text-anchor="middle" class="tiny">Padding: left side</text>
+  <text x="30" y="208" class="axis">RTL ←</text>
+  <rect x="80" y="221" width="360" height="104" rx="16" fill="#E1ECF2"/>
+  <g clip-path="url(#clip1)">
+    <rect x="380" y="221" width="60" height="104" fill="#C8D59A"/>
+  </g>
+  <rect x="80" y="221" width="360" height="104" rx="16" fill="none" stroke="#4C7186" stroke-width="3"/>
+  <text x="259" y="260" text-anchor="middle" class="arabic" direction="rtl">بطاقة المهمة</text>
+  <text x="259" y="288" text-anchor="middle" class="small arabic" direction="rtl" style="font-size:17px;font-weight:400">مراجعة المهمة</text>
+  <text x="259" y="311" text-anchor="middle" class="tiny">Padding: right side</text>
+</svg>

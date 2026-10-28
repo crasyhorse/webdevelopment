@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 388" role="img" aria-labelledby="title">
+  <title id="title">Body text at line heights 1, 1.5 and 2.3</title>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      fill: #263C55;
+    }
+    .heading {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .detail {
+      font-size: 16px;
+      fill: #526B80;
+    }
+    .code {
+      font-family: "DejaVu Sans Mono", Consolas, monospace;
+      font-size: 17px;
+    }
+  </style>
+  <text x="12" y="24" class="heading">Body text</text>
+  <rect x="8" y="35" width="424" height="104" rx="6" fill="#FAFBFC" stroke="#CAD5E0" stroke-width="1.5" />
+  <text x="20" y="57" class="code">Tight — line-height: 1</text>
+  <text x="20" y="84">Good typography helps users</text>
+  <text x="20" y="104">find information and complete tasks.</text>
+  <rect x="8" y="142" width="424" height="104" rx="6" fill="#FAFBFC" stroke="#CAD5E0" stroke-width="1.5" />
+  <text x="20" y="164" class="code">Balanced — line-height: 1.5</text>
+  <text x="20" y="191.0">Good typography helps users</text>
+  <text x="20" y="221.0">find information and complete tasks.</text>
+  <rect x="8" y="254" width="424" height="125" rx="6" fill="#FAFBFC" stroke="#CAD5E0" stroke-width="1.5" />
+  <text x="20" y="276" class="code">Loose — line-height: 2.3</text>
+  <text x="20" y="303.0">Good typography helps users</text>
+  <text x="20" y="349.0">find information and complete tasks.</text>
+
+</svg>

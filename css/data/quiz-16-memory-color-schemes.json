@@ -1,0 +1,45 @@
+{
+  "title": "Color Scheme Memory",
+  "pairs": [
+    {
+      "id": "1",
+      "term": "Primary color",
+      "definition": "Main brand and action color"
+    },
+    {
+      "id": "2",
+      "term": "Accent color",
+      "definition": "Selective emphasis"
+    },
+    {
+      "id": "3",
+      "term": "Neutral colors",
+      "definition": "Surfaces, text and borders"
+    },
+    {
+      "id": "4",
+      "term": "Semantic colors",
+      "definition": "Communicate states such as errors"
+    },
+    {
+      "id": "5",
+      "term": "60%",
+      "definition": "Dominant visual area"
+    },
+    {
+      "id": "6",
+      "term": "30%",
+      "definition": "Supporting visual area"
+    },
+    {
+      "id": "7",
+      "term": "10%",
+      "definition": "Selective accent area"
+    },
+    {
+      "id": "8",
+      "term": "Contrast check",
+      "definition": "Test actual foreground/background pairs"
+    }
+  ]
+}

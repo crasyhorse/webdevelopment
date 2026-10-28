@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 290" role="img" aria-labelledby="title desc">
+  <title id="title">Media query and breakpoint</title>
+  <desc id="desc">At an illustrative 768 CSS pixel breakpoint the base one-column arrangement changes to two columns when the min-width condition matches; diagrams are schematic.</desc>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      fill: #263C55;
+      font-weight: 400;
+    }
+    .heading {
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .annotation {
+      font-size: 16px;
+      fill: #526B80;
+    }
+    .code {
+      font-family: "DejaVu Sans Mono", Consolas, monospace;
+    }
+    .frame {
+      fill: #F3F6F9;
+      stroke: #8095AA;
+      stroke-width: 2;
+      stroke-dasharray: 6 4;
+    }
+  </style>
+  <text x="175" y="26" text-anchor="middle" class="heading">600px — condition false</text>
+  <text x="615" y="26" text-anchor="middle" class="heading">900px — condition true</text>
+  <rect x="45" y="42" width="260" height="140" rx="4" class="frame" />
+  <rect x="53" y="50" width="244" height="58.0" rx="4" fill="#C8D59A" stroke="#6C7D2C" stroke-width="2" />
+  <text x="175.0" y="85.0" text-anchor="middle">Nav</text>
+  <rect x="53" y="116.0" width="244" height="58.0" rx="4" fill="#A8C8D9" stroke="#4C7186" stroke-width="2" />
+  <text x="175.0" y="151.0" text-anchor="middle">Tasks</text>
+  <rect x="425" y="42" width="380" height="140" rx="4" class="frame" />
+  <rect x="433" y="50" width="89.0" height="124" rx="4" fill="#C8D59A" stroke="#6C7D2C" stroke-width="2" />
+  <text x="477.5" y="118.0" text-anchor="middle">Nav</text>
+  <rect x="530.0" y="50" width="267.0" height="124" rx="4" fill="#A8C8D9" stroke="#4C7186" stroke-width="2" />
+  <text x="663.5" y="118.0" text-anchor="middle">Tasks</text>
+  <text x="175" y="207" text-anchor="middle" class="annotation">Base rule: 1 column</text>
+  <text x="615" y="207" text-anchor="middle" class="annotation">Media rule: 2 columns</text>
+  <path d="M45 245 H805" stroke="#8095AA" stroke-width="2" fill="none" />
+  <path d="M425 234 V256" stroke="#9A6A2C" stroke-width="3" />
+  <circle cx="425" cy="245" r="5" fill="#9A6A2C" />
+  <text x="425" y="278" text-anchor="middle" class="code" style="font-size: 17px;">768px — breakpoint</text>
+  <text x="195" y="239" text-anchor="middle" class="annotation">Below 768px</text>
+  <text x="655" y="239" text-anchor="middle" class="annotation">768px and wider</text>
+</svg>

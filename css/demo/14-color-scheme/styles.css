@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #263C55;
+  background: #F3F6F9;
+}
+.workshop {
+  max-inline-size: 70rem;
+  margin-inline: auto;
+  padding: 1rem;
+}
+.palette {
+  background: #FFFFFF;
+  padding: 1rem;
+  border: 1px solid #CAD5E0;
+  border-radius: .5rem;
+  margin-block-end: 2rem;
+}
+.palette__row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 8rem), 1fr));
+  gap: .5rem;
+}
+.palette__sample {
+  font-size: .875rem;
+  min-inline-size: 0;
+}
+.palette__swatch {
+  display: block;
+  min-block-size: 3rem;
+  border: 1px solid #8095AA;
+  border-radius: .25rem;
+}
+.dashboard {
+  background: #F3F6F9;
+  border: 1px solid #8095AA;
+  border-radius: .5rem;
+}
+.dashboard__header {
+  padding: 1rem;
+  background: #125BD4;
+  color: #FFFFFF;
+  border-radius: .5rem .5rem 0 0;
+}
+.dashboard__title {
+  margin: 0;
+}
+.dashboard__body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+.dashboard__nav {
+  background: #D0DEF6;
+  padding: .75rem;
+  border-radius: .25rem;
+}
+.dashboard__link {
+  display: block;
+  color: #0B377F;
+  padding: .5rem;
+  overflow-wrap: anywhere;
+}
+.dashboard__link[aria-current="page"] {
+  font-weight: 700;
+  background: #A0BDEE;
+}
+.dashboard__tasks {
+  min-inline-size: 0;
+}
+.task-card {
+  padding: 1rem;
+  border: 1px solid #8095AA;
+  background: #FFFFFF;
+  border-radius: .5rem;
+  margin-block-end: .75rem;
+}
+.task-card__title {
+  margin: 0;
+}
+.task-card__status {
+  display: inline-block;
+  padding: .25rem .5rem;
+  border-radius: .25rem;
+}
+.task-card__status--warning {
+  background: #F6E8D0;
+  color: #69460A;
+}
+.task-card__status--success {
+  background: #ECF0DC;
+  color: #344C36;
+}
+.dashboard__action {
+  font: inherit;
+  font-weight: 700;
+  border: 1px solid #88590C;
+  border-radius: .25rem;
+  padding: .5rem 1rem;
+  background: #D48B12;
+  color: #172033;
+  cursor: pointer;
+}
+.dashboard__action:hover {
+  background: #DDA241;
+}
+.dashboard__hint {
+  font-size: .875rem;
+}
+:focus-visible {
+  outline: 3px solid #0B377F;
+  outline-offset: 3px;
+}
+@media (max-width: 36rem) {
+  .dashboard__body {
+    grid-template-columns: 1fr;
+  }
+}

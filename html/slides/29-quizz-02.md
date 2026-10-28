@@ -8,6 +8,6 @@ layout: pageBar
 
 <Button 
     url="https://github.com/crasyhorse/webdevelopment/tree/html/html/quizz/quizz-02.md" 
-    type="quizz"
+    type="quiz"
 />
 
