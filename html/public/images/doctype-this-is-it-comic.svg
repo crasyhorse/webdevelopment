@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-labelledby="title desc">
+  <title id="title">HTML doctype — That is it</title>
+  <desc id="desc">A comic-style doctype declaration at the top, with a hand-drawn turquoise arrow curving up from below to point at the HTML declaration. The words That is it appear below on the opposite side of the arrow.</desc>
+  <rect width="1200" height="675" fill="white"/>
+  <path d="M132 186 Q338 177 591 183 T1041 183 L1046 301 Q835 307 599 303 T135 307 Z" fill="#e9f7f9" opacity=".85"/>
+  <path d="M140 186 Q521 181 1035 188" stroke="#8bd6df" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 17" opacity=".75" fill="none"/>
+  <text x="585" y="268" font-family="'Comic Mono', 'Comic Sans MS', 'Courier New', monospace" font-size="79" font-weight="700" text-anchor="middle" letter-spacing="-3" fill="#182b3a">&lt;!DOCTYPE html&gt;</text>
+  <!-- The arrow begins below, curves upwards, and points at the HTML declaration. -->
+  <path d="M782 535 C922 556 1084 475 1066 391 C1055 346 1019 315 982 302" fill="none" stroke="#183e50" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M782 535 C922 556 1084 475 1066 391 C1055 346 1019 315 982 302" fill="none" stroke="#17c8c5" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Upward-pointing comic arrowhead -->
+  <path d="M1025 307 Q994 296 969 287 Q989 323 987 348" fill="#17c8c5" stroke="#183e50" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Hand-drawn caption on the opposite, lower-left side of the arrow. -->
+  <g transform="rotate(-3 400 506)">
+    <text x="395" y="515" font-family="'Comic Sans MS', 'Trebuchet MS', cursive" font-size="66" font-weight="700" text-anchor="middle" fill="#183e50">This is it</text>
+    <path d="M249 530 Q398 546 556 526" fill="none" stroke="#f5ae3d" stroke-width="9" stroke-linecap="round"/>
+  </g>
+  <path d="M1105 365 l22 -19 M1117 399 l30 -5 M1078 329 l6 -28" fill="none" stroke="#f5ae3d" stroke-width="7" stroke-linecap="round"/>
+</svg>

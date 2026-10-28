@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="960" viewBox="0 0 1280 960">
+  <defs>
+    <style>
+      .title { font: 700 34px Arial, Helvetica, sans-serif; fill: #111827; }
+      .small { font: 500 20px Arial, Helvetica, sans-serif; fill: #6b7280; }
+      .legend { font: 500 24px Arial, Helvetica, sans-serif; fill: #1f2937; }
+      .measure { font: 500 28px Arial, Helvetica, sans-serif; fill: #15803d; }
+      .vp { font: 500 28px Arial, Helvetica, sans-serif; fill: #2563eb; }
+      .layouttext { font: 500 28px Arial, Helvetica, sans-serif; fill: #15803d; }
+    </style>
+  </defs>
+  <rect width="1280" height="960" fill="#efefef"/>
+  <text x="310" y="45" text-anchor="middle" class="title">Before pinch zoom</text>
+  <text x="950" y="45" text-anchor="middle" class="title">After 2× pinch zoom</text>
+
+  <g transform="translate(40,85)">
+    <rect x="0" y="0" width="500" height="780" rx="42" fill="#f8f8f8" stroke="#111111" stroke-width="7"/>
+    <rect x="24" y="60" width="452" height="660" rx="10" fill="#cfded2" stroke="#16a34a" stroke-width="7"/>
+    <rect x="60" y="116" width="350" height="34" rx="8" fill="#9fd0b0"/>
+    <rect x="60" y="217" width="270" height="34" rx="8" fill="#9fd0b0"/>
+    <rect x="60" y="318" width="350" height="34" rx="8" fill="#9fd0b0"/>
+    <rect x="60" y="419" width="270" height="34" rx="8" fill="#9fd0b0"/>
+    <rect x="60" y="520" width="350" height="34" rx="8" fill="#9fd0b0"/>
+    <rect x="60" y="621" width="270" height="34" rx="8" fill="#9fd0b0"/>
+    <text x="250" y="670" text-anchor="middle" class="measure">390 CSS px</text>
+  </g>
+
+  <g transform="translate(660,85)">
+    <rect x="0" y="0" width="600" height="780" fill="#d9e1dc" stroke="#16a34a" stroke-width="7" stroke-dasharray="18 14"/>
+    <rect x="42" y="60" width="490" height="660" rx="10" fill="#d7e4dd"/>
+    <rect x="42" y="102" width="470" height="34" rx="8" fill="#9fd0b0"/>
+    <rect x="42" y="203" width="390" height="34" rx="8" fill="#9fd0b0"/>
+    <rect x="42" y="304" width="470" height="34" rx="8" fill="#9fd0b0"/>
+    <rect x="42" y="405" width="390" height="34" rx="8" fill="#9fd0b0"/>
+    <rect x="42" y="506" width="470" height="34" rx="8" fill="#9fd0b0"/>
+    <rect x="42" y="607" width="390" height="34" rx="8" fill="#9fd0b0"/>
+    <rect x="42" y="60" width="300" height="450" rx="10" fill="#cfe0f6" fill-opacity="0.72" stroke="#2563eb" stroke-width="8"/>
+    <text x="192" y="270" text-anchor="middle" class="vp">Visual</text>
+    <text x="192" y="315" text-anchor="middle" class="vp">viewport</text>
+    <text x="320" y="678" text-anchor="middle" class="layouttext">Layout viewport</text>
+  </g>
+
+  <text x="305" y="875" text-anchor="middle" class="small">Layout = Visual</text>
+  <text x="960" y="875" text-anchor="middle" class="small">Visual is smaller than layout</text>
+  <g transform="translate(350,920)">
+    <line x1="0" y1="0" x2="30" y2="0" stroke="#16a34a" stroke-width="6"/>
+    <text x="40" y="8" class="legend">Layout viewport</text>
+    <line x1="305" y1="0" x2="335" y2="0" stroke="#2563eb" stroke-width="6"/>
+    <text x="345" y="8" class="legend">Visual viewport after zoom</text>
+  </g>
+</svg>

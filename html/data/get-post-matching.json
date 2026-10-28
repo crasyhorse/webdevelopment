@@ -1,0 +1,12 @@
+{
+  "leftHeader": "GET / POST",
+  "rightHeader": "Purpose",
+  "pairs": [
+    { "id": "query", "left": "GET — Query string", "right": "Form values appear in URL parameters" },
+    { "id": "body", "left": "POST — Request body", "right": "Carries submitted values in the request body" },
+    { "id": "retrieval", "left": "GET — Retrieval", "right": "Retrieves information without changing server state" },
+    { "id": "changes", "left": "POST — State changes", "right": "Creates or changes server-side data" },
+    { "id": "upload", "left": "POST — File upload", "right": "Supports multipart file uploads" }
+  ],
+  "rightOrder": ["changes", "query", "upload", "body", "retrieval"]
+}

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 400" role="img" aria-label="Cartoon developer opening a door to the next section">
+  <g stroke="#193447" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Opening and single frame: a clear doorway, not another door leaf -->
+    <rect x="280" y="53" width="176" height="302" rx="5" fill="#e4f9fa"/>
+    <path d="M299 72H438V340H299Z" fill="#b7eff2" stroke="none"/>
+    <!-- light emerging from opening -->
+    <g stroke="#62d4de" stroke-width="5" fill="none">
+      <path d="M365 105h48M371 150h40M368 196h47M372 245h38"/>
+    </g>
+    <!-- One clearly defined open yellow door, hinged at the left -->
+    <path d="M280 53 L175 94 L175 361 L280 355 Z" fill="#f6c75b"/>
+    <path d="M196 108 L263 82 L263 339 L196 346Z" fill="#ffe19a" stroke-width="3" opacity=".6"/>
+    <circle cx="250" cy="212" r="6" fill="#193447" stroke="none"/>
+    <!-- cartoon developer -->
+    <path d="M84 299 Q85 255 119 251 Q159 253 161 300 L168 355 H77Z" fill="#4a9dd4"/>
+    <path d="M112 350L101 382M148 350L156 382" fill="none"/>
+    <path d="M88 382h28M143 382h29" fill="none"/>
+    <circle cx="123" cy="212" r="39" fill="#f7c99e"/>
+    <path d="M86 207Q89 170 121 169Q151 169 161 198Q147 189 139 186Q111 198 86 207Z" fill="#193447"/>
+    <g fill="#fff" stroke-width="4"><circle cx="108" cy="214" r="13"/><circle cx="136" cy="214" r="13"/></g>
+    <path d="M121 214h2" fill="none" stroke-width="3"/>
+    <g fill="#193447" stroke="none"><circle cx="110" cy="215" r="3"/><circle cx="137" cy="215" r="3"/></g>
+    <path d="M116 236q9 9 18 0" fill="none" stroke-width="3"/>
+    <!-- arm reaches toward the door -->
+    <path d="M155 278Q188 258 212 236" fill="none"/>
+    <circle cx="214" cy="233" r="9" fill="#f7c99e" stroke-width="4"/>
+    <!-- Direction arrow placed through the doorway, not under it -->
+    <path d="M324 286h69" fill="none" stroke="#009eab" stroke-width="9"/>
+    <path d="M383 271l25 15-25 15" fill="none" stroke="#009eab" stroke-width="9"/>
+  </g>
+</svg>

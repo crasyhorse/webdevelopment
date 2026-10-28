@@ -1,0 +1,23 @@
+/* Task Manager styles */
+body { font-family: system-ui, sans-serif; margin: 2rem; }
+main { max-width: 42rem; }
+.task-list { border: 2px solid #117aa3; padding: 1rem; }
+.task-list h2 { color: #117aa3; }
+input { width: 16rem; }
+
+
+/* Rendering demo: compare layout, paint, and compositing work in DevTools. */
+.rendering-demo { margin-top: 2rem; border-top: 1px solid #cbd5e1; padding-top: 1rem; }
+.render-box {
+    width: 100px;
+    height: 100px;
+    margin: 1rem 0;
+    background-color: teal;
+    transition: transform 600ms ease;
+    will-change: transform;
+}
+.render-box.is-wide { width: 200px; }
+.render-box.is-coral { background-color: coral; }
+.render-box.is-moved { transform: translateX(150px); }
+.render-controls { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.render-controls button { padding: 0.4rem 0.8rem; cursor: pointer; }

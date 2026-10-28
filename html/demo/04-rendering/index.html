@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Task Manager</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Task Manager</h1>
+            <p>Manage your tasks in one place.</p>
+            <nav aria-label="Main navigation">
+                <a href="#tasks">Tasks</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="tasks" class="task-list" data-view="active" aria-labelledby="tasks-heading">
+                <h2 id="tasks-heading">Tasks</h2>
+
+                <ul>
+                    <li>Learn HTML document structure</li>
+                    <li>Review semantic HTML</li>
+                </ul>
+
+                <form action="" method="get">
+                    <label for="task-name">New task</label>
+                    <p id="task-help">Enter a short description of the task.</p>
+                    <input id="task-name" name="task" type="text" aria-describedby="task-help" required minlength="3" maxlength="80" />
+                    <label for="task-priority">Priority</label>
+                    <select id="task-priority" name="priority">
+                        <option value="low">Low</option>
+                        <option value="normal" selected>Normal</option>
+                        <option value="high">High</option>
+                    </select>
+                    <label for="task-due">Due date (optional)</label>
+                    <input id="task-due" name="due" type="date" />
+                    <button type="submit">Add task</button>
+                </form>
+
+                <section class="rendering-demo" aria-labelledby="rendering-heading">
+                    <h3 id="rendering-heading">Rendering demonstration</h3>
+                    <p>Change the box and inspect the rendering work in browser Developer Tools.</p>
+
+                    <div id="render-box" class="render-box" aria-hidden="true"></div>
+
+                    <div class="render-controls">
+                        <button id="resize-box" type="button">Resize</button>
+                        <button id="color-box" type="button">Change color</button>
+                        <button id="move-box" type="button">Move</button>
+                    </div>
+                </section>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

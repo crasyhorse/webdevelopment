@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img" aria-labelledby="title desc">
+  <title id="title">One CSS pixel at device pixel ratios 1, 2, and 3</title>
+  <desc id="desc">Three equal-sized blue-outlined squares. The first is a single square, the second is divided into a 2 by 2 grid, and the third is divided into a 3 by 3 grid, showing one CSS pixel represented by progressively more device pixels.</desc>
+  <rect width="900" height="300" fill="none"/>
+  <g stroke="#2563eb" stroke-width="5" fill="#dbeafe" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="38" y="30" width="224" height="224" rx="6"/>
+    <rect x="338" y="30" width="224" height="224" rx="6"/>
+    <rect x="638" y="30" width="224" height="224" rx="6"/>
+  </g>
+  <g stroke="#2563eb" stroke-width="3.5">
+    <line x1="450" y1="30" x2="450" y2="254"/>
+    <line x1="338" y1="142" x2="562" y2="142"/>
+    <line x1="712.6667" y1="30" x2="712.6667" y2="254"/>
+    <line x1="787.3333" y1="30" x2="787.3333" y2="254"/>
+    <line x1="638" y1="104.6667" x2="862" y2="104.6667"/>
+    <line x1="638" y1="179.3333" x2="862" y2="179.3333"/>
+  </g>
+</svg>
