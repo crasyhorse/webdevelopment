@@ -1,0 +1,45 @@
+{
+  "title": "Flexbox Memory",
+  "pairs": [
+    {
+      "id": "1",
+      "term": "flex-direction",
+      "definition": "Sets main axis and direction"
+    },
+    {
+      "id": "2",
+      "term": "justify-content",
+      "definition": "Distributes free space on main axis"
+    },
+    {
+      "id": "3",
+      "term": "align-items",
+      "definition": "Default cross-axis item alignment"
+    },
+    {
+      "id": "4",
+      "term": "align-self",
+      "definition": "Overrides alignment for one item"
+    },
+    {
+      "id": "5",
+      "term": "flex-wrap",
+      "definition": "Allows multiple flex lines"
+    },
+    {
+      "id": "6",
+      "term": "flex-grow",
+      "definition": "Share of positive free space"
+    },
+    {
+      "id": "7",
+      "term": "flex-shrink",
+      "definition": "Factor for reducing item size"
+    },
+    {
+      "id": "8",
+      "term": "flex-basis",
+      "definition": "Starting main-axis size"
+    }
+  ]
+}

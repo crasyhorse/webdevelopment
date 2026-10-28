@@ -1,25 +1,11 @@
 ---
-layout: pageBar
+layout: learningOutcomes
 ---
-
-# Learning Outcomes
-
-I will ...
 
 1. become familiar with **native form submission** and the role of `name`, `method`, and `action`.
 2. explore how different **form controls** collect structured values.
 3. discover how **constraint validation** works without JavaScript.
 4. learn how to inspect **submitted data and validation** in DevTools.
-
-<style scoped>
-.slidev-layout > .my-auto > p,
-.slidev-layout > .my-auto > ol {
-    margin-left: 5rem;
-    font-size: 1.5rem;
-    line-height: 1.8;
-}
-.slidev-layout > .my-auto > p { margin-top: 5rem; }
-</style>
 
 <!--
 - Connect this section directly to the Task Manager form introduced in the earlier exercises.

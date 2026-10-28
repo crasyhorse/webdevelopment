@@ -1,0 +1,6 @@
+/* Try each basic selector in DevTools. */
+body { background: #f3f7fd; color: #263c55; font-family: Arial, sans-serif; }
+h2 { color: #215f9e; }                    /* Type selector */
+.task-item { padding: 0.3rem; }     /* Class selector */
+#tasks { border-left: 4px solid #87b4cf; padding-left: 1.5rem; }  /* ID selector */
+* { box-sizing: border-box; }             /* Universal selector */

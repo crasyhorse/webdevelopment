@@ -1,0 +1,5 @@
+* { box-sizing: border-box; }
+body { font: 1rem/1.5 Arial,sans-serif; margin: 2rem; color: #263c55; }
+.card,.dashboard > *,button { background: #edf5ff; border: 1px solid #85a7c8; padding: 1rem; border-radius: .5rem; }
+.card { position: relative; padding: 2.5rem 1rem 1rem; }
+.badge { position: absolute; top: .5rem; right: .5rem; background: peachpuff; }

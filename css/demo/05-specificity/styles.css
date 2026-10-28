@@ -1,0 +1,14 @@
+/* Demo 05: calculate the weight of each selector while inspecting the task button. */
+body { background: #f2f6fb; font-family: Arial, sans-serif; color: #263c55; }
+.task-title { color: #245f9f; }
+.submit-button { background: #245f9f; color: #ffffff; }
+/* All declarations below are normal, unlayered author styles. */
+button { color: #1f5c99; }                 /* 0-0-1: loses to class */
+.submit-button { color: #197747; }         /* 0-1-0: wins over type */
+button { color: #b14c37; }                 /* 0-0-1: still loses */
+/* Experiment A: uncomment this rule after calculating 0-2-0.
+.task-form .submit-button { color: #7a3ea2; }
+*/
+/* Experiment B: add id="task-submit" to HTML and uncomment the ID rule (1-0-0).
+#task-submit { color: #7442ac; }
+*/

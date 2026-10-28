@@ -1,0 +1,46 @@
+.slidev-layout.pageBar .bg-barBottom > div:nth-child(1) {
+    width: 50%;
+    flex: 0 0 50%;
+}
+
+.slidev-layout.pageBar .bg-barBottom > div:nth-child(2) {
+    width: 35%;
+    flex: 0 0 35%;
+}
+
+.slidev-layout.pageBar .bg-barBottom > div:last-child {
+    min-width: 5rem;
+    white-space: nowrap;
+}
+
+.slidev-layout.pageBar.content-offset > .my-auto > h1 + *,
+.slidev-layout.pageBar.content-offset > h1 + * {
+    margin-top: 5rem !important;
+}
+
+.slidev-layout.pageBar.content-offset > .grid {
+    margin-top: 5rem !important;
+}
+
+
+table {
+    font-size: 1.2rem;
+}
+
+table th,
+table td {
+    padding: 0.75rem 1rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.slidev-layout > .my-auto > p,
+.slidev-layout > .my-auto > ul {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.slidev-code {
+    font-size: 1.2rem !important;
+    line-height: 1.6;
+}

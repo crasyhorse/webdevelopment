@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="780" viewBox="0 0 1600 780" role="img" aria-labelledby="title desc">
+  <title id="title">Composition diagram</title>
+  <desc id="desc">A diagram demonstrating composition with reusable interface parts. A task card on the left contains a status badge and action buttons. On the right, similar badge and button parts are reused in a task toolbar and in two small panels with more natural actions.</desc>
+  <defs>
+    <style>
+      .ui {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .bg {
+        fill: #F3F6F9;
+      }
+      .panel {
+        fill: #ffffff;
+        stroke: #CAD5E0;
+        stroke-width: 3;
+        rx: 24;
+      }
+      .label {
+        font-size: 24px;
+        font-weight: 700;
+        fill: #263C55;
+      }
+      .bodyText {
+        font-size: 18px;
+        fill: #526B80;
+      }
+      .taskCard {
+        fill: #ffffff;
+        stroke: #4C7186;
+        stroke-width: 4;
+        rx: 24;
+      }
+      .taskHeader {
+        fill: #C2D8E4;
+        stroke: #4C7186;
+        stroke-width: 3;
+        rx: 14;
+      }
+      .taskBody {
+        fill: #FAFBFC;
+        stroke: #8095AA;
+        stroke-width: 2.5;
+        rx: 14;
+      }
+      .taskFooter {
+        fill: #E1ECF2;
+        stroke: #8095AA;
+        stroke-width: 2.5;
+        rx: 14;
+      }
+      .toolbar {
+        fill: #FAFBFC;
+        stroke: #8095AA;
+        stroke-width: 3;
+        rx: 18;
+      }
+      .miniCard {
+        fill: #ffffff;
+        stroke: #8095AA;
+        stroke-width: 3;
+        rx: 18;
+      }
+      .badge {
+        fill: #F8E9D8;
+        stroke: #9A6A2C;
+        stroke-width: 2.5;
+        rx: 12;
+      }
+      .button {
+        fill: #E1ECF2;
+        stroke: #4C7186;
+        stroke-width: 2.5;
+        rx: 12;
+      }
+      .buttonDanger {
+        fill: #EBC08F;
+        stroke: #9A6A2C;
+        stroke-width: 2.5;
+        rx: 12;
+      }
+      .buttonSoft {
+        fill: #E1ECF2;
+        stroke: #7FA1B4;
+        stroke-width: 2.5;
+        rx: 12;
+      }
+      .input {
+        fill: #ffffff;
+        stroke: #CAD5E0;
+        stroke-width: 2.5;
+        rx: 12;
+      }
+      .divider {
+        stroke: #CAD5E0;
+        stroke-width: 2;
+      }
+    </style>
+  </defs>
+  <rect width="1600" height="780" class="bg"/>
+  <!-- Left column -->
+  <rect x="70" y="80" width="720" height="650" class="panel"/>
+  <text x="100" y="120" class="ui label">Composed interface</text>
+  <g>
+    <rect x="210" y="180" width="460" height="420" class="taskCard"/>
+    <rect x="240" y="211" width="400" height="82" class="taskHeader"/>
+    <text x="268" y="246" class="ui" style="font-size:28px;font-weight:700;fill:#263C55;">Review pull request</text>
+    <rect x="507" y="248" width="103" height="28" class="badge"/>
+    <text x="558" y="267" text-anchor="middle" class="ui" style="font-size:15px;font-weight:700;fill:#263C55;">High priority</text>
+    <rect x="240" y="315" width="400" height="160" class="taskBody"/>
+    <text x="268" y="355" class="ui" style="font-size:22px;font-weight:700;fill:#263C55;">Notes</text>
+    <text x="268" y="393" class="ui bodyText">Check CSS example naming.</text>
+    <text x="268" y="425" class="ui bodyText">Update tasks before the review.</text>
+    <text x="268" y="457" class="ui bodyText">Prepare the final presenter notes.</text>
+    <rect x="240" y="497" width="400" height="73" class="taskFooter"/>
+    <rect x="272" y="515" width="126" height="38" class="button"/>
+    <text x="335" y="540" text-anchor="middle" class="ui" style="font-size:18px;font-weight:700;fill:#4C7186;">Edit</text>
+    <rect x="420" y="515" width="162" height="38" class="buttonDanger"/>
+    <text x="501" y="540" text-anchor="middle" class="ui" style="font-size:18px;font-weight:700;fill:#263C55;">Delete</text>
+  </g>
+  <!-- Right column -->
+  <rect x="840" y="80" width="690" height="650" class="panel"/>
+  <text x="872" y="120" class="ui label">The same parts can be reused elsewhere</text>
+  <!-- Toolbar example -->
+  <rect x="900" y="190" width="560" height="125" class="toolbar"/>
+  <text x="928" y="228" class="ui" style="font-size:24px;font-weight:700;fill:#263C55;">Task toolbar</text>
+  <rect x="928" y="248" width="220" height="38" class="input"/>
+  <text x="948" y="273" class="ui" style="font-size:17px;fill:#8095AA;">Search tasks</text>
+  <rect x="1172" y="250" width="96" height="30" class="badge"/>
+  <text x="1220" y="270" text-anchor="middle" class="ui" style="font-size:15px;font-weight:700;fill:#263C55;">3 filters</text>
+  <rect x="1290" y="246" width="126" height="38" class="button"/>
+  <text x="1353" y="271" text-anchor="middle" class="ui" style="font-size:18px;font-weight:700;fill:#4C7186;">Add task</text>
+  <line x1="900" y1="350" x2="1460" y2="350" class="divider"/>
+  <!-- Notification panel -->
+  <rect x="920" y="400" width="255" height="220" class="miniCard"/>
+  <text x="946" y="439" class="ui" style="font-size:24px;font-weight:700;fill:#263C55;">Notifications</text>
+  <rect x="947" y="461" width="92" height="34" class="badge"/>
+  <text x="993" y="483" text-anchor="middle" class="ui" style="font-size:16px;font-weight:700;fill:#263C55;">3 unread</text>
+  <text x="946" y="530" class="ui bodyText">A badge can show status</text>
+  <text x="946" y="556" class="ui bodyText">or a count in many places.</text>
+  <rect x="946" y="575" width="116" height="38" class="buttonSoft"/>
+  <text x="1004" y="600" text-anchor="middle" class="ui" style="font-size:17px;font-weight:700;fill:#4C7186;">Show all</text>
+  <!-- Summary panel -->
+  <rect x="1210" y="400" width="255" height="220" class="miniCard"/>
+  <text x="1236" y="439" class="ui" style="font-size:24px;font-weight:700;fill:#263C55;">Task summary</text>
+  <rect x="1236" y="461" width="102" height="34" class="badge"/>
+  <text x="1287" y="483" text-anchor="middle" class="ui" style="font-size:16px;font-weight:700;fill:#263C55;">Due today</text>
+  <text x="1236" y="530" class="ui bodyText">Buttons can trigger actions</text>
+  <text x="1236" y="556" class="ui bodyText">that fit the context.</text>
+  <rect x="1236" y="575" width="112" height="38" class="button"/>
+  <text x="1292" y="600" text-anchor="middle" class="ui" style="font-size:17px;font-weight:700;fill:#4C7186;">Details</text>
+  <rect x="1360" y="575" width="79" height="38" class="buttonSoft"/>
+  <text x="1399" y="600" text-anchor="middle" class="ui" style="font-size:17px;font-weight:700;fill:#4C7186;">View</text>
+</svg>

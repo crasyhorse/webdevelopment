@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 470" width="760" height="470" role="img" aria-labelledby="title desc">
+  <title id="title">Fixed height and overflowing text</title>
+  <desc id="desc">The task card has a short fixed height; lower lines of text visibly continue outside its bottom border.</desc>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      fill: #263C55;
+    }
+    .label {
+      font-size: 25px;
+      font-weight: 700;
+    }
+    .note {
+      font-size: 19px;
+    }
+    .small {
+      font-size: 17px;
+    }
+    .content {
+      fill: #A8C8D9;
+      stroke: #4C7186;
+      stroke-width: 3;
+    }
+    .frame {
+      fill: #fff;
+      stroke: #263C55;
+      stroke-width: 4;
+    }
+    .dim {
+      stroke: #263C55;
+      stroke-width: 3;
+    }
+  </style>
+  <rect width="760" height="470" rx="14" fill="#F3F6F9"/>
+  <rect x="60" y="58" width="640" height="133" rx="10" class="frame"/>
+  <text x="100" y="101" class="label">Task card</text>
+  <text x="105" y="132" class="note">Review the pull request</text>
+  <text x="105" y="167" class="note">Check failing tests and any new</text>
+  <text x="105" y="202" class="note">comments before approving.</text>
+  <text x="105" y="237" class="note">Check the build status again.</text>
+  <text x="105" y="272" class="note">Ask a teammate for feedback.</text>
+  <line x1="60" y1="191" x2="700" y2="191" stroke="#9A6A2C" stroke-width="4" stroke-dasharray="8 5"/>
+  <text x="380" y="414" text-anchor="middle" class="label" fill="#9A6A2C"><tspan font-family="DejaVu Sans Mono, Consolas, monospace">height: 120px</tspan> — text overflows</text>
+</svg>

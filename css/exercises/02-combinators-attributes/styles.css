@@ -1,0 +1,18 @@
+/* The semantic HTML remains unchanged apart from descriptive class names. */
+body {
+  background-color: #f2f6fb;
+  font-family: Arial, sans-serif;
+  color: #263c55;
+}
+
+.task-title {
+  color: #245f9f;
+}
+
+.submit-button {
+  background-color: #245f9f;
+  color: white;
+}
+
+/* Headings retain a consistent, readable accent throughout the workshop. */
+h2 { color: #245f9f; }

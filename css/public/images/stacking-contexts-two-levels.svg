@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="260" viewBox="0 0 420 260" role="img" aria-labelledby="title desc">
+  <title id="title">Multiple stacking contexts</title>
+  <desc id="desc">The header at z-index 2 covers the card and part of its popover at z-index 999 because the card is at z-index 1.</desc>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      fill: #263C55;
+    }
+    .label {
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .code {
+      font-size: 15px;
+      font-family: DejaVu Sans Mono, Consolas, monospace;
+    }
+  </style>
+  <rect width="420" height="260" rx="16" fill="#FAFBFC"/>
+  <rect x="16" y="12" width="388" height="236" rx="12" fill="#fff" stroke="#8095AA" stroke-width="2"/>
+  <text x="30" y="32" font-size="13">Viewport</text>
+  <!-- Card and its children are painted before the higher header. -->
+  <rect x="62" y="66" width="308" height="166" rx="12" fill="#E1ECF2" stroke="#4C7186" stroke-width="3"/>
+  <text x="78" y="119" class="label">Task card</text>
+  <text x="78" y="140" class="code" style="font-family:DejaVu Sans Mono, Consolas, monospace;">z-index: 1</text>
+  <rect x="82" y="166" width="152" height="42" rx="8" fill="#EBC08F" stroke="#9A6A2C" stroke-width="2.5"/>
+  <text x="96" y="183" class="label" style="fill:#263C55">Badge</text>
+  <text x="96" y="200" class="code" style="font-family:DejaVu Sans Mono, Consolas, monospace;fill:#263C55">z-index: 1</text>
+  <rect x="204" y="80" width="150" height="112" rx="9" fill="#D8E2B8" stroke="#6C7D2C" stroke-width="3"/>
+  <text x="279" y="130" text-anchor="middle" class="label" style="fill:#263C55">Popover</text>
+  <text x="279" y="151" text-anchor="middle" class="code" style="font-family:DejaVu Sans Mono, Consolas, monospace;fill:#263C55">z-index: 999</text>
+  <rect x="32" y="42" width="356" height="59" rx="9" fill="#C2D8E4" stroke="#4C7186" stroke-width="3"/>
+  <text x="48" y="65" class="label">Header</text>
+  <text x="48" y="86" class="code" style="font-family:DejaVu Sans Mono, Consolas, monospace;">z-index: 2</text>
+</svg>

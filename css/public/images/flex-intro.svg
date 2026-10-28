@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 340" role="img">
+  <title>Flex intro</title>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      fill: #263C55;
+      font-size: 19px;
+    }
+    .head {
+      font-weight: 700;
+      font-size: 21px;
+    }
+    .small {
+      font-size: 16px;
+    }
+    .frame {
+      fill: #F3F6F9;
+      stroke: #8095AA;
+      stroke-width: 2;
+      stroke-dasharray: 6 4;
+    }
+    .item {
+      fill: #A8C8D9;
+      stroke: #4C7186;
+      stroke-width: 2;
+    }
+    .accent {
+      fill: #C8D59A;
+      stroke: #6C7D2C;
+      stroke-width: 2;
+    }
+    .orange {
+      fill: #EBC08F;
+      stroke: #9A6A2C;
+      stroke-width: 2;
+    }
+  </style>
+  <text x="220" y="25" text-anchor="middle" class="head" style="font-family:DejaVu Sans Mono, Consolas, monospace;">display: block</text>
+  <rect x="20" y="40" width="400" height="132" rx="5" class="frame"/>
+  <rect x="32" y="48" width="376" height="32" rx="5" class="item"/>
+  <text x="220.0" y="70.0" text-anchor="middle" class="">Save</text>
+  <rect x="32" y="87" width="376" height="32" rx="5" class="orange"/>
+  <text x="220.0" y="109.0" text-anchor="middle" class="">Edit</text>
+  <rect x="32" y="126" width="376" height="32" rx="5" class="accent"/>
+  <text x="220.0" y="148.0" text-anchor="middle" class="">Delete</text>
+  <text x="220" y="210" text-anchor="middle" class="head" style="font-family:DejaVu Sans Mono, Consolas, monospace;">display: flex</text>
+  <rect x="20" y="225" width="400" height="85" rx="5" class="frame"/>
+  <rect x="32" y="247" width="108" height="42" rx="5" class="item"/>
+  <text x="86.0" y="274.0" text-anchor="middle" class="">Save</text>
+  <rect x="144" y="247" width="108" height="42" rx="5" class="orange"/>
+  <text x="198.0" y="274.0" text-anchor="middle" class="">Edit</text>
+  <rect x="256" y="247" width="108" height="42" rx="5" class="accent"/>
+  <text x="310.0" y="274.0" text-anchor="middle" class="">Delete</text>
+</svg>

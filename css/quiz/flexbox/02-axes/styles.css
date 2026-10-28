@@ -1,0 +1,9 @@
+* { box-sizing: border-box; }
+body { font: 16px Arial, sans-serif; margin: 24px; color: #263c55; }
+.panel { outline: 2px dashed #8296aa; background: #f3f6f9; }
+.item { background: #A8C8D9; border: 1px solid #4C7186; color: #263c55; border-radius: 5px; text-align: center; font: inherit; }
+.item:nth-child(2) { background: #EBC08F; border-color: #9A6A2C; }
+.item:nth-child(3) { background: #C8D59A; border-color: #6C7D2C; }
+
+.panel { display: flex; width: 320px; height: 240px; gap: 8px; /* Try flex-direction here. */ }
+.item { width: 52px; height: 52px; }

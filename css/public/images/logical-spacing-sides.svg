@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="450" viewBox="0 0 860 450" role="img" aria-labelledby="title desc">
+  <title id="title">Logical inline and block sides in left-to-right and right-to-left text</title>
+  <desc id="desc">In horizontal writing block-start is top and block-end is bottom. Inline-start is left in LTR but right in RTL. Orange marks margin, ocher marks border, green marks padding and blue marks content.</desc>
+  <style>
+text {font-family:Arial, Helvetica, sans-serif;fill:#263C55}
+.title {font-size:26px;font-weight:700}
+.label {font-size:20px;font-weight:700}
+.side {font-size:17px;font-weight:700}
+.note {font-size:17px}
+.arabic {font-family:"Noto Sans Arabic","Noto Naskh Arabic",Arial, Helvetica, sans-serif;font-weight:700;font-size:23px}
+</style>
+  <rect width="860" height="450" rx="18" fill="#FAFBFC"/>
+  <text x="225" y="38" text-anchor="middle" class="label">LTR →</text>
+  <text x="635" y="38" text-anchor="middle" class="label">RTL ←</text>
+  <!-- Left: each zone has its own rounded corner and no overlaps. -->
+  <rect x="75" y="140" width="300" height="240" rx="24" fill="#EBC08F" stroke="#9A6A2C" stroke-width="2"/>
+  <rect x="99" y="164" width="252" height="192" rx="19" fill="#E7D89B" stroke="#8C7428" stroke-width="3"/>
+  <rect x="124" y="189" width="202" height="142" rx="14" fill="#C8D59A" stroke="#6C7D2C" stroke-width="1"/>
+  <rect x="148" y="213" width="154" height="94" rx="9" fill="#A8C8D9" stroke="#4C7186" stroke-width="1.5"/>
+  <text x="225" y="262" text-anchor="middle" class="label">Content</text>
+  <!-- Right -->
+  <rect x="485" y="140" width="300" height="240" rx="24" fill="#EBC08F" stroke="#9A6A2C" stroke-width="2"/>
+  <rect x="509" y="164" width="252" height="192" rx="19" fill="#E7D89B" stroke="#8C7428" stroke-width="3"/>
+  <rect x="534" y="189" width="202" height="142" rx="14" fill="#C8D59A" stroke="#6C7D2C" stroke-width="1"/>
+  <rect x="558" y="213" width="154" height="94" rx="9" fill="#A8C8D9" stroke="#4C7186" stroke-width="1.5"/>
+  <text x="635" y="262" text-anchor="middle" class="arabic" direction="rtl">المحتوى</text>
+  <text x="225" y="127" text-anchor="middle" class="side">block-start (top)</text>
+  <text x="635" y="127" text-anchor="middle" class="side">block-start (top)</text>
+  <text x="225" y="406" text-anchor="middle" class="side">block-end (bottom)</text>
+  <text x="635" y="406" text-anchor="middle" class="side">block-end (bottom)</text>
+  <text x="51" y="237" text-anchor="middle" class="side" transform="rotate(-90 51 237)" style="font-family:DejaVu Sans Mono, Consolas, monospace;">inline-start</text>
+  <text x="397" y="237" text-anchor="middle" class="side" transform="rotate(90 397 237)" style="font-family:DejaVu Sans Mono, Consolas, monospace;">inline-end</text>
+  <text x="461" y="237" text-anchor="middle" class="side" transform="rotate(-90 461 237)" style="font-family:DejaVu Sans Mono, Consolas, monospace;">inline-end</text>
+  <text x="809" y="237" text-anchor="middle" class="side" transform="rotate(90 809 237)" style="font-family:DejaVu Sans Mono, Consolas, monospace;">inline-start</text>
+</svg>

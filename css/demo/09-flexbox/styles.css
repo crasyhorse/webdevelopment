@@ -1,0 +1,5 @@
+* { box-sizing: border-box; }
+body { font: 1rem/1.5 Arial,sans-serif; margin: 2rem; color: #263c55; }
+.card,.dashboard > *,button { background: #edf5ff; border: 1px solid #85a7c8; padding: 1rem; border-radius: .5rem; }
+.actions { display: flex; gap: .75rem; align-items: center; flex-wrap: wrap; }
+.actions button { flex: 1 1 8rem; }

@@ -1,0 +1,38 @@
+{
+  "leftHeader": "Position value",
+  "rightHeader": "Behavior",
+  "pairs": [
+    {
+      "id": "static",
+      "left": "static",
+      "right": "Stays in normal flow; insets have no effect"
+    },
+    {
+      "id": "relative",
+      "left": "relative",
+      "right": "Moves visually while its original space remains"
+    },
+    {
+      "id": "absolute",
+      "left": "absolute",
+      "right": "Leaves flow; uses its containing block"
+    },
+    {
+      "id": "fixed",
+      "left": "fixed",
+      "right": "Usually stays at a viewport inset when scrolling"
+    },
+    {
+      "id": "sticky",
+      "left": "sticky",
+      "right": "Stays in flow; sticks at an inset while scrolling"
+    }
+  ],
+  "rightOrder": [
+    "sticky",
+    "absolute",
+    "static",
+    "fixed",
+    "relative"
+  ]
+}
