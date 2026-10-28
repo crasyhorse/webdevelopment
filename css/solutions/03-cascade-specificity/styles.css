@@ -1,0 +1,31 @@
+/* The semantic HTML remains unchanged apart from descriptive class names. */
+body {
+  background-color: #f2f6fb;
+  font-family: Arial, sans-serif;
+  color: #263c55;
+}
+
+.task-title {
+  color: #245f9f;
+}
+
+.submit-button {
+  background-color: #245f9f;
+  color: white;
+}
+
+/* Direct-child combinator: only items directly under the list. */
+.task-list > .task-item { padding: 0.45rem 0.65rem; }
+/* Adjacent sibling: the short header description follows the main title. */
+.task-title + p { color: #56738c; }
+/* Attribute selectors: HTML meaning, not an invented class. */
+input[required] { border: 2px solid #317aa6; }
+input[type="date"] { background: #edf5ff; }
+/* Pseudo-class states: don't hide keyboard focus. */
+.submit-button:hover { background-color: #174978; }
+.submit-button:focus-visible { outline: 3px solid #efab36; outline-offset: 3px; }
+/* Decorative pseudo-element: not essential content. */
+.task-list > .task-item::before { content: "✓ "; color: #267b5a; }
+
+/* Resolve the conflict without !important: use the matching selector deliberately. */
+.task-main .submit-button { color: white; }

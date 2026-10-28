@@ -1,0 +1,112 @@
+[
+  {
+    "question": "What does CSS selector specificity describe?",
+    "answers": [
+      "The number of elements a selector matches",
+      "The relative weight of a selector when competing declarations have the same earlier cascade priority",
+      "The order in which stylesheets load",
+      "The number of properties inside a CSS rule"
+    ],
+    "correctIndex": 1,
+    "explanation": "Specificity is a weight assigned to a selector. It matters only after higher-priority cascade criteria, such as origin, importance and layers, are considered."
+  },
+  {
+    "question": "What do the columns in a specificity value such as 1-2-3 represent, from left to right?",
+    "answers": [
+      "ID selectors; class/attribute/pseudo-class selectors; type/pseudo-element selectors",
+      "Inline declarations; ID selectors; class selectors",
+      "Type selectors; class selectors; ID selectors",
+      "Rules; declarations; matched elements"
+    ],
+    "correctIndex": 0,
+    "explanation": "The three columns count IDs, class-like selectors, and type-like selectors, respectively. Inline declarations are handled separately, not as a fourth number in this tuple."
+  },
+  {
+    "question": "Why does specificity 0-2-0 outrank 0-1-10?",
+    "answers": [
+      "The values are added up, and 2 is greater than 11",
+      "The last column is ignored in every comparison",
+      "The first different column, read from left to right, decides the comparison",
+      "The shortest selector always wins"
+    ],
+    "correctIndex": 2,
+    "explanation": "Specificity is compared column by column from left to right, not as a sum or a decimal. The class-like column decides this comparison."
+  },
+  {
+    "question": "At which point in the cascade is selector specificity compared?",
+    "answers": [
+      "Before the browser checks whether selectors match",
+      "Before the importance of declarations is considered",
+      "Only after source order has chosen a rule",
+      "After cascade origin, importance and layer precedence have been considered"
+    ],
+    "correctIndex": 3,
+    "explanation": "Specificity resolves ties among eligible competing declarations after earlier cascade criteria. Scoping proximity and source order may be consulted later."
+  },
+  {
+    "question": "What is the specificity of the compound selector .task-list .task-card?",
+    "answers": [
+      "0-1-0, because only the last class counts",
+      "0-2-0, because both class selectors count",
+      "0-2-1, because a descendant relationship adds a type",
+      "1-0-0, because there are two components"
+    ],
+    "correctIndex": 1,
+    "explanation": "Both .task-list and .task-card are class selectors. Each contributes 0-1-0, giving 0-2-0 in total."
+  },
+  {
+    "question": "In .task-list > .task-card, what specificity does the child combinator > itself add?",
+    "answers": [
+      "0-1-0",
+      "0-0-1",
+      "0-0-0",
+      "1-0-0"
+    ],
+    "correctIndex": 2,
+    "explanation": "Combinators express relationships between elements but do not contribute to specificity. The two classes still contribute 0-2-0 overall."
+  },
+  {
+    "question": "What specificity does the universal selector * have by itself?",
+    "answers": [
+      "0-0-0",
+      "0-0-1",
+      "0-1-0",
+      "1-0-0"
+    ],
+    "correctIndex": 0,
+    "explanation": "The universal selector matches elements but contributes no specificity. Matching many elements does not make a selector stronger."
+  },
+  {
+    "question": "For a comma-separated selector list .task-card, #featured, how is specificity determined when the .task-card branch matches an element but #featured does not?",
+    "answers": [
+      "The list always uses the most specific branch, even if it does not match",
+      "The two branch weights are added together",
+      "The first branch always has zero specificity",
+      "Only the matching .task-card branch provides the specificity for that match"
+    ],
+    "correctIndex": 3,
+    "explanation": "A selector list consists of independent selectors. The matching branch .task-card contributes 0-1-0; a nonmatching ID branch does not boost its weight."
+  },
+  {
+    "question": "How should a style=\"color: orange\" declaration on an HTML element be represented when teaching the standard three-column selector weights?",
+    "answers": [
+      "As 0-0-1, because it belongs to one element",
+      "Separately from the selector tuple: inline styles are not selectors",
+      "As 1-0-0, because it is as strong as an ID",
+      "As 0-1-0, because an attribute is a class-like selector"
+    ],
+    "correctIndex": 1,
+    "explanation": "The style attribute sets declarations directly on an element; it is not an ordinary selector and does not fit into the 0-0-0 selector tuple. Normal inline styles generally outrank normal author stylesheet rules."
+  },
+  {
+    "question": "Does a selector become more specific because it matches fewer elements on the page?",
+    "answers": [
+      "Yes; a selector matching one element automatically receives ID specificity",
+      "Yes; the browser counts matching elements before comparing rules",
+      "No; specificity is determined by the selector's syntax, not its number of matches",
+      "No; all selectors have equal specificity if they match"
+    ],
+    "correctIndex": 2,
+    "explanation": "Specificity follows the kinds and counts of selectors in the selector, not how many elements happen to match it. This is one reason to prefer predictable descriptive class selectors."
+  }
+]

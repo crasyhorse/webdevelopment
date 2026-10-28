@@ -1,0 +1,13 @@
+/* Demo 04 — edit one conflict at a time in DevTools. */
+body { margin: 2rem; background: #f2f6fb; font: 18px/1.5 Arial, sans-serif; color: #263c55; }
+.task-card { border: 2px solid #bbcad9; border-radius: 12px; padding: 1.4rem; background: white; }
+.card-title { color: navy; } /* Normal class rule: first */
+.card-title { color: teal; } /* Normal class rule: later wins */
+
+/* Experiment A — remove the comment and observe specificity:
+#important-task .card-title { color: darkorange; }
+*/
+
+/* Experiment B — try this important class rule while A is enabled:
+.card-title { color: crimson !important; }
+*/

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="750" viewBox="0 0 1600 750" role="img" aria-labelledby="svgtitle svgdesc">
+<title id="svgtitle">CSS combinators select HTML elements</title>
+<desc id="svgdesc">One shared HTML example on the left and four CSS rules on the right. Colored arrows lead to example selected elements, while highlights show all matching elements. The descendant rule selects both task cards; direct child selects the direct article only; adjacent sibling selects the first paragraph after h2; general sibling selects both paragraphs after h2.</desc>
+<defs>
+
+<marker id="mblue" markerWidth="13" markerHeight="13" refX="10.5" refY="6.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L13 6.5 L0 13 Z" fill="#367abb"/></marker>
+<marker id="mamber" markerWidth="13" markerHeight="13" refX="10.5" refY="6.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L13 6.5 L0 13 Z" fill="#d8822d"/></marker>
+<marker id="mpurple" markerWidth="13" markerHeight="13" refX="10.5" refY="6.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L13 6.5 L0 13 Z" fill="#884eb1"/></marker>
+<marker id="mgreen" markerWidth="13" markerHeight="13" refX="10.5" refY="6.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L13 6.5 L0 13 Z" fill="#279767"/></marker>
+</defs>
+<rect x="0" y="0" width="1600" height="750" fill="#f9fbfd"/>
+<rect x="55" y="30" width="715" height="690" rx="20" fill="#fff" stroke="#d4dee9" stroke-width="2"/>
+<rect x="850" y="30" width="695" height="690" rx="20" fill="#fff" stroke="#d4dee9" stroke-width="2"/>
+<text x="104" y="76" font-family="Arial,sans-serif" font-weight="700" font-size="26" fill="#294560">HTML</text>
+<text x="902" y="76" font-family="Arial,sans-serif" font-weight="700" font-size="26" fill="#294560">CSS</text>
+
+<rect x="164.0" y="184.0" width="367.8" height="30.0" rx="6" fill="#e7f3ff" stroke="#367abb" stroke-width="1.5" />
+<rect x="137.5" y="352.0" width="367.8" height="30.0" rx="6" fill="#fff0df" stroke="#d8822d" stroke-width="1.5" />
+<rect x="164.0" y="436.0" width="222.0" height="30.0" rx="6" fill="#f1e9ff" stroke="#884eb1" stroke-width="1.5" />
+<rect x="164.0" y="520.0" width="275.0" height="30.0" rx="6" fill="#e5f8ee" stroke="#279767" stroke-width="1.5" />
+<path d="M142.5 385.0 H500.2" stroke="#367abb" stroke-width="4" stroke-linecap="round"/>
+<path d="M169.0 469.0 H381.0" stroke="#279767" stroke-width="4" stroke-linecap="round"/>
+<text x="116" y="124" xml:space="preserve" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="22" fill="#2d4c63">&lt;section class=&quot;task-list&quot;&gt;</text>
+<text x="116" y="166" xml:space="preserve" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="22" fill="#2d4c63">  &lt;div class=&quot;task-group&quot;&gt;</text>
+<text x="116" y="208" xml:space="preserve" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="22" fill="#2d4c63">    &lt;article class=&quot;task-card&quot;&gt;</text>
+<text x="116" y="250" xml:space="preserve" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="22" fill="#2d4c63">      &lt;h2&gt;Grouped task&lt;/h2&gt;</text>
+<text x="116" y="292" xml:space="preserve" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="22" fill="#2d4c63">    &lt;/article&gt;</text>
+<text x="116" y="334" xml:space="preserve" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="22" fill="#2d4c63">  &lt;/div&gt;</text>
+<text x="116" y="376" xml:space="preserve" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="22" fill="#2d4c63">  &lt;article class=&quot;task-card&quot;&gt;</text>
+<text x="116" y="418" xml:space="preserve" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="22" fill="#2d4c63">    &lt;h2&gt;Direct task&lt;/h2&gt;</text>
+<text x="116" y="460" xml:space="preserve" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="22" fill="#2d4c63">    &lt;p&gt;Due today&lt;/p&gt;</text>
+<text x="116" y="502" xml:space="preserve" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="22" fill="#2d4c63">    &lt;span&gt;Priority&lt;/span&gt;</text>
+<text x="116" y="544" xml:space="preserve" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="22" fill="#2d4c63">    &lt;p&gt;High priority&lt;/p&gt;</text>
+<text x="116" y="586" xml:space="preserve" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="22" fill="#2d4c63">  &lt;/article&gt;</text>
+<text x="116" y="628" xml:space="preserve" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="22" fill="#2d4c63">&lt;/section&gt;</text>
+<rect x="889.0" y="112.0" width="615.0" height="121.0" rx="14" fill="#e7f3ff" stroke="#367abb" stroke-width="1.8" />
+<text x="922" y="143" xml:space="preserve" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="22" fill="#367abb">.task-list .task-card {</text>
+<text x="955" y="170" xml:space="preserve" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="22" fill="#30475d">color: navy;</text>
+<text x="955" y="197" xml:space="preserve" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="22" fill="#30475d">padding: 1rem;</text>
+<text x="922" y="224" xml:space="preserve" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="22" fill="#30475d">}</text>
+<rect x="889.0" y="258.0" width="615.0" height="121.0" rx="14" fill="#fff0df" stroke="#d8822d" stroke-width="1.8" />
+<text x="922" y="289" xml:space="preserve" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="22" fill="#d8822d">.task-list &gt; .task-card {</text>
+<text x="955" y="316" xml:space="preserve" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="22" fill="#30475d">border: 2px solid orange;</text>
+<text x="955" y="343" xml:space="preserve" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="22" fill="#30475d">margin: 1rem;</text>
+<text x="922" y="370" xml:space="preserve" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="22" fill="#30475d">}</text>
+<rect x="889.0" y="404.0" width="615.0" height="121.0" rx="14" fill="#f1e9ff" stroke="#884eb1" stroke-width="1.8" />
+<text x="922" y="435" xml:space="preserve" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="22" fill="#884eb1">h2 + p {</text>
+<text x="955" y="462" xml:space="preserve" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="22" fill="#30475d">font-style: italic;</text>
+<text x="955" y="489" xml:space="preserve" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="22" fill="#30475d">color: purple;</text>
+<text x="922" y="516" xml:space="preserve" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="22" fill="#30475d">}</text>
+<rect x="889.0" y="550.0" width="615.0" height="121.0" rx="14" fill="#e5f8ee" stroke="#279767" stroke-width="1.8" />
+<text x="922" y="581" xml:space="preserve" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="22" fill="#279767">h2 ~ p {</text>
+<text x="955" y="608" xml:space="preserve" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="22" fill="#30475d">background: #e8fff3;</text>
+<text x="955" y="635" xml:space="preserve" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="22" fill="#30475d">color: seagreen;</text>
+<text x="922" y="662" xml:space="preserve" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="22" fill="#30475d">}</text>
+<path d="M889 171 C824 171, 797 199, 543.8 199" stroke="#367abb" stroke-width="3.7" fill="none" stroke-linecap="round" marker-end="url(#mblue)"/>
+<path d="M889 317 C824 317, 797 367, 517.2 367" stroke="#d8822d" stroke-width="3.7" fill="none" stroke-linecap="round" marker-end="url(#mamber)"/>
+<path d="M889 463 C824 463, 797 451, 398.0 451" stroke="#884eb1" stroke-width="3.7" fill="none" stroke-linecap="round" marker-end="url(#mpurple)"/>
+<path d="M889 609 C824 609, 797 535, 451.0 535" stroke="#279767" stroke-width="3.7" fill="none" stroke-linecap="round" marker-end="url(#mgreen)"/>
+</svg>

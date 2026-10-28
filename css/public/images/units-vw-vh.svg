@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 470" width="760" height="470" role="img" aria-labelledby="title desc">
+<title id="title">Viewport width and height calculations</title><desc id="desc">Within a 1000 by 600px viewport a box of width 50vw measures 500px and height 30vh measures 180px.</desc>
+<style>
+text { font-family: Arial, Helvetica, sans-serif; fill: #1c344e; }
+.label { font-size: 25px; font-weight: 700; }
+.note { font-size: 19px; }
+.small { font-size: 17px; }
+.content { fill: #a8c8d9; stroke: #4c7186; stroke-width: 3; }
+.frame { fill: #fff; stroke: #345b83; stroke-width: 4; }
+.dim { stroke: #214c75; stroke-width: 3; }
+</style>
+<rect width="760" height="470" rx="14" fill="#f3f6f9"/>
+<rect x="75" y="70" width="610" height="331" rx="12" fill="white" stroke="#365b80" stroke-width="5"/>
+<text x="380" y="108" text-anchor="middle" class="note">Viewport: 1000 × 600px (schematic)</text>
+<rect x="111" y="156" width="305" height="99" rx="6" class="content"/>
+<text x="264" y="198" text-anchor="middle" class="label">width: 50vw</text>
+<text x="264" y="228" text-anchor="middle" class="note">500px</text>
+<line x1="447" y1="156" x2="447" y2="255" class="dim"/>
+<line x1="439" y1="156" x2="455" y2="156" class="dim"/>
+<line x1="439" y1="255" x2="455" y2="255" class="dim"/>
+<text x="464" y="197" class="note">30vh</text>
+<text x="464" y="225" class="note">180px</text>
+<text x="380" y="445" text-anchor="middle" class="note">vw = viewport width · vh = viewport height</text>
+</svg>

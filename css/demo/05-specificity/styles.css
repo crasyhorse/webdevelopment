@@ -1,0 +1,23 @@
+/* The semantic HTML remains unchanged apart from descriptive class names. */
+body {
+  background-color: #f2f6fb;
+  font-family: Arial, sans-serif;
+  color: #263c55;
+}
+
+.task-title {
+  color: #245f9f;
+}
+
+.submit-button {
+  background-color: #245f9f;
+  color: white;
+}
+
+/* Live lesson additions: change rules while inspecting DevTools. */
+button { color: #1f5c99; }
+.submit-button { color: #197747; }
+button { color: #b14c37; }
+
+/* A more specific rule may win even when an earlier style is later overwritten. */
+.task-form .submit-button { border-color: #b14c37; }

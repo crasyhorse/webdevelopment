@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 160" width="360" height="160" role="img" aria-labelledby="title desc">
+  <title id="title">Demo comic label</title>
+  <desc id="desc">A playful hand-drawn turquoise rectangular badge with bold lettering reading demo.</desc>
+  <defs>
+    <filter id="roughShadow" x="-20%" y="-25%" width="150%" height="160%">
+      <feGaussianBlur stdDeviation="1.2"/>
+    </filter>
+  </defs>
+  <!-- Cartoon offset shadow -->
+  <path d="M37 29 Q28 34 30 47 L32 125 Q33 137 48 137 L319 134 Q333 133 333 121 L331 46 Q329 33 315 33 Z" fill="#152d40" opacity=".16" filter="url(#roughShadow)"/>
+  <!-- Slightly imperfect hand-drawn rectangle -->
+  <path d="M33 25 Q25 27 26 39 L27 116 Q27 129 41 129 L307 127 Q320 126 321 113 L319 38 Q318 24 303 24 L43 23 Q37 23 33 25 Z" fill="#38D1C4" stroke="#172D3C" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M41 35 Q75 31 125 33 M233 33 L303 35" fill="none" stroke="#A8FFF2" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+  <!-- Hand-lettered word with light comic shadow -->
+  <text x="174" y="100" text-anchor="middle" font-family="'Comic Sans MS','Trebuchet MS',system-ui,sans-serif" font-size="72" font-weight="900" letter-spacing="-2" fill="#164354" opacity=".38" transform="translate(2 3)">demo</text>
+  <text x="174" y="100" text-anchor="middle" font-family="'Comic Sans MS','Trebuchet MS',system-ui,sans-serif" font-size="72" font-weight="900" letter-spacing="-2" fill="#FFFFFF" stroke="#173748" stroke-width="2.4" stroke-linejoin="round" paint-order="stroke">demo</text>
+  <!-- Minimal playful ink accents -->
+  <path d="M49 48 l12 -5 M304 109 l-10 5" fill="none" stroke="#1B6273" stroke-width="3.5" stroke-linecap="round" opacity=".7"/>
+</svg>

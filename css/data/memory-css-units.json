@@ -1,0 +1,45 @@
+{
+  "title": "CSS Units Memory",
+  "pairs": [
+    {
+      "id": "unit-1",
+      "term": "px",
+      "definition": "CSS reference pixel"
+    },
+    {
+      "id": "unit-2",
+      "term": "pt",
+      "definition": "1/72 of a CSS inch"
+    },
+    {
+      "id": "unit-3",
+      "term": "%",
+      "definition": "Relative to a property-specific reference"
+    },
+    {
+      "id": "unit-4",
+      "term": "rem",
+      "definition": "Root element's font size"
+    },
+    {
+      "id": "unit-5",
+      "term": "em",
+      "definition": "Font size reference (depends on property)"
+    },
+    {
+      "id": "unit-6",
+      "term": "vw",
+      "definition": "1% of viewport width"
+    },
+    {
+      "id": "unit-7",
+      "term": "vh",
+      "definition": "1% of viewport height"
+    },
+    {
+      "id": "unit-8",
+      "term": "max-width",
+      "definition": "Upper limit on an element’s width"
+    }
+  ]
+}

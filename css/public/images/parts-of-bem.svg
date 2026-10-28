@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="800" viewBox="0 0 1400 800" role="img" aria-labelledby="diagram-title diagram-desc">
+  <title id="diagram-title">BEM: Block, Element, Modifier — high-contrast task card</title>
+  <desc id="diagram-desc">A left-side legend explains the card block, its header, body and footer elements, and red and blue button modifiers. Three short arrows point from the legend to a card showing a project status header, main content and a footer with Delete and Save buttons. There are no labels or arrows on the right.</desc>
+  <defs>
+    <style>
+      .ui { font-family: Arial, Helvetica, sans-serif; }
+      .code { font-family: 'DejaVu Sans Mono', Consolas, 'Courier New', monospace; }
+      .heading { font-size: 27px; font-weight: 700; }
+      .description { font-size: 20px; fill: #203448; }
+      .code-line { font-size: 22px; font-weight: 700; fill: #6A2CA2; }
+      .code-mod { font-size: 19px; font-weight: 700; fill: #A13856; }
+      .legend-box { fill: #FFFFFF; stroke: #C3D0DD; stroke-width: 2; }
+      .card { fill: #FFFFFF; stroke: #2E74B5; stroke-width: 3.5; }
+      .card-header { fill: #D2E6FF; stroke: #2E74B5; stroke-width: 2.5; }
+      .card-body { fill: #EEF5FF; stroke: #9FB3C5; stroke-width: 2.5; }
+      .card-footer { fill: #E1EDFB; stroke: #7F9CBC; stroke-width: 2.5; }
+      .btn-red { fill: #F7C7CC; stroke: #B64253; stroke-width: 2.5; }
+      .btn-blue { fill: #CBE1FF; stroke: #3D7FBE; stroke-width: 2.5; }
+      .arrow { fill: none; stroke-width: 3.8; stroke-linecap: round; }
+    </style>
+  </defs>
+  <rect width="1400" height="800" fill="#F3F5F7"/>
+
+  <!-- Left legend: enough space for all code text. -->
+  <rect x="55" y="102" width="460" height="154" rx="16" class="legend-box"/>
+  <text x="84" y="142" class="ui heading" fill="#163A64">Block</text>
+  <text x="84" y="181" class="code code-line">.card</text>
+  <text x="84" y="221" class="ui description">A reusable, standalone component.</text>
+
+  <rect x="55" y="292" width="460" height="192" rx="16" class="legend-box"/>
+  <text x="84" y="332" class="ui heading" fill="#2F8D61">Elements</text>
+  <text x="84" y="369" class="code code-line">.card__header</text>
+  <text x="84" y="404" class="code code-line">.card__body</text>
+  <text x="84" y="439" class="code code-line">.card__footer</text>
+  <text x="84" y="468" class="ui description">Parts belonging to the card.</text>
+
+  <rect x="55" y="523" width="460" height="202" rx="16" class="legend-box"/>
+  <text x="84" y="565" class="ui heading" fill="#B64253">Modifiers</text>
+  <text x="84" y="604" class="code code-mod">.button .button--red</text>
+  <text x="84" y="643" class="code code-mod">.button .button--blue</text>
+  <text x="84" y="687" class="ui description">Variants of the same button block.</text>
+
+  <!-- Card: single main component, no right-side annotation column. -->
+  <rect x="625" y="92" width="700" height="640" rx="26" class="card"/>
+  <rect x="657" y="126" width="636" height="120" rx="16" class="card-header"/>
+  <text x="690" y="174" class="ui" font-size="33" font-weight="700" fill="#163A64">Project status</text>
+  <text x="690" y="212" class="ui" font-size="21" fill="#4E5F70">This is the header area of the card.</text>
+
+  <rect x="657" y="275" width="636" height="260" rx="16" class="card-body"/>
+  <text x="690" y="328" class="ui" font-size="30" font-weight="700" fill="#163A64">Current sprint</text>
+  <text x="690" y="377" class="ui" font-size="23" fill="#203448">Finish CSS workshop slides</text>
+  <text x="690" y="419" class="ui" font-size="23" fill="#203448">Review examples and exercises</text>
+  <text x="690" y="461" class="ui" font-size="23" fill="#203448">Prepare BEM refactoring demo</text>
+  <text x="690" y="506" class="ui" font-size="19" fill="#4E5F70">The body contains the main content.</text>
+
+  <rect x="657" y="565" width="636" height="127" rx="16" class="card-footer"/>
+  <rect x="699" y="603" width="236" height="52" rx="12" class="btn-red"/>
+  <text x="817" y="637" text-anchor="middle" class="ui" font-size="23" font-weight="700" fill="#8A2030">Delete</text>
+  <rect x="1013" y="603" width="236" height="52" rx="12" class="btn-blue"/>
+  <text x="1131" y="637" text-anchor="middle" class="ui" font-size="23" font-weight="700" fill="#2D6FAF">Save</text>
+
+  <!-- Three horizontal connectors in the empty gutter only. Triangle tips meet target borders. -->
+  <path d="M515 190 H601" class="arrow" stroke="#2E74B5"/>
+  <polygon points="625,190 601,178 601,202" fill="#2E74B5"/>
+  <path d="M515 399 H633" class="arrow" stroke="#2F8D61"/>
+  <polygon points="657,399 633,387 633,411" fill="#2F8D61"/>
+  <path d="M515 629 H633" class="arrow" stroke="#B64253"/>
+  <polygon points="657,629 633,617 633,641" fill="#B64253"/>
+</svg>

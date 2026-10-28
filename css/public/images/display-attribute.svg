@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="770" viewBox="0 0 1400 770" role="img" aria-labelledby="title desc">
+  <title id="title">Display block, inline, and inline-block</title>
+  <desc id="desc">An educational diagram showing a grey page area. A red full-width block box labeled Hello World demonstrates display block. Below it, three blue inline boxes labeled Hello, World, and Hello World size themselves to their content. Below them, two green inline-block boxes labeled Hello and World have different explicit widths and heights.</desc>
+  <defs>
+    <style>
+      .ui { font-family: Arial, Helvetica, sans-serif; }
+      .label { font-size: 26px; font-weight: 700; fill: #163A64; }
+      .sub { font-size: 18px; fill: #4f6070; }
+      .code { font-family: "Courier New", Courier, monospace; font-size: 22px; font-weight: 700; }
+      .page { fill: #eef1f4; stroke: #a8b2bc; stroke-width: 3; }
+      .row-note { font-size: 24px; font-weight: 700; fill: #163A64; }
+      .row-code { font-family: "Courier New", Courier, monospace; font-size: 22px; fill: #5b6f83; }
+      .blockbox { fill: #f6c3c3; stroke: #c95454; stroke-width: 3; }
+      .inlinebox { fill: #cfe3ff; stroke: #4f86c7; stroke-width: 3; }
+      .ibbox { fill: #d9f2d8; stroke: #5f9d63; stroke-width: 3; }
+      .boxtext { font-size: 28px; font-weight: 700; fill: #17324d; }
+      .divider { stroke: #c9d0d7; stroke-width: 2; stroke-dasharray: 8 8; }
+    </style>
+  </defs>
+
+  <rect width="1400" height="770" fill="#ffffff"/>
+
+
+  <g transform="translate(0 -80)">
+  <rect x="110" y="115" width="1180" height="700" rx="18" class="page"/>
+  <text x="140" y="150" class="ui label">Page</text>
+
+  <!-- Block row -->
+  <text x="150" y="200" class="ui row-note">display: block</text>
+  <text x="365" y="200" class="row-code">(takes the full available width)</text>
+
+  <rect x="150" y="225" width="1100" height="85" rx="10" class="blockbox"/>
+  <text x="700" y="278" text-anchor="middle" class="ui boxtext">Hello World</text>
+
+  <line x1="140" y1="365" x2="1260" y2="365" class="divider"/>
+
+  <!-- Inline row -->
+  <text x="150" y="410" class="ui row-note">display: inline</text>
+  <text x="368" y="410" class="row-code">(width depends on the content)</text>
+
+  <rect x="150" y="435" width="120" height="65" rx="10" class="inlinebox"/>
+  <text x="210" y="476" text-anchor="middle" class="ui boxtext">Hello</text>
+
+  <rect x="292" y="435" width="122" height="65" rx="10" class="inlinebox"/>
+  <text x="353" y="476" text-anchor="middle" class="ui boxtext">World</text>
+
+  <rect x="436" y="435" width="205" height="65" rx="10" class="inlinebox"/>
+  <text x="538" y="476" text-anchor="middle" class="ui boxtext">Hello World</text>
+
+
+  <line x1="140" y1="555" x2="1260" y2="555" class="divider"/>
+
+  <!-- Inline-block row -->
+  <text x="150" y="600" class="ui row-note">display: inline-block</text>
+  <text x="457" y="600" class="row-code">(sits inline, but width and height can be controlled)</text>
+
+  <rect x="150" y="625" width="185" height="85" rx="10" class="ibbox"/>
+  <text x="242" y="678" text-anchor="middle" class="ui boxtext">Hello</text>
+
+  <rect x="360" y="625" width="250" height="120" rx="10" class="ibbox"/>
+  <text x="485" y="694" text-anchor="middle" class="ui boxtext">World</text>
+
+  </g>
+</svg>

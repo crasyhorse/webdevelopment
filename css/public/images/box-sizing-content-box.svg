@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="680" viewBox="0 0 920 680" role="img" aria-labelledby="title desc">
+<title id="title">CSS content-box sizing</title>
+<desc id="desc">width: 300px → content width. There is 20px of padding and 4px of border on each side. Total width: 348px. Content width is 300px.</desc>
+<defs><style>
+ text { font-family: Arial, Helvetica, sans-serif; fill: #1f3348; }
+ .heading { font-size: 40px; font-weight: 700; }
+ .sub { font-size: 27px; font-weight: 600; }
+ .note { font-size: 24px; }
+ .dim { font-size: 30px; font-weight: 700; }
+ .content { fill: #9bc7e8; stroke: #21679f; stroke-width: 3; }
+ .padding { fill: #bbd98a; stroke: #4f772d; stroke-width: 3; }
+ .border { fill: #f7d58e; stroke: #9b6619; stroke-width: 3; }
+ .bg { fill: #f8fafc; stroke: #bdcbd7; stroke-width: 2; }
+</style></defs>
+<rect width="920" height="680" fill="#f2f5f8"/>
+<rect x="24" y="22" width="872" height="636" rx="18" class="bg"/>
+<text x="460" y="76" text-anchor="middle" class="heading">content-box</text>
+<text x="460" y="114" text-anchor="middle" class="note">width: 300px → content width</text>
+<!-- Three nested rectangles: 4px border (8 diagram units) and 20px padding (40 diagram units) on each side. -->
+<rect x="112.0" y="168" width="696" height="330" rx="6" class="border"/>
+<rect x="120.0" y="176" width="680" height="314" class="padding"/>
+<rect x="160.0" y="216" width="600" height="234" class="content"/>
+<text x="460" y="299" text-anchor="middle" class="sub">Content</text>
+<text x="460" y="344" text-anchor="middle" class="heading">300px</text>
+<text x="460" y="386" text-anchor="middle" class="note">20px padding each side</text>
+<!-- Dimension line spans the border-box -->
+<line x1="112.0" y1="531" x2="808.0" y2="531" stroke="#153c5b" stroke-width="3"/>
+<line x1="112.0" y1="516" x2="112.0" y2="546" stroke="#153c5b" stroke-width="3"/>
+<line x1="808.0" y1="516" x2="808.0" y2="546" stroke="#153c5b" stroke-width="3"/>
+<text x="460" y="578" text-anchor="middle" class="dim">Total width: 348px</text>
+<text x="460" y="614" text-anchor="middle" class="note">300 + 20 + 20 + 4 + 4 = 348px</text>
+</svg>

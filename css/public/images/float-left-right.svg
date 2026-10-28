@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="660" viewBox="0 0 660 660" role="img" aria-labelledby="title desc">
+<title id="title">Comparison of float left and float right</title>
+<desc id="desc">Two independent task cards. A square task icon floats on the left in the first card and on the right in the second, while the sentence Review the pull request occupies the adjacent inline space.</desc>
+<defs>
+  <style>
+    .label { font: 700 26px Arial,Helvetica,sans-serif; fill: #214462 }
+    .sentence { font: 23px Arial,Helvetica,sans-serif; fill: #24394c }
+    .page { fill: #eef1f4; stroke: #b1bdc8; stroke-width: 2.5 }
+    .card { fill: #ffffff; stroke: #a8b7c4; stroke-width: 2.5 }
+    .iconbox { fill: #d2e5fa; stroke: #4383b7; stroke-width: 3 }
+    .icontext { font: 700 18px Arial,Helvetica,sans-serif; fill: #245d8a }
+  </style>
+</defs>
+
+<rect x="16" y="16" width="628" height="628" rx="16" class="page"/>
+<text x="46" y="66" class="label">float: left</text>
+<rect x="46" y="92" width="568" height="205" rx="11" class="card"/>
+<!-- In this card, the image sits on the left. -->
+<rect x="69" y="116" width="140" height="140" rx="8" class="iconbox"/>
+<g transform="translate(113 149)" stroke="#245d8a" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="0" y="0" width="52" height="70" rx="5"/>
+  <path d="M12 23h28M12 38h28M12 53h19"/>
+  <path d="M17-6h18v12H17z" fill="#d2e5fa"/>
+</g>
+<text x="228" y="151" class="sentence">Review the pull</text>
+<text x="228" y="185" class="sentence">request</text>
+<text x="46" y="353" class="label">float: right</text>
+<rect x="46" y="379" width="568" height="205" rx="11" class="card"/>
+<!-- Same image and text; only the float direction changes. -->
+<rect x="451" y="403" width="140" height="140" rx="8" class="iconbox"/>
+<g transform="translate(495 436)" stroke="#245d8a" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="0" y="0" width="52" height="70" rx="5"/>
+  <path d="M12 23h28M12 38h28M12 53h19"/>
+  <path d="M17-6h18v12H17z" fill="#d2e5fa"/>
+</g>
+<text x="69" y="438" class="sentence">Review the pull</text>
+<text x="69" y="472" class="sentence">request</text>
+</svg>

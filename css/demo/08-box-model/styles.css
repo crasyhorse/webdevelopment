@@ -1,0 +1,19 @@
+/* Inspect .task-card and .description with browser DevTools. */
+body { margin: 0; background: #f2f6fb; font: 1rem/1.5 Arial, sans-serif; color: #253e55; }
+.demo { max-width: 1000px; margin: 2rem auto; padding: 1rem; }
+h1 { color: #205f98; }
+.controls { display: flex; flex-wrap: wrap; gap: .75rem; padding: 1rem; background: white; border: 1px solid #b4c9de; border-radius: .6rem; }
+.controls label { padding: .4rem; cursor: pointer; }
+.controls input { accent-color: #205f98; }
+.workspace { margin-top: 1.5rem; }
+.task-card { width: 360px; margin: 18px 0; padding: 20px; border: 4px solid #2e74b5; background: white; border-radius: .5rem; }
+.task-card h2 { margin-top: 0; }
+.task-icon { display: inline-block; width: 44px; height: 44px; margin-right: 12px; background: #deedff; border: 2px solid #2e74b5; border-radius: .4rem; text-align: center; line-height: 44px; font-weight: 700; }
+.float-icon .task-icon { float: left; }
+.flow-root .description { display: flow-root; }
+.fixed-height .task-card { height: 160px; }
+.tasks { background: #fff; padding: 1rem; border: 1px solid #cbd5e1; max-width: 25rem; }
+.tasks li { margin: .75rem 0; }
+.scroll-list .tasks { max-height: 9rem; overflow-y: auto; }
+.use-border-box .task-card { box-sizing: border-box; }
+@media (max-width: 500px) { .task-card { width: min(360px, 100%); } }

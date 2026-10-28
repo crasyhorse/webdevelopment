@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="660" viewBox="0 0 660 660" role="img" aria-labelledby="title desc">
+<title id="title">The effect of clear both on a left float</title>
+<desc id="desc">Inside a grey page, a blue task icon floats left and Review the pull request flows to the right. A green Next task block appears below the icon because clear both prevents it from sitting alongside the earlier float. A dashed comparison indicates where it could start without clearing.</desc>
+<defs>
+  <style>
+    .heading { font: 700 25px Arial,Helvetica,sans-serif; fill: #214462 }
+    .label { font: 19px Arial,Helvetica,sans-serif; fill: #506677 }
+    .sentence { font: 23px Arial,Helvetica,sans-serif; fill: #24394c }
+    .page { fill: #eef1f4; stroke: #b1bdc8; stroke-width: 2.5 }
+    .card { fill: #ffffff; stroke: #a8b7c4; stroke-width: 2.5 }
+    .iconbox { fill: #d2e5fa; stroke: #4383b7; stroke-width: 3 }
+    .nextbox { fill: #d7eed8; stroke: #5b9e65; stroke-width: 3 }
+    .ghost { fill: #f1f4f7; stroke: #99a8b4; stroke-width: 2; stroke-dasharray: 8 6 }
+    .codetext { font: 700 22px 'Courier New',monospace; fill: #3c7c47 }
+  </style>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="8" refY="5" orient="auto">
+    <path d="M1,1 L9,5 L1,9 Z" fill="#5b9e65"/>
+  </marker>
+</defs>
+
+<rect x="16" y="16" width="628" height="628" rx="16" class="page"/>
+<text x="46" y="66" class="heading">float: left</text>
+<rect x="46" y="92" width="568" height="494" rx="11" class="card"/>
+
+<!-- The float is taller than the adjacent paragraph. -->
+<rect x="69" y="118" width="150" height="180" rx="8" class="iconbox"/>
+<g transform="translate(118 166)" stroke="#245d8a" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="0" y="0" width="52" height="70" rx="5"/>
+  <path d="M12 23h28M12 38h28M12 53h19"/>
+  <path d="M17-6h18v12H17z" fill="#d2e5fa"/>
+</g>
+<text x="244" y="152" class="sentence">Review the pull</text>
+<text x="244" y="186" class="sentence">request</text>
+
+<!-- Actual placement of the next block once it clears the float. -->
+<rect x="69" y="338" width="511" height="84" rx="9" class="nextbox"/>
+<text x="324" y="388" text-anchor="middle" class="sentence">Next task</text>
+<text x="324" y="465" text-anchor="middle" class="codetext">clear: both</text>
+<text x="324" y="503" text-anchor="middle" class="label">Starts below the float</text>
+</svg>

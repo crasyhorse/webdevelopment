@@ -1,28 +1,11 @@
 ---
-layout: pageBar
+layout: learningOutcomes
 ---
-
-# Learning Outcomes
-
-I will ...
 
 1. learn how **HTML, CSS, and JavaScript** complement one another.
 2. become familiar with the relationship between **HTML5** and the WHATWG HTML Living Standard.
 3. discover how browsers **parse HTML and construct the DOM tree**.
 4. learn how browsers **handle malformed HTML** using defined parsing rules.
-
-<style scoped>
-.slidev-layout > .my-auto > p,
-.slidev-layout > .my-auto > ol {
-    margin-left: 5rem;
-    font-size: 1.5rem;
-    line-height: 1.8;
-}
-
-.slidev-layout > .my-auto > p {
-    margin-top: 5rem;
-}
-</style>
 
 <!--
 - Present these as topics participants will explore and learn about during the segment.

@@ -1,0 +1,27 @@
+/* The semantic HTML and native form behavior remain intact. */
+body { margin: 0; background: #f2f6fb; font-family: Arial, sans-serif; color: #263c55; }
+
+/* Task Manager block and elements */
+.task-manager { max-width: 880px; margin: 1.5rem auto; padding: 1.5rem; background: white; border-radius: 12px; }
+.task-manager__title { color: #245f9f; }
+.task-manager__intro { color: #56738c; }
+
+/* Task list block, item element, and semantic variants */
+.task-list { padding-left: 0; list-style: none; }
+.task-list__item { margin: .55rem 0; padding: .65rem .9rem; background: #edf5ff; border-left: 4px solid #85a7c8; border-radius: 5px; }
+.task-list__item--high-priority { background: #fff1dc; border-left-color: #a65a0b; }
+.task-list__item--completed { text-decoration: line-through; color: #345f45; background: #e6f4e9; border-left-color: #32834c; }
+/* Decorative only: the text and modifier still communicate status. */
+.task-list__item--completed::before { content: "✓ "; color: #27664a; }
+
+/* Independent form block and elements */
+.task-form { max-width: 520px; }
+.task-form__label { display: block; margin-top: 1rem; }
+.task-form__input { padding: .4rem; }
+.task-form__submit { padding: .55rem 1rem; border: 0; border-radius: 5px; background: #245f9f; color: white; cursor: pointer; }
+.task-form__submit:hover { background: #174978; }
+.task-form__submit:focus-visible { outline: 3px solid #ad6a08; outline-offset: 3px; }
+
+/* Attributes stay meaningful: BEM is not a replacement for native HTML. */
+input[required] { border: 2px solid #317aa6; }
+input[type="date"] { background: #edf5ff; }

@@ -1,0 +1,58 @@
+[
+  {
+    "question": "What does h2 ~ p { } select?",
+    "answers": [
+      "Every p following an h2 that shares the same parent",
+      "Only the first p immediately after an h2",
+      "Every p inside an h2",
+      "All p elements anywhere on the page"
+    ],
+    "correctIndex": 0,
+    "explanation": "~ is the subsequent-sibling combinator. Matches following p siblings with the same parent; they need not be adjacent."
+  },
+  {
+    "question": "What does .task-list > .task-card { } select?",
+    "answers": [
+      "All descendants with the class task-card",
+      "Only direct child elements with the class task-card",
+      "All preceding sibling task cards",
+      "Only the very first task card"
+    ],
+    "correctIndex": 1,
+    "explanation": "> matches direct children, not grandchildren."
+  },
+  {
+    "question": "What does h2 + p { } select?",
+    "answers": [
+      "Every paragraph inside h2",
+      "The first paragraph child of h2",
+      "A p immediately following h2 as a sibling",
+      "Every paragraph anywhere after h2"
+    ],
+    "correctIndex": 2,
+    "explanation": "+ is the next-sibling combinator. Both elements must share a parent and p must immediately follow h2."
+  },
+  {
+    "question": "What does .task-list .task-card { } select?",
+    "answers": [
+      "Task cards that are descendants of .task-list, at any depth",
+      "Only direct child task cards",
+      "Only task cards with the same parent as .task-list",
+      "The .task-list element itself"
+    ],
+    "correctIndex": 0,
+    "explanation": "A space between selectors represents the descendant combinator."
+  },
+  {
+    "question": "Which selector matches every p sibling after an h2, not just the adjacent one?",
+    "answers": [
+      "h2 > p",
+      "h2 p",
+      "h2 + p",
+      "h2 ~ p",
+      "p ~ h2"
+    ],
+    "correctIndex": 3,
+    "explanation": "h2 ~ p matches later paragraph siblings. The direction of the selectors matters."
+  }
+]

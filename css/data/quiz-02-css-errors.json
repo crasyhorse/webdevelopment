@@ -1,0 +1,66 @@
+[
+  {
+    "lines": [
+      ".task-card {",
+      "  colro: navy;",
+      "  padding: 1rem;",
+      "}"
+    ],
+    "badLine": 1,
+    "reason": "The property is spelled color, not colro. Browsers ignore the unknown declaration; padding still works.",
+    "corrected": [
+      ".task-card {",
+      "  color: navy;",
+      "  padding: 1rem;",
+      "}"
+    ]
+  },
+  {
+    "lines": [
+      ".card-title {",
+      "  font-size 1.5rem;",
+      "  color: navy;",
+      "}"
+    ],
+    "badLine": 1,
+    "reason": "A property and its value must be separated by a colon (:).",
+    "corrected": [
+      ".card-title {",
+      "  font-size: 1.5rem;",
+      "  color: navy;",
+      "}"
+    ]
+  },
+  {
+    "lines": [
+      ".task-card {",
+      "  padding: 12pixels;",
+      "  color: navy;",
+      "}"
+    ],
+    "badLine": 1,
+    "reason": "pixels is not a valid CSS length unit. Use px, rem, em, or another valid unit.",
+    "corrected": [
+      ".task-card {",
+      "  padding: 12px;",
+      "  color: navy;",
+      "}"
+    ]
+  },
+  {
+    "lines": [
+      ".task-card {",
+      "  color: navy;",
+      "  padding: 1rem;",
+      "/* end of file */"
+    ],
+    "badLine": 3,
+    "reason": "The opening { needs a closing }. A missing brace can change how later CSS is parsed.",
+    "corrected": [
+      ".task-card {",
+      "  color: navy;",
+      "  padding: 1rem;",
+      "}"
+    ]
+  }
+]

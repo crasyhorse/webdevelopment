@@ -1,0 +1,20 @@
+/* Blocks */
+body { margin: 0; background: #f1f6fb; font: 18px/1.5 Arial, sans-serif; color: #243b50; }
+.task-manager { max-width: 880px; margin: 2rem auto; padding: 1.5rem; background: white; border-radius: 12px; }
+.task-manager__title { margin-top: 0; color: #175a91; }
+.task-manager__intro { color: #475f76; }
+.task-list { padding: 0; list-style: none; }
+
+/* An element of task-list, reused for every item. */
+.task-list__item { margin: 0.5rem 0; padding: 0.65rem 0.9rem; background: #eaf2fc; border-left: 4px solid #8ba9c6; border-radius: 5px; }
+/* Modifiers change variants, without replacing the base element class. */
+.task-list__item--high-priority { background: #fff0d9; border-left-color: #a65b0d; }
+.task-list__item--completed { color: #405f50; text-decoration: line-through; background: #e4f4e8; border-left-color: #32774b; }
+
+/* A second, independently named block. */
+.task-form { display: grid; gap: 0.55rem; max-width: 420px; margin-top: 1.5rem; }
+.task-form__label { font-weight: bold; }
+.task-form__input { padding: 0.55rem; border: 2px solid #537ca1; border-radius: 5px; }
+.task-form__submit { justify-self: start; padding: 0.55rem 1.2rem; color: white; background: #175a91; border: 0; border-radius: 5px; cursor: pointer; }
+.task-form__submit:hover { background: #10446e; }
+.task-form__submit:focus-visible { outline: 3px solid #a65b0d; outline-offset: 3px; }

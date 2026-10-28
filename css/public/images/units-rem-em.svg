@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 470" width="760" height="470" role="img" aria-labelledby="title desc">
+<title id="title">Font sizes: rem and em</title><desc id="desc">Root 16px, parent 20px, child with font size 1.5em is 30px, while 1rem padding stays 16px.</desc>
+<style>
+text { font-family: Arial, Helvetica, sans-serif; fill: #1c344e; }
+.label { font-size: 25px; font-weight: 700; }
+.note { font-size: 19px; }
+.small { font-size: 17px; }
+.content { fill: #a8c8d9; stroke: #4c7186; stroke-width: 3; }
+.frame { fill: #fff; stroke: #345b83; stroke-width: 4; }
+.dim { stroke: #214c75; stroke-width: 3; }
+</style>
+<rect width="760" height="470" rx="14" fill="#f3f6f9"/>
+<rect x="58" y="60" width="644" height="356" rx="10" class="frame"/>
+<text x="100" y="112" class="label">Root: 16px</text>
+<rect x="90" y="141" width="580" height="225" rx="8" fill="#e7d89b" stroke="#8c7428" stroke-width="3"/>
+<text x="120" y="184" class="label">Parent: 20px</text>
+<rect x="120" y="213" width="520" height="123" rx="8" fill="#a8c8d9" stroke="#4c7186" stroke-width="3"/>
+<text x="380" y="264" text-anchor="middle" class="label">Child: 1.5em = 30px</text>
+<text x="380" y="299" text-anchor="middle" class="note">padding: 1rem = 16px</text>
+<text x="380" y="446" text-anchor="middle" class="note">em depends on font size · rem uses the root</text>
+</svg>

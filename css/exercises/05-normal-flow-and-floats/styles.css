@@ -1,0 +1,51 @@
+/* Exercise 05: Normal Flow & Floats */
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 2rem 1rem;
+  background: #f2f6fb;
+  color: #263c55;
+  font: 1rem/1.5 Arial, sans-serif;
+}
+.task-manager {
+  max-width: 32rem;
+  margin: auto;
+}
+.task-card {
+  padding: 1rem;
+  border: 1px solid #b1c7da;
+  border-radius: .6rem;
+  background: #fff;
+}
+.task-card__icon {
+  width: 80px;
+  height: 80px;
+  border-radius: .4rem;
+  background: #cfe6f6;
+  color: #245f9f;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 80px;
+
+  /* TODO 1: float this icon to the left. */
+  /* TODO 2: add 12px of space to its right. */
+}
+.task-card__description {
+  margin-top: 0;
+}
+.task-card__action {
+  display: block;
+  padding: .55rem .9rem;
+  border: 0;
+  border-radius: .4rem;
+  background: #245f9f;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+
+  /* TODO 3: clear floats on both sides. */
+}
+.task-card__action:focus-visible {
+  outline: 3px solid #ad6a08;
+  outline-offset: 3px;
+}
