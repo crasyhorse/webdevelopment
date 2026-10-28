@@ -1,0 +1,7 @@
+{
+    "asciidoc.pdf.asciidoctorPdfCommandArgs": [
+        "-r",
+        "/workspaces/webdevelopment/.asciidoctor/lib/list_colors.rb"
+    ],
+    "asciidoc.pdf.asciidoctorPdfCommandPath": "/usr/bin/asciidoctor-pdf"
+}

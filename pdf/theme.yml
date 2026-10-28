@@ -1,0 +1,65 @@
+extends: default
+
+font:
+  catalog:
+    merge: true
+
+    DejaVu Sans:
+      normal: DejaVuSans.ttf
+      bold: DejaVuSans-Bold.ttf
+
+    DejaVu Mono:
+      normal: DejaVuSansMono.ttf
+      bold: DejaVuSansMono-Bold.ttf
+
+page:
+  size: A4
+  layout: landscape
+
+base:
+  font-family: DejaVu Sans
+  font-color: #000000
+
+list:
+  indent: 24
+  item-spacing: 3
+
+ulist:
+  marker:
+    disc:
+      font-color: #A61C00
+      font-size: 16
+
+    circle:
+      font-color: #3C78D8
+      font-size: 16
+
+    square:
+      font-color: #3C78D8
+      font-size: 16
+
+role:
+  red-list:
+    font-family: DejaVu Sans
+    font-color: #A61C00
+    font-size: 16
+
+  blue-list:
+    font-family: DejaVu Sans
+    font-color: #3C78D8
+    font-size: 16
+
+code:
+  font-family: DejaVu Mono
+  font-color: #000000
+  background-color: #FFFFFF
+  border-width: 0
+  padding: 0
+  font-size: 16
+
+codespan:
+  font-family: DejaVu Mono
+  font-color: #000000
+  background-color:
+  border-width: 0
+  font-size: 16

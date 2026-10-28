@@ -1,0 +1,20 @@
+{
+    "name": "web-development",
+    "version": "1.0.0",
+    "description": "Slides and other materials for a comprehensive web development workshop",
+    "author": "Florian Weidinger",
+    "scripts": {
+        "build": "dotenv run -- slidev build $SLIDE_DECK/slides.md",
+        "dev:html": "slidev html/slides.md --remote --open",
+        "dev:css": "slidev css/slides.md --remote --open",
+        "dev:js": "slidev javascript/slides.md --remote --open",
+        "export": "dotenv run -- slidev export $SLIDE_DECK/slides.md  --without-notes"
+    },
+    "dependencies": {
+        "@slidev/cli": "^53.0.0",
+        "@slidev/theme-default": "^0.25.0",
+        "@slidev/theme-seriph": "^0.25.0",
+        "dotenv": "^18.0.9",
+        "vue": "^3.5.33"
+    }
+}
