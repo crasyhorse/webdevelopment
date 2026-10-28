@@ -1,0 +1,42 @@
+{
+    "name": "Node.js",
+    "image": "mcr.microsoft.com/devcontainers/typescript-node:dev-26-bookworm",
+    // Features to add to the dev container. More info: https://containers.dev/features.
+    // "features": {},
+    // Use 'forwardPorts' to make a list of ports inside the container available locally.
+    "forwardPorts": [
+        3030,
+        5500
+    ],
+    // Use 'postCreateCommand' to run commands after the container is created.
+    // "postCreateCommand": "yarn install",
+    "postCreateCommand": {
+        "pnpm": "npm install -g pnpm",
+        "asciidoctor": "sudo apt -y update && sudo apt -y install ruby-asciidoctor-pdf"
+    },
+    // Configure tool-specific properties.
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "esbenp.prettier-vscode",
+                "mhutchie.git-graph",
+                "antfu.slidev",
+                "vue.volar",
+                "ritwickdey.liveserver",
+                "asciidoctor.asciidoctor-vscode",
+                "tomoki1207.pdf"
+            ]
+        },
+        "settings": {
+            "asciidoc.pdf.asciidoctorPdfCommandArgs": [
+                "-r",
+                "/workspaces/webdevelopment/.asciidoctor/lib/list_colors.rb"
+            ],
+            "asciidoc.pdf.asciidoctorPdfCommandPath": "/usr/bin/asciidoctor-pdf"
+        }
+    },
+    // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+    // "remoteUser": "node",
+    // "updateRemoteUserUID": true
+    "remoteUser": "root"
+}
