@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Tablet with centered exclamation mark</title>
+  <desc id="desc">Editable SVG illustration of a perspective tablet labeled Summary with a centered upright green exclamation mark standing on it.</desc>
+  <defs>
+    <linearGradient id="aluminium" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#8a98a5"/>
+      <stop offset="0.42" stop-color="#4e5d69"/>
+      <stop offset="1" stop-color="#222f3a"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0.07" y1="0.05" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#fbfdff"/>
+      <stop offset="1" stop-color="#dceef2"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".38"/>
+      <stop offset=".55" stop-color="#ffffff" stop-opacity=".07"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="floorShadow" x="-30%" y="-60%" width="160%" height="220%">
+      <feGaussianBlur stdDeviation="15"/>
+    </filter>
+    <clipPath id="displayClip"><rect x="52" y="51" width="736" height="428" rx="17"/></clipPath>
+  </defs>
+
+  <!-- Transparent background; a ground shadow is the only surface cue. -->
+  <ellipse cx="604" cy="531" rx="455" ry="68" fill="#334e5e" opacity=".20" filter="url(#floorShadow)"/>
+
+  <!-- All tablet rectangles are defined with perpendicular 90-degree corners
+       in local coordinates; this affine projection is shared by every layer.
+       Matrix projects the tablet into a coherent three-quarter view. -->
+  <g transform="matrix(0.90 -0.15 0.34 0.53 120 300)">
+    <!-- Thickness: rear body offset toward the viewer, with matching dimensions. -->
+    <rect x="0" y="22" width="840" height="530" rx="34" fill="#263441" stroke="#1a2732" stroke-width="8"/>
+    <rect x="0" y="10" width="840" height="530" rx="34" fill="url(#aluminium)" stroke="#324653" stroke-width="7"/>
+    <rect x="12" y="8" width="816" height="514" rx="27" fill="#1f2d37" stroke="#9caab3" stroke-width="5"/>
+    <rect x="36" y="31" width="768" height="468" rx="24" fill="#111c25"/>
+    <rect x="52" y="51" width="736" height="428" rx="17" fill="url(#screen)"/>
+
+    <!-- Screen contents: only the word Summary, with non-text UI decoration. -->
+    <g clip-path="url(#displayClip)">
+      <rect x="52" y="51" width="736" height="428" fill="url(#glass)"/>
+      <line x1="95" y1="173" x2="738" y2="173" stroke="#b6cad2" stroke-width="3"/>
+      <rect x="97" y="206" width="276" height="17" rx="8.5" fill="#d2e2e8"/>
+      <rect x="97" y="248" width="401" height="17" rx="8.5" fill="#d2e2e8"/>
+      <rect x="97" y="290" width="323" height="17" rx="8.5" fill="#d2e2e8"/>
+      <rect x="97" y="332" width="363" height="17" rx="8.5" fill="#d2e2e8"/>
+    </g>
+    <text x="99" y="143" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700" fill="#28749a">Summary</text>
+    <!-- Hardware details -->
+    <circle cx="420" cy="23" r="7" fill="#101820" stroke="#7d8993" stroke-width="2"/>
+    <circle cx="420" cy="23" r="2" fill="#32495a"/>
+    <path d="M25 508 Q420 523 813 508" fill="none" stroke="#d5e0e4" stroke-opacity=".35" stroke-width="3"/>
+  </g>
+
+  <g id="centered-exclamation-mark" transform="translate(494.769 216.000) scale(0.276923)" aria-label="Green exclamation mark">
+
+
+
+<defs>
+ <linearGradient id="front" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#76dc73"/><stop offset=".18" stop-color="#43b947"/><stop offset=".48" stop-color="#239a37"/><stop offset=".76" stop-color="#14762d"/><stop offset="1" stop-color="#0b4925"/></linearGradient>
+ <linearGradient id="side" x1="0" y1="0" x2="1" y2=".65"><stop stop-color="#093e20"/><stop offset=".5" stop-color="#17692f"/><stop offset="1" stop-color="#43b758"/></linearGradient>
+ <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d5ffd0" stop-opacity=".7"/><stop offset=".18" stop-color="#b0fca9" stop-opacity=".35"/><stop offset=".55" stop-color="#228b38" stop-opacity="0"/><stop offset="1" stop-color="#0b4827" stop-opacity=".3"/></linearGradient>
+ <filter id="soft"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<ellipse cx="390" cy="943" rx="175" ry="32" transform="rotate(-14 390 943)" fill="#173929" opacity=".28" filter="url(#soft)"/>
+<g transform="translate(100 850) scale(.52 -.52)">
+  <path d="M348 1520 H709 L674 504 H383 Z M348 356 H709 V0 H348 Z" fill="#0b4925" transform="translate(38 -44)"/>
+  <path d="M348 1520 H709 L674 504 H383 Z M348 356 H709 V0 H348 Z" fill="url(#side)" transform="translate(26 -29)"/>
+  <path d="M348 1520 H709 L674 504 H383 Z M348 356 H709 V0 H348 Z" fill="#22883c" transform="translate(13 -14)"/>
+  <path d="M348 1520 H709 L674 504 H383 Z M348 356 H709 V0 H348 Z" fill="url(#front)" stroke="#176c35" stroke-width="4"/>
+  <path d="M348 1520 H709 L674 504 H383 Z M348 356 H709 V0 H348 Z" fill="url(#gloss)" opacity=".6"/>
+</g>
+
+  </g>
+</svg>

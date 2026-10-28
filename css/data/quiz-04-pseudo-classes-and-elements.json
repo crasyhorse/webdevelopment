@@ -1,0 +1,57 @@
+[
+  {
+    "question": "What is a CSS pseudo-class?",
+    "answers": [
+      "A selector for an element in a particular state or structural situation",
+      "A new HTML element inserted by CSS",
+      "A class selector",
+      "A CSS variable"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pseudo-classes like :hover, :focus-visible and :first-child match elements based on states or relationships."
+  },
+  {
+    "question": "What does :focus-visible generally match?",
+    "answers": [
+      "Elements whose contents are visible",
+      "An element when its focus should visibly be indicated",
+      "Every disabled form control",
+      "The first focused descendant"
+    ],
+    "correctIndex": 1,
+    "explanation": ":focus-visible matches a focused element when the browser judges a visible focus indicator is appropriate."
+  },
+  {
+    "question": "What is a CSS pseudo-element?",
+    "answers": [
+      "A JavaScript component",
+      "A class with a double underscore",
+      "A way to style a selected part or generate a box, such as ::before",
+      "A selector for a checked checkbox"
+    ],
+    "correctIndex": 2,
+    "explanation": "Pseudo-elements target parts of an element or generated content; they use :: in modern syntax."
+  },
+  {
+    "question": "Which selector can style the first letter of a paragraph?",
+    "answers": [
+      "p:first-child",
+      "p::first-letter",
+      "p:checked",
+      "p::hover"
+    ],
+    "correctIndex": 1,
+    "explanation": "::first-letter is a pseudo-element. :first-child is a pseudo-class."
+  },
+  {
+    "question": "Which statement about ::before is correct?",
+    "answers": [
+      "It always creates meaningful accessible content",
+      "It changes the HTML DOM to insert a real element",
+      "It selects the element directly before its sibling",
+      "It can render generated decorative content; important content belongs in HTML"
+    ],
+    "correctIndex": 3,
+    "explanation": "Generated content may not be represented consistently to assistive technology. Use HTML for essential information."
+  }
+]

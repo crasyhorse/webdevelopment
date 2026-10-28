@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo 07 — BEM in the Task Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="task-manager">
+    <header class="task-manager__header">
+      <h1 class="task-manager__title">Task Manager</h1>
+      <p class="task-manager__intro">Inspect BEM class names with DevTools.</p>
+    </header>
+    <main class="task-manager__main">
+      <section aria-labelledby="task-list-heading">
+        <h2 id="task-list-heading">Tasks</h2>
+        <ul class="task-list">
+          <li class="task-list__item">Prepare slides</li>
+          <li class="task-list__item task-list__item--high-priority">Review pull request — high priority</li>
+          <li class="task-list__item task-list__item--completed">Review HTML — completed</li>
+        </ul>
+      </section>
+      <form class="task-form" action="" method="get">
+        <label class="task-form__label" for="task-name">New task</label>
+        <input class="task-form__input" id="task-name" name="task" required minlength="3">
+        <button class="task-form__submit" type="submit">Add task</button>
+      </form>
+    </main>
+  </div>
+</body>
+</html>

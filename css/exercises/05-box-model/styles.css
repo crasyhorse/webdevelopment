@@ -1,0 +1,14 @@
+/* Exercise 05 starter: BEM naming from Exercise 04 is preserved. */
+body { margin: 0; font-family: Arial, sans-serif; line-height: 1.5; color: #263c55; background-color: #f2f6fb; }
+.task-manager { background: #fff; }
+.task-manager__title { color: #245f9f; }
+.task-manager__intro { color: #56738c; }
+.task-list { list-style: none; padding-left: 0; }
+.task-list__item { background: #edf5ff; border-left: 4px solid #85a7c8; }
+.task-list__item--high-priority { background: #fff1dc; border-left-color: #a65a0b; }
+.task-list__item--completed { text-decoration: line-through; background: #e6f4e9; border-left-color: #32834c; }
+.task-form__label { display: block; }
+.task-form__submit { background: #245f9f; color: white; cursor: pointer; }
+.task-form__submit:hover { background: #174978; }
+.task-form__submit:focus-visible, .task-form__input:focus-visible { outline: 3px solid #ad6a08; outline-offset: 3px; }
+/* TODO: add border-box reset, component spacing, constraints, and form-control sizing. */

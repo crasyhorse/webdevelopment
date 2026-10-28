@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720" role="img" aria-labelledby="title desc">
+  <title id="title">CSS Inheritance — parent and child examples</title>
+  <desc id="desc">A blue parent CSS rule .task-manager with color navy and border gray connects through 90-degree arrow paths to three children: a green h2 inheriting navy, a yellow p with explicitly declared teal, and a gray button whose border is not inherited. CSS examples have syntax highlighting.</desc>
+  <defs>
+    <style>
+      .box { stroke-width: 3; }
+      .parent { fill: #EAF3FF; stroke: #2E74B5; }
+      .inherited { fill: #E8F7EE; stroke: #2F8D61; }
+      .override { fill: #FDF0DE; stroke: #C97E24; }
+      .plain { fill: #F2F5F8; stroke: #7A8794; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill: #163A64; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #163A64; }
+      .label-green { fill: #21684B; }
+      .label-gray { fill: #4E5F70; }
+      .note { font-family: Arial, Helvetica, sans-serif; font-size: 21px; fill: #163A64; }
+      .note-green { fill: #2A7B57; }
+      .note-orange { fill: #A45F12; }
+      .note-gray { fill: #4E5F70; }
+      .code-bg { fill: #FFFFFF; fill-opacity: 1; stroke: #B7C4D0; stroke-opacity: 1; stroke-width: 1.6; }
+      .code { font-family: 'DejaVu Sans Mono', Consolas, 'Courier New', monospace; font-size: 23px; fill: #26384B; }
+      .code-small { font-size: 20px; }
+      .sel { fill: #8B5FAF; font-weight: 700; }
+      .prop { fill: #71A6D8; }
+      .val { fill: #6BAF87; }
+      .punct { fill: #6B7C8C; }
+      .arrow { fill: none; stroke: #A7B3BF; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; }
+      .arrow-tip { fill: #A7B3BF; }
+    </style>
+  </defs>
+
+  <rect width="1400" height="720" fill="#F3F5F7"/>
+  <text x="700" y="58" text-anchor="middle" class="title">CSS Inheritance</text>
+
+  <!-- Parent: complete syntax-highlighted CSS rule, inside the original blue panel. -->
+  <rect x="430" y="83" width="540" height="218" rx="18" class="box parent"/>
+  <rect x="462" y="105" width="476" height="174" rx="11" class="code-bg"/>
+  <g class="code" xml:space="preserve">
+    <text x="489" y="145"><tspan class="sel">.task-manager</tspan><tspan class="punct"> {</tspan></text>
+    <text x="489" y="186"><tspan class="prop">  color</tspan><tspan class="punct">: </tspan><tspan class="val">navy</tspan><tspan class="punct">;</tspan></text>
+    <text x="489" y="227"><tspan class="prop">  border</tspan><tspan class="punct">: </tspan><tspan class="val">2px solid gray</tspan><tspan class="punct">;</tspan></text>
+    <text x="489" y="268" class="punct">}</text>
+  </g>
+
+  <!-- Orthogonal connectors: no diagonals or curves. The point of each arrowhead
+       ends precisely at y=438, the upper edge of its child box. -->
+  <path class="arrow" d="M565 301 V360 H250 V418"/>
+  <path class="arrow-tip" d="M250 438 L238 418 L262 418 Z"/>
+  <path class="arrow" d="M700 301 V418"/>
+  <path class="arrow-tip" d="M700 438 L688 418 L712 418 Z"/>
+  <path class="arrow" d="M835 301 V360 H1150 V418"/>
+  <path class="arrow-tip" d="M1150 438 L1138 418 L1162 418 Z"/>
+
+  <!-- Child 1: inherited value; retain the previous simple green design. -->
+  <rect x="75" y="438" width="350" height="198" rx="18" class="box inherited"/>
+  <text x="250" y="486" text-anchor="middle" class="label label-green">h2</text>
+  <rect x="120" y="503" width="260" height="43" rx="8" class="code-bg"/>
+  <text x="250" y="533" text-anchor="middle" class="code">color: navy;</text>
+  <text x="250" y="585" text-anchor="middle" class="note note-green">inherited from parent</text>
+
+  <!-- Child 2: complete syntax-highlighted CSS rule with explanation beneath. -->
+  <rect x="525" y="438" width="350" height="198" rx="18" class="box override"/>
+  <rect x="551" y="453" width="298" height="126" rx="9" class="code-bg"/>
+  <g class="code" xml:space="preserve">
+    <text x="575" y="482"><tspan class="sel">p</tspan><tspan class="punct"> {</tspan></text>
+    <text x="575" y="522"><tspan class="prop">  color</tspan><tspan class="punct">: </tspan><tspan class="val">teal</tspan><tspan class="punct">;</tspan></text>
+    <text x="575" y="562" class="punct">}</text>
+  </g>
+  <text x="700" y="606" text-anchor="middle" class="note note-orange">explicitly declared on child</text>
+
+  <!-- Child 3: keep label and description; correctly contain entire code in white box. -->
+  <rect x="975" y="438" width="350" height="198" rx="18" class="box plain"/>
+  <text x="1150" y="486" text-anchor="middle" class="label label-gray">button</text>
+  <rect x="990" y="503" width="320" height="43" rx="8" class="code-bg"/>
+  <text x="1150" y="532" text-anchor="middle" class="code code-small">border: not inherited;</text>
+  <text x="1150" y="585" text-anchor="middle" class="note note-gray">needs its own border rule</text>
+</svg>

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="900" viewBox="0 0 1800 900" role="img" aria-labelledby="diagram-title diagram-description">
+  <title id="diagram-title">How the Cascade Works — detailed snake flowchart</title>
+  <desc id="diagram-description">Eight labeled nodes with cascade-priority factors enclosed inside a dashed rounded group flow left to right along the top row, downward, right to left across the middle row, downward, and left to right on the bottom row: Collect relevant declarations, Cascade priority, Origin and importance, Cascade layers, Animations and transitions, Compare selector specificity, Resolve ties, Winning declaration. Arrows have triangular heads and travel only through whitespace between node boxes.</desc>
+
+  <defs>
+    <style>
+      .node { stroke-width: 3; }
+      .priority-group { fill: #FFF6E8; fill-opacity: 1; stroke: #B36A10; stroke-width: 4; stroke-dasharray: 12 8; }
+      .priority-group-label { font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-weight: 700; fill: #7A4300; }
+      .stage { fill: #EAF3FF; stroke: #2E74B5; }
+      .priority { fill: #FDF0DE; stroke: #D07C1C; }
+      .winner { fill: #E7F7EE; stroke: #2B9860; }
+      .main { font-family: Arial, Helvetica, sans-serif; font-size: 29px; font-weight: 700; text-anchor: middle; fill: #163A64; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 26px; font-weight: 600; text-anchor: middle; fill: #163A64; }
+      .prio-text { fill: #9A5A10; }
+      .win-text { fill: #1E6D46; }
+      .arrow { fill: none; stroke: #567EAB; stroke-width: 5.5; stroke-linecap: round; stroke-linejoin: round; }
+      .arrow-tip { fill: #567EAB; stroke: none; }
+    </style>
+
+  </defs>
+
+  <rect width="1800" height="900" fill="#F3F5F7"/>
+
+  <!-- Row 1: left to right -->
+  <rect class="node stage" x="115" y="85" width="540" height="160" rx="20"/>
+  <text class="main" x="385" y="135">
+    <tspan x="385">1. Collect relevant declarations</tspan>
+    <tspan x="385" dy="48" class="sub">Same element and CSS property</tspan>
+  </text>
+
+  <rect class="node priority" x="1260" y="85" width="425" height="160" rx="20"/>
+  <text class="main prio-text" x="1472.5" y="158">2. Cascade priority</text>
+
+  <path class="arrow" d="M655 165 H1240"/>
+  <path class="arrow-tip" d="M1260 165 L1240 154 L1240 176 Z"/>
+  <path class="arrow" d="M1472.5 245 V318"/>
+  <path class="arrow-tip" d="M1472.5 340 L1461.5 318 L1483.5 318 Z"/>
+
+  <!-- These factors belong to ONE cascade-priority stage, rather than being independent cascade stages. -->
+  <rect class="priority-group" x="492" y="312" width="1208" height="222" rx="19"/>
+  <text class="priority-group-label" x="1050" y="335" text-anchor="middle">Within cascade priority</text>
+
+  <!-- Row 2: right to left. Each connected edge points LEFT. -->
+  <rect class="node priority" x="1260" y="340" width="425" height="170" rx="20"/>
+  <text class="main prio-text" x="1472.5" y="423">
+    <tspan x="1472.5">Origin and</tspan>
+    <tspan x="1472.5" dy="43">importance</tspan>
+  </text>
+
+  <rect class="node priority" x="888" y="340" width="326" height="170" rx="20"/>
+  <text class="main prio-text" x="1051" y="435">Cascade layers</text>
+
+  <rect class="node priority" x="510" y="340" width="332" height="170" rx="20"/>
+  <text class="main prio-text" x="676" y="420">
+    <tspan x="676">Animations and</tspan>
+    <tspan x="676" dy="43">transitions</tspan>
+  </text>
+
+  <rect class="node stage" x="115" y="340" width="350" height="170" rx="20"/>
+  <text class="main" x="290" y="388" style="font-size: 25px">
+    <tspan x="290">3. Compare selector</tspan>
+    <tspan x="290" dy="37">specificity</tspan>
+    <tspan x="290" dy="47" class="sub">ID – CLASS – ELEMENT</tspan>
+  </text>
+
+  <path class="arrow" d="M1260 425 H1236"/>
+  <path class="arrow-tip" d="M1214 425 L1236 414 L1236 436 Z"/>
+  <path class="arrow" d="M888 425 H864"/>
+  <path class="arrow-tip" d="M842 425 L864 414 L864 436 Z"/>
+  <path class="arrow" d="M510 425 H487"/>
+  <path class="arrow-tip" d="M465 425 L487 414 L487 436 Z"/>
+
+  <!-- Row 3: left to right -->
+  <path class="arrow" d="M290 510 V613"/>
+  <path class="arrow-tip" d="M290 635 L279 613 L301 613 Z"/>
+
+  <rect class="node stage" x="115" y="635" width="590" height="165" rx="20"/>
+  <text class="main" x="410" y="688">
+    <tspan x="410">4. Resolve ties</tspan>
+    <tspan x="410" dy="46" class="sub">Scoping proximity, then source order</tspan>
+  </text>
+
+  <rect class="node winner" x="1200" y="635" width="485" height="165" rx="20"/>
+  <text class="main win-text" x="1442.5" y="726">Winning declaration</text>
+
+  <path class="arrow" d="M705 717.5 H1178"/>
+  <path class="arrow-tip" d="M1200 717.5 L1178 706.5 L1178 728.5 Z"/>
+</svg>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Demo 08 — CSS Box Model</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<main class="demo">
+<header><h1>Task Manager — Box Model Lab</h1><p>Inspect the card in DevTools while changing the settings below.</p></header>
+<section class="controls" aria-label="Demo controls">
+  <label><input id="border-box" type="checkbox"> Use <code>box-sizing: border-box</code></label>
+  <label><input id="float-icon" type="checkbox" checked> Float the icon</label>
+  <label><input id="flow-root" type="checkbox" checked> Contain float with <code>flow-root</code></label>
+  <label><input id="fixed-height" type="checkbox"> Force a fixed card height</label>
+  <label><input id="long-copy" type="checkbox"> Add long content</label>
+  <label><input id="scroll" type="checkbox"> Scroll the task list</label>
+</section>
+<section class="workspace" aria-label="Task examples">
+ <article class="task-card" id="card">
+  <h2>Review pull request</h2>
+  <div class="description" id="description">
+   <span class="task-icon" aria-hidden="true">✓</span>
+   <p>Review the CSS changes and leave clear comments. The text flows beside the icon when it floats.</p>
+   <p class="extra" hidden>Long task descriptions expose how fixed heights can cause content to overflow. CSS boxes usually expand naturally to accommodate content. Try increasing browser zoom to 200 percent, then compare the results.</p>
+  </div>
+ </article>
+ <section class="tasks" id="tasks"><h2>Task list</h2><ul><li>Review styles</li><li>Inspect the box model</li><li>Measure padding</li><li>Measure borders</li><li>Test overflow</li><li>Check keyboard focus</li></ul></section>
+</section>
+</main>
+<script>
+const controls=[...document.querySelectorAll('.controls input')];
+function update(){document.body.classList.toggle('use-border-box',document.querySelector('#border-box').checked);document.body.classList.toggle('float-icon',document.querySelector('#float-icon').checked);document.body.classList.toggle('flow-root',document.querySelector('#flow-root').checked);document.body.classList.toggle('fixed-height',document.querySelector('#fixed-height').checked);document.body.classList.toggle('scroll-list',document.querySelector('#scroll').checked);document.querySelector('.extra').hidden=!document.querySelector('#long-copy').checked;}
+controls.forEach(c=>c.addEventListener('change',update));update();
+</script>
+</body></html>

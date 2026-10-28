@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="610" viewBox="0 0 1500 610" role="img" aria-labelledby="title description">
+<title id="title">Annotated CSS syntax essentials</title>
+<desc id="description">A CSS example featuring an aligned property-colon-value pattern, a comment, a class selector, whitespace and a declaration block. Comic-style curved dashed arrows with triangular heads avoid text overlaps.</desc>
+<defs>
+  <filter id="shadow" x="-10%" y="-20%" width="120%" height="140%"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#253d57" flood-opacity=".12"/></filter>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L12 6 L0 12 Q3 6 0 0" fill="#78899c"/></marker>
+</defs>
+<rect x="308" y="59" width="838" height="497" rx="18" fill="#f6f8fc" stroke="#d3dce9" stroke-width="2" filter="url(#shadow)"/>
+<g font-family="Consolas,'Liberation Mono',monospace" font-size="34">
+  <text x="389" y="139" fill="#569c69">/* Style a Task Manager card */</text>
+  <text x="389" y="211" fill="#8852a4">.task-card</text><text x="612" y="211" fill="#344b63">{</text>
+  <text x="390" y="292" fill="#287db7">color</text><text x="501" y="292" fill="#344b63">:</text><text x="525" y="292" fill="#298870">navy</text><text x="615" y="292" fill="#344b63">;</text>
+  <text x="390" y="366" fill="#287db7">padding</text><text x="542" y="366" fill="#344b63">:</text><text x="566" y="366" fill="#298870">1rem</text><text x="656" y="366" fill="#344b63">;</text>
+  <text x="389" y="440" fill="#344b63">}</text>
+</g>
+<path d="M944 219 Q956 219 956 233 L956 330 Q956 347 972 350 Q956 353 956 370 L956 485 Q956 498 944 498" fill="none" stroke="#a2aec0" stroke-width="2.4" stroke-linecap="round"/>
+<g font-family="Arial,Helvetica,sans-serif" font-size="21" font-style="italic" fill="#3c5067">
+  <text x="58" y="111">CSS comment</text>
+  <text x="58" y="214">Selector</text>
+  <text x="58" y="350">Whitespace</text>
+  <text x="1170" y="184">Declaration block</text>
+  <text x="1170" y="435">Semicolon</text>
+</g>
+<g fill="none" stroke="#78899c" stroke-width="2.4" stroke-dasharray="7 6" stroke-linecap="round" marker-end="url(#arrow)">
+  <path d="M207 108 C265 83 321 113 377 126"/>
+  <path d="M205 208 C264 179 319 199 378 201"/>
+  <path d="M205 342 C284 380 370 346 455 341 C485 339 495 321 495 298"/>
+  <path d="M1171 194 C1116 209 1061 244 1019 300 C999 326 996 338 977 349"/>
+  <path d="M1169 432 C1094 438 1007 421 894 391 C784 363 710 355 669 357"/>
+</g>
+</svg>

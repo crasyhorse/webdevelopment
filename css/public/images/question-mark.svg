@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="1040" viewBox="0 0 760 1040" role="img" aria-labelledby="title desc">
+<title id="title">Red three-dimensional question mark</title>
+<desc id="desc">A glossy dark red question mark with shaded beveled edges and a soft ground shadow on a transparent background.</desc>
+<defs>
+ <linearGradient id="front" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d7644b"/><stop offset=".18" stop-color="#ac3726"/><stop offset=".48" stop-color="#8e271c"/><stop offset=".76" stop-color="#6d1f18"/><stop offset="1" stop-color="#481a16"/></linearGradient>
+ <linearGradient id="side" x1="0" y1="0" x2="1" y2=".65"><stop stop-color="#491712"/><stop offset=".5" stop-color="#77251a"/><stop offset="1" stop-color="#b94932"/></linearGradient>
+ <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffd0ac" stop-opacity=".7"/><stop offset=".18" stop-color="#ffae8a" stop-opacity=".35"/><stop offset=".55" stop-color="#8f2b1b" stop-opacity="0"/><stop offset="1" stop-color="#401610" stop-opacity=".3"/></linearGradient>
+ <filter id="soft"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<ellipse cx="390" cy="943" rx="195" ry="38" transform="rotate(-14 390 943)" fill="#151011" opacity=".28" filter="url(#soft)"/>
+<g transform="translate(100 850) scale(.52 -.52)">
+  <path d="M709 504H348V553Q348 635 381.0 698.5Q414 762 520 860L584 918Q641 970 667.5 1016.0Q694 1062 694 1108Q694 1178 646.0 1217.5Q598 1257 512 1257Q431 1257 337.0 1223.5Q243 1190 141 1124V1438Q262 1480 362.0 1500.0Q462 1520 555 1520Q799 1520 927.0 1420.5Q1055 1321 1055 1130Q1055 1032 1016.0 954.5Q977 877 883 788L819 731Q751 669 730.0 631.5Q709 594 709 549ZM348 356H709V0H348Z" fill="#4c1712" transform="translate(38 -44)"/>
+  <path d="M709 504H348V553Q348 635 381.0 698.5Q414 762 520 860L584 918Q641 970 667.5 1016.0Q694 1062 694 1108Q694 1178 646.0 1217.5Q598 1257 512 1257Q431 1257 337.0 1223.5Q243 1190 141 1124V1438Q262 1480 362.0 1500.0Q462 1520 555 1520Q799 1520 927.0 1420.5Q1055 1321 1055 1130Q1055 1032 1016.0 954.5Q977 877 883 788L819 731Q751 669 730.0 631.5Q709 594 709 549ZM348 356H709V0H348Z" fill="url(#side)" transform="translate(26 -29)"/>
+  <path d="M709 504H348V553Q348 635 381.0 698.5Q414 762 520 860L584 918Q641 970 667.5 1016.0Q694 1062 694 1108Q694 1178 646.0 1217.5Q598 1257 512 1257Q431 1257 337.0 1223.5Q243 1190 141 1124V1438Q262 1480 362.0 1500.0Q462 1520 555 1520Q799 1520 927.0 1420.5Q1055 1321 1055 1130Q1055 1032 1016.0 954.5Q977 877 883 788L819 731Q751 669 730.0 631.5Q709 594 709 549ZM348 356H709V0H348Z" fill="#85301f" transform="translate(13 -14)"/>
+  <path d="M709 504H348V553Q348 635 381.0 698.5Q414 762 520 860L584 918Q641 970 667.5 1016.0Q694 1062 694 1108Q694 1178 646.0 1217.5Q598 1257 512 1257Q431 1257 337.0 1223.5Q243 1190 141 1124V1438Q262 1480 362.0 1500.0Q462 1520 555 1520Q799 1520 927.0 1420.5Q1055 1321 1055 1130Q1055 1032 1016.0 954.5Q977 877 883 788L819 731Q751 669 730.0 631.5Q709 594 709 549ZM348 356H709V0H348Z" fill="url(#front)" stroke="#74251a" stroke-width="4"/>
+  <path d="M709 504H348V553Q348 635 381.0 698.5Q414 762 520 860L584 918Q641 970 667.5 1016.0Q694 1062 694 1108Q694 1178 646.0 1217.5Q598 1257 512 1257Q431 1257 337.0 1223.5Q243 1190 141 1124V1438Q262 1480 362.0 1500.0Q462 1520 555 1520Q799 1520 927.0 1420.5Q1055 1321 1055 1130Q1055 1032 1016.0 954.5Q977 877 883 788L819 731Q751 669 730.0 631.5Q709 594 709 549ZM348 356H709V0H348Z" fill="url(#gloss)" opacity=".6"/>
+</g>
+</svg>

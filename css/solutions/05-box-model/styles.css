@@ -1,0 +1,18 @@
+/* Exercise 05 reference solution: predictable sizing without fixed card heights. */
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: #f2f6fb; font: 1rem/1.5 Arial, sans-serif; color: #263c55; }
+.task-manager { width: calc(100% - 2rem); max-width: 55rem; min-height: 20rem; margin: 1.5rem auto; padding: 1.5rem; background: #fff; border: 1px solid #ccdae8; border-radius: .75rem; }
+.task-manager__title { color: #245f9f; margin: 0 0 .5rem; }
+.task-manager__intro { color: #56738c; margin: 0 0 1rem; }
+.task-list { margin: 1rem 0 1.5rem; padding: 0; list-style: none; }
+.task-list__item { margin-block: .6rem; padding: .75rem 1rem; border: 1px solid #b1c7da; border-left: 4px solid #85a7c8; border-radius: .375rem; background: #edf5ff; overflow-wrap: anywhere; }
+.task-list__item--high-priority { border-left-color: #a65a0b; background: #fff1dc; }
+.task-list__item--completed { border-left-color: #32834c; background: #e6f4e9; text-decoration: line-through; }
+.task-form { width: 100%; max-width: 32rem; }
+.task-form__label { display: block; margin: 1rem 0 .25rem; }
+.task-form__input, .task-form input, .task-form select { display: block; width: 100%; min-height: 2.75rem; padding: .5rem .75rem; border: 1px solid #9fb5c9; border-radius: .35rem; font: inherit; color: inherit; background: #fff; }
+.task-form input[required] { border: 2px solid #317aa6; }
+.task-form input[type="date"] { background: #edf5ff; }
+.task-form__submit { margin-top: 1rem; min-height: 2.75rem; padding: .65rem 1rem; border: 0; border-radius: .35rem; background: #245f9f; color: #fff; font: inherit; cursor: pointer; }
+.task-form__submit:hover { background: #174978; }
+.task-form__submit:focus-visible, .task-form__input:focus-visible, .task-form input:focus-visible, .task-form select:focus-visible { outline: 3px solid #ad6a08; outline-offset: 3px; }
