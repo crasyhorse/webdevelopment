@@ -1,10 +1,11 @@
 ---
 layout: pageBar
+class: content-offset
 ---
 
 # Elements, attributes, and useful defaults
 
-| Attribute | Typical purpose |
+| **Attribute** | **Typical purpose** |
 | --- | --- |
 | `id="tasks"` | Unique identifier in this document |
 | `class="task-list"` | Group elements for styling or scripting |

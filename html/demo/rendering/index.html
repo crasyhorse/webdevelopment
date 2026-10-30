@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Task Manager</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Task Manager</h1>
+            <p>Manage your tasks in one place.</p>
+            <nav aria-label="Main navigation">
+                <a href="#tasks">Tasks</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="tasks" class="task-list" data-view="active" aria-labelledby="tasks-heading">
+                <h2 id="tasks-heading">Tasks</h2>
+
+                <ul>
+                    <li>Learn HTML document structure</li>
+                    <li>Review semantic HTML</li>
+                </ul>
+
+                <form>
+                    <label for="task-name">New task</label>
+                    <p id="task-help">Enter a short description of the task.</p>
+                    <input id="task-name" name="task" type="text" aria-describedby="task-help" />
+                    <button type="button">Add task</button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

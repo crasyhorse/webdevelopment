@@ -1,5 +1,6 @@
 ---
 layout: pageBarTwoCols
+class: content-offset
 ---
 
 # Anatomy of an HTML document

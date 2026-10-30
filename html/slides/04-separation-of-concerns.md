@@ -1,10 +1,9 @@
 ---
 layout: pageBar
+class: content-offset
 ---
 
 # Three technologies, distinct responsibilities
-
-<div class="mt-20"></div>
 
 | **Technology** | **Responsibility** | **Question** |
 | --- | --- | --- |

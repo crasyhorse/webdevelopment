@@ -1,10 +1,9 @@
 ---
 layout: pageBar
+class: content-offset
 ---
 
 # Browsers recover from malformed HTML
-
-<div class="mt-20"></div>
 
 **Source HTML**
 

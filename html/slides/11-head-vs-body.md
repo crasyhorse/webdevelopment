@@ -1,10 +1,11 @@
 ---
 layout: pageBar
+class: content-offset
 ---
 
 # Metadata vs. visible content
 
-| In `<head>` | In `<body>` |
+| **In `<head>`** | **In `<body>`** |
 | --- | --- |
 | `<title>` — browser tab and bookmarks | `<h1>` — page heading |
 | `<meta charset="utf-8">` — text encoding | `<p>` — paragraph |

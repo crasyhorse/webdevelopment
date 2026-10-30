@@ -107,3 +107,146 @@
 *** `class` can be reused across multiple elements
 *** `data-*` stores application-specific information, without defining built-in HTML behavior
 *** Keep this demonstration brief; CSS and JavaScript uses will be covered in subsequent sessions
+
+<<<
+
+* Semantic HTML
+** Information:
+*** https://developer.mozilla.org/en-US/docs/Glossary/Semantics[MDN - Semantics]
+*** https://developer.mozilla.org/en-US/docs/Web/HTML/Element[MDN - HTML elements reference]
+*** https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Roles/region_role[MDN - Region role]
+** Explain that semantic HTML describes purpose independently of CSS
+*** A native `button` is not equivalent to a `div` that merely looks like a button
+*** Semantics help accessibility tools, browser behavior, developers, and role-based tests
+*** Testing Library and Playwright can use role-and-name selectors (`button`, `Add task`) instead of brittle CSS selectors; no testing setup is needed for this workshop
+** Open `demo/semantic-html/index.html` — a copy of `solutions/document-structure/index.html`
+*** Refactor this file during the demonstration; compare your result with `solutions/semantic-html/index.html`
+*** Keep all changes in HTML; no styling or JavaScript is necessary
+** Group the page heading and navigation in a `header`
++
+[source,html]
+----
+<header>
+    <h1>Task Manager</h1>
+    <p>Manage your tasks in one place.</p>
+    <nav aria-label="Main navigation">
+        <a href="#tasks">Tasks</a>
+    </nav>
+</header>
+----
++
+*** `header` is introductory content for its containing page or section
+*** `nav` is for a meaningful group of navigation links, not every link
+*** `main` remains outside `header` and represents the primary document content
+** Give the existing task section an accessible name using its visible heading
++
+[source,html]
+----
+<main>
+    <section id="tasks" class="task-list" data-view="active" aria-labelledby="tasks-heading">
+        <h2 id="tasks-heading">Tasks</h2>
+        <!-- Keep the existing list and form here -->
+    </section>
+</main>
+----
++
+*** A `section` groups related content; it is usually introduced by a heading
+*** `aria-labelledby` references the existing heading text instead of duplicating it
+*** A named section may be exposed as a `region` landmark to assistive technologies
+*** Not every container needs to be a section; use `div` when no more specific meaning fits
+** Revisit the task items
++
+[source,html]
+----
+<ul>
+    <li>Learn HTML document structure</li>
+    <li>Review semantic HTML</li>
+</ul>
+----
++
+*** `ul` means the ordering is not significant; `ol` indicates a meaningful order
+*** Avoid replacing a list with paragraphs and line breaks merely to change appearance
+*** `article` is for independently meaningful content, not necessarily each simple task item
+** Revisit the form controls
++
+[source,html]
+----
+<form>
+    <label for="task-name">New task</label>
+    <input id="task-name" name="task" type="text">
+    <button type="button">Add task</button>
+</form>
+----
++
+*** A visible `label` gives the field an accessible name and enlarges its click target
+*** `button` supplies focus and keyboard activation semantics without custom event handlers
+*** Use links for navigation and buttons for actions; appearance does not determine semantics
+*** `type="button"` deliberately prevents accidental submission; JavaScript behavior comes later
+** Inspect the resulting HTML in the browser
+*** Locate `header`, `nav`, `main`, `section`, headings, list, and form in Developer Tools
+*** Inspect the accessible name of the navigation landmark and named section
+*** Click the `New task` label to focus the corresponding input
+*** Ask which elements express purpose and which attributes are merely styling or application hooks
+
+
+<<<
+
+* Accessibility & WAI-ARIA
+** Information:
+*** https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA[MDN - ARIA overview]
+*** https://www.slideshare.net/slideshow/introduction-to-aria/72580922[SlideShare - Introduction to ARIA]
+** Open `demo/accessibility/index.html` — a copy of `solutions/semantic-html/index.html`
+*** Use keyboard Tab, Enter and Space to navigate the existing controls
+*** Explain that native button, label, and input provide roles and built-in behavior
+** Inspect `nav`, `section`, and `button` in browser Developer Tools
+*** Identify the implicit role of `nav` and button
+*** Compare the computed accessible name with visible text and `aria-label`
+** Give a task section its accessible name using an existing heading
++
+[source,html]
+----
+<section aria-labelledby="tasks-heading">
+  <h2 id="tasks-heading">Tasks</h2>
+</section>
+----
++
+*** A named section can become a region landmark
+*** Do not add `role="region"` when native semantics already suffice
+** Add a description to the new task input
++
+[source,html]
+----
+<label for="task-name">New task</label>
+<p id="task-help">Enter a short description of the task.</p>
+<input id="task-name" name="task" aria-describedby="task-help">
+----
++
+*** The label contributes an accessible name; describedby supplies supplementary description
+*** Inspect both name and description in DevTools
+*** ARIA adds semantics, not JavaScript behavior
+** Compare the finished page with `solutions/accessibility/index.html`
+*** This is also the HTML starting point for the Part V rendering demo
+
+<<<
+
+* Browser rendering internals
+** Information:
+*** https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Critical_rendering_path[MDN - Critical rendering path]
+*** https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/How_browsers_work[MDN - How browsers work]
+*** https://www.slideshare.net/slideshow/how-browsers-work-74804349/74804349[SlideShare - How browsers work]
+** Explain the simplified pipeline: DOM, CSSOM, render tree, layout, paint, composite
+*** HTML parsing constructs the DOM incrementally
+*** CSS parsing constructs the CSSOM; computed styles contribute to the render tree
+*** `display: none` elements remain in DOM but have no render box
+*** Layout computes element sizes and positions
+*** Paint creates visual output; compositing assembles layers
+** Open `demo/rendering/index.html` with browser Developer Tools
+*** It reuses the accessibility solution and links to `demo/rendering/styles.css`
+*** Inspect the DOM in Elements and computed styles
+*** Temporarily apply a visible color change, then a width change
+*** Record each in the Performance panel and compare activity
+*** Width changes may trigger layout; color changes normally trigger paint without layout
+*** Browser optimizations affect which stages appear; measure rather than assume
+
+** Compare the final rendering demo with `solutions/rendering/index.html` and `solutions/rendering/styles.css`
+*** The output intentionally matches the starting files: the exercise is measuring and comparing browser rendering, not building additional markup

@@ -6,11 +6,10 @@ layout: pageBar
 
 I will ...
 
-1. become familiar about how to **separate responsibilities** with HTML, CSS, and JavaScript.
-2. learn how to **distinguish HTML5** from the WHATWG HTML Living Standard.
-3. get to know how to **describe HTML parsing** and DOM construction.
-4. recognize **error recovery** when HTML markup is malformed.
-{.text-2xl}
+1. learn how **HTML, CSS, and JavaScript** complement one another.
+2. become familiar with the relationship between **HTML5** and the WHATWG HTML Living Standard.
+3. discover how browsers **parse HTML and construct the DOM tree**.
+4. learn how browsers **handle malformed HTML** using defined parsing rules.
 
 <style scoped>
 .slidev-layout > .my-auto > p,
@@ -26,7 +25,7 @@ I will ...
 </style>
 
 <!--
-- Frame these outcomes as practical questions attendees should answer after this segment.
+- Present these as topics participants will explore and learn about during the segment.
 - HTML conveys structure and meaning; CSS handles visual presentation; JavaScript supplies behavior.
 - HTML5 is a historical label, while the WHATWG HTML Living Standard continues to evolve.
 - Browsers parse HTML into a DOM tree; the DOM is what APIs and developer tools expose.

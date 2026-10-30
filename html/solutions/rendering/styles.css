@@ -1,0 +1,6 @@
+/* Change color in DevTools (usually paint), then width (usually layout + paint). */
+body { font-family: system-ui, sans-serif; margin: 2rem; }
+main { max-width: 42rem; }
+.task-list { border: 2px solid #117aa3; padding: 1rem; }
+.task-list h2 { color: #117aa3; }
+input { width: 16rem; }

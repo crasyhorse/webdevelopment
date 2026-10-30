@@ -1,12 +1,11 @@
 ---
 layout: pageBar
+class: content-offset
 ---
 
 # What does “HTML5” mean today?
 
-<div class="mt-20"></div>
-
-| HTML5 | WHATWG HTML Living Standard |
+| **HTML5** | **WHATWG HTML Living Standard** |
 | --- | --- |
 | Historical milestone and commonly used shorthand for modern HTML | Continuously maintained specification |
 | Often used informally as a technology label | Current reference for browser HTML behavior |

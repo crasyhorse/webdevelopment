@@ -1,10 +1,9 @@
 ---
 layout: pageBarTwoCols
+class: content-offset
 ---
 
 # From source to a DOM tree
-
-<div class="mt-20"></div>
 
 **HTML source → HTML parser → DOM tree**
 

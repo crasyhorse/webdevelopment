@@ -34,3 +34,14 @@ table td {
     font-size: 1.2rem !important;
     line-height: 1.6;
 }
+
+/* Replaces the repeated <div class="mt-20"></div> spacer on selected slides. */
+.slidev-layout.pageBar.content-offset > .my-auto > h1 + *,
+.slidev-layout.pageBar.content-offset > h1 + * {
+    margin-top: 5rem !important;
+}
+
+/* The two-column layout wraps its named slots in a grid. */
+.slidev-layout.pageBar.content-offset > .grid {
+    margin-top: 5rem !important;
+}
