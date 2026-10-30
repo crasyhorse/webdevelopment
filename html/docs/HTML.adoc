@@ -1,0 +1,109 @@
+= HTML
+:doctype: article
+:pdf-theme: ../../pdf/theme.yml
+:pdf-fontsdir: /usr/share/fonts/truetype/dejavu
+
+* Document structure
+** Information:
+*** https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/name/viewport?utm_source=chatgpt.com[MDN - Viewport metadata]
+*** https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Roles/navigation_role?utm_source=chatgpt.com[MDN - Aria navigation role]
+** Explain the goal: create a minimal HTML document for the Task Manager and identify what belongs in the document head and body
+*** The attendees already know basic HTML; concentrate on meaningful document structure rather than memorizing tags
+*** `head` contains metadata and references to resources, while `body` contains the document's content
+** Create `demo/document-structure/index.html` with the minimal HTML document
++
+[source,html]
+----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager</title>
+</head>
+<body>
+</body>
+</html>
+----
++
+** Open `demo/document-structure/index.html` in the browser
+*** Compare the browser tab title with the empty page
+*** Show the `head` and `body` elements in Developer Tools
+** Add viewport metadata to the `head`
++
+[source,html]
+----
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+----
++
+*** The viewport is the area through which the browser displays the document
+*** Mobile browsers may use a virtual viewport wider than the physical screen
+*** `width=device-width` requests a viewport matching the device width in CSS pixels
+*** CSS pixels are not necessarily the same as physical display pixels
+*** `initial-scale=1.0` requests an initial zoom level of 100%
+*** Without this metadata, mobile browsers may display the page scaled down
+*** The viewport metadata does not automatically make the page responsive
+** Add a heading and short introduction to the `body`
++
+[source,html]
+----
+<h1>Task Manager</h1>
+<p>Manage your tasks in one place.</p>
+----
++
+*** The heading and paragraph are now visible, unlike the contents of `<title>`
+*** Point out the distinction between the text content and the metadata describing the document
++
+<<<
++
+** Add a navigation area and a task list
++
+[source,html]
+----
+<nav aria-label="Main navigation">
+    <a href="#tasks">Tasks</a>
+</nav>
+
+<main>
+    <section id="tasks">
+        <h2>Tasks</h2>
+        <ul>
+            <li>Learn HTML document structure</li>
+            <li>Review semantic HTML</li>
+        </ul>
+    </section>
+</main>
+----
++
+*** `id="tasks"` gives the fragment link `#tasks` a destination
+*** `id` identifies an element; `class` is typically used to group elements for styling or scripting
+*** This is a preview of semantic HTML; detailed landmark and accessibility rules come later
+*** Reload the page and click the Tasks link to show a URL fragment
++
+<<<
++
+** Add a labeled form field and a native button
++
+[source,html]
+----
+<form>
+    <label for="task-name">New task</label>
+    <input id="task-name" name="task" type="text">
+    <button type="button">Add task</button>
+</form>
+----
++
+*** `for="task-name"` connects the label to the input's `id`
+*** `name="task"` identifies the field when form data is submitted
+*** `type="button"` avoids implying that the button currently performs a form submission
+*** The button will not add a task yet; JavaScript behavior will be introduced later
+** Demonstrate global attributes by adding them to existing elements
++
+[source,html]
+----
+<section id="tasks" class="task-list" data-view="active">
+----
++
+*** `id` must be unique within the document
+*** `class` can be reused across multiple elements
+*** `data-*` stores application-specific information, without defining built-in HTML behavior
+*** Keep this demonstration brief; CSS and JavaScript uses will be covered in subsequent sessions
