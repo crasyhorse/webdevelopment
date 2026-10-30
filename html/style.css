@@ -1,0 +1,36 @@
+.slidev-layout.pageBar .bg-barBottom > div:nth-child(1) {
+  width: 55%;
+  flex: 0 0 55%;
+}
+
+.slidev-layout.pageBar .bg-barBottom > div:nth-child(2) {
+  width: 40%;
+  flex: 0 0 40%;
+}
+
+.slidev-layout.pageBar .bg-barBottom > div:nth-child(3) {
+  width: 0;
+  flex: 0 0 0;
+}
+
+table {
+  font-size: 1.2rem;
+}
+
+table th,
+table td {
+  padding: 0.75rem 1rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.slidev-layout > .my-auto > p,
+.slidev-layout > .my-auto > ul {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.slidev-code {
+  font-size: 1.2rem !important;
+  line-height: 1.6;
+}
