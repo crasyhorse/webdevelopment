@@ -23,14 +23,17 @@ class: content-offset
   </head>
   <body>
     <h1>My Tasks</h1>
+    <p lang="de">Erste Arbeit</p>
+    <p lang="es">Segunda tarea</p>
   </body>
 </html>
 ```
 
 <!--
-- Start from the outer document structure rather than individual content elements.
-- The doctype is a compatibility switch for standards mode, not a version selector.
 - The html element is the root of the document and carries its primary language.
+- The global attribute "lang" declares the default language of the document.
+- Important for Screen readers (pronounciation), Browsers (hyphenation) or Search engines.
+- Attributes are global if they can be put on any tag not only on specific ones.
 - The head holds metadata, while body holds the main document content.
 - Explain that metadata can affect browser behavior without appearing as body text.
 - Elements omitted from source can sometimes be inserted by the parser, as seen in Part I.

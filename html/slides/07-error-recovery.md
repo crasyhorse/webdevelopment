@@ -19,15 +19,15 @@ class: content-offset
 <p>Second paragraph</p>
 ```
 
-<DemoButton 
+<Button 
     url="http://localhost:5500/html/demo/invalid-paragraphs.html"
+    type="demo"
 />
 
 <!--
-- This input omits closing paragraph tags intentionally; it is the example, not a recommended style.
-- Opening a new paragraph implicitly closes the previous paragraph in this context.
-- The resulting DOM therefore contains two sibling paragraph elements.
-- Error recovery follows specified parsing rules and is consistent enough to be tested.
-- Source inspection alone can be misleading when investigating unexpected DOM structure.
+- This input omits closing paragraph tags intentionally.
+- Opening a new paragraph implicitly closes the previous paragraph in this context because a p-tag is not allowed within a p-tag.
+- The 2nd p-tag encloses the script-tag because the HTML standard allows "phrasing content" in a p-tag.
+- The 2nd p-tag is closed when the body-tag closes.
 - Prefer valid, explicit markup even though browsers recover from many mistakes.
 -->

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="675" viewBox="0 0 1280 675" role="img" aria-labelledby="title desc">
+<title id="title">Initial viewport and layout viewport</title>
+<desc id="desc">Two matching 390 CSS pixel phone viewports. The first shows the initial viewport before viewport overrides. The second shows the layout viewport after width=device-width is applied, with the same width in this example.</desc>
+<defs>
+ <style>
+  .heading{font:700 30px Arial,Helvetica,sans-serif;fill:#172033}
+  .detail{font:500 21px Arial,Helvetica,sans-serif;fill:#475569}
+  .measure{font:700 27px Arial,Helvetica,sans-serif}
+  .small{font:500 18px Arial,Helvetica,sans-serif;fill:#64748b}
+ </style>
+ <marker id="arrow" markerWidth="12" markerHeight="12" refX="11" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#64748b"/></marker>
+</defs>
+<rect width="1280" height="675" fill="#f5f6f7"/>
+<text x="325" y="55" text-anchor="middle" class="heading">Initial viewport</text>
+<text x="950" y="55" text-anchor="middle" class="heading">Layout viewport</text>
+<text x="325" y="89" text-anchor="middle" class="detail">Before viewport overrides</text>
+<text x="950" y="89" text-anchor="middle" class="detail">After viewport configuration</text>
+
+<!-- phone frames -->
+<rect x="148" y="128" width="354" height="520" rx="42" fill="#fff" stroke="#172033" stroke-width="7"/>
+<rect x="773" y="128" width="354" height="520" rx="42" fill="#fff" stroke="#172033" stroke-width="7"/>
+<rect x="270" y="145" width="110" height="11" rx="6" fill="#cbd5e1"/>
+<rect x="895" y="145" width="110" height="11" rx="6" fill="#cbd5e1"/>
+<circle cx="325" cy="627" r="9" fill="#e2e8f0" stroke="#94a3b8"/>
+<circle cx="950" cy="627" r="9" fill="#e2e8f0" stroke="#94a3b8"/>
+<!-- viewports -->
+<rect x="176" y="179" width="298" height="413" rx="10" fill="#e2e8f0" stroke="#64748b" stroke-width="5"/>
+<rect x="801" y="179" width="298" height="413" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="5"/>
+<!-- visual page stripes -->
+<g fill="#b7c4d4">
+ <rect x="200" y="224" width="238" height="20" rx="6"/><rect x="200" y="284" width="170" height="20" rx="6"/>
+ <rect x="200" y="344" width="238" height="20" rx="6"/><rect x="200" y="404" width="170" height="20" rx="6"/>
+ <rect x="200" y="464" width="238" height="20" rx="6"/>
+</g>
+<g fill="#9ed5b2">
+ <rect x="825" y="224" width="238" height="20" rx="6"/><rect x="825" y="284" width="170" height="20" rx="6"/>
+ <rect x="825" y="344" width="238" height="20" rx="6"/><rect x="825" y="404" width="170" height="20" rx="6"/>
+ <rect x="825" y="464" width="238" height="20" rx="6"/>
+</g>
+<!-- dimensions -->
+<text x="325" y="555" text-anchor="middle" class="measure" fill="#475569">390 CSS px</text>
+<text x="950" y="555" text-anchor="middle" class="measure" fill="#15803d">390 CSS px</text>
+<!-- directional connector -->
+<path d="M535 355H738" stroke="#64748b" stroke-width="5" marker-end="url(#arrow)"/>
+<text x="640" y="335" text-anchor="middle" class="small">Apply viewport metadata</text>
+</svg>

@@ -17,10 +17,8 @@ class: content-offset
 />
 
 <!--
-- Ask which layer is responsible for identifying a Save action: HTML, not a CSS class.
-- The native button communicates meaning and also provides built-in interaction behavior.
+- The native button communicates meaning.
 - CSS can make an element look like a button but does not create button semantics.
 - JavaScript can attach behavior, but it should not be needed to define the element’s identity.
 - This is a design guideline, not a claim that the three technologies never interact.
-- Mention that React ultimately renders HTML elements, so the same separation still matters.
 -->

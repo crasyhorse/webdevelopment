@@ -17,9 +17,8 @@ class: content-offset
 
 <!--
 - Explain that HTML5 often means modern HTML in everyday developer conversation.
+- "Web Hypertext Application Working Group" WHATWG HTML Living Standard
 - The WHATWG HTML Living Standard is the continuously maintained specification for HTML.
 - Avoid presenting HTML5 and the Living Standard as two competing browser modes.
 - The short doctype activates standards mode in modern browsers; it does not select a numbered HTML version.
-- Standards define parsing behavior as well as elements and attributes.
-- Suggest consulting the Living Standard when precise browser behavior matters.
 -->

@@ -27,8 +27,6 @@ I will ...
 <!--
 - Present these as topics participants will explore and learn about during the segment.
 - HTML conveys structure and meaning; CSS handles visual presentation; JavaScript supplies behavior.
-- HTML5 is a historical label, while the WHATWG HTML Living Standard continues to evolve.
+- HTML5 is a historical label, while the "Web Hypertext Application Working Group" WHATWG HTML Living Standard continues to evolve.
 - Browsers parse HTML into a DOM tree; the DOM is what APIs and developer tools expose.
-- Parsing errors are handled by standardized recovery rules, not merely ignored at random.
-- Point ahead to a concrete comparison of HTML source and the DOM in Developer Tools.
 -->
