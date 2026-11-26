@@ -38,5 +38,6 @@ class: content-offset
 - The parser tokenizes markup and constructs document, element, and text nodes.
 - The DOM is a live tree structure exposed through browser APIs and Developer Tools.
 - The sample creates a main element containing a heading and a button.
-- Distinguish the DOM from the rendered pixels; layout and painting will be covered later.
+- Distinguish the DOM from the rendered pixels
+  - layout and painting will be covered later.
 -->

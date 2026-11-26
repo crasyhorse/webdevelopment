@@ -20,5 +20,6 @@ class: content-offset
 - "Web Hypertext Application Working Group" WHATWG HTML Living Standard
 - The WHATWG HTML Living Standard is the continuously maintained specification for HTML.
 - Avoid presenting HTML5 and the Living Standard as two competing browser modes.
-- The short doctype activates standards mode in modern browsers; it does not select a numbered HTML version.
+- The short doctype activates standards mode in modern browsers
+  - it does not select a numbered HTML version.
 -->

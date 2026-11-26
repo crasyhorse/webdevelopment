@@ -26,8 +26,8 @@ class: content-offset
 
 <!--
 - This input omits closing paragraph tags intentionally.
-- Opening a new paragraph implicitly closes the previous paragraph in this context because a p-tag is not allowed within a p-tag.
-- The 2nd p-tag encloses the script-tag because the HTML standard allows "phrasing content" in a p-tag.
-- The 2nd p-tag is closed when the body-tag closes.
+- Opening a new paragraph implicitly closes the previous paragraph in this context because a `p` is not allowed within a `p`.
+- The 2nd `p` encloses the script-tag because the HTML standard allows "phrasing content" in a `p`.
+- The 2nd `p` is closed when the body-tag closes.
 - Prefer valid, explicit markup even though browsers recover from many mistakes.
 -->

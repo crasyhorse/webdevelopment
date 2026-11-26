@@ -1,0 +1,23 @@
+# Demo 04 — Rendering in DevTools
+
+- **Topic: Compare style, layout, paint, and compositing**
+  - **Open the Task Manager demo**
+    - Serve the repository root with Live Server (port `5500`).
+    - Open `http://localhost:5500/html/demo/04-rendering/index.html`.
+    - Why: Observe browser rendering in a working page.
+  - **Record a baseline**
+    - Open DevTools → **Performance**.
+    - Start recording; click **Resize** once; stop recording.
+    - Expand the recorded main-thread activity; look for **Recalculate Style**, **Layout**, and **Paint** events when present.
+    - Why: Changing `width` can affect geometry and trigger layout and painting.
+  - **Compare a paint-related change**
+    - Reset **Resize** (click again) or reload the page.
+    - Record again; click **Change color** once; stop.
+    - Compare with the resize recording; inspect **Paint** activity when present.
+    - Why: Changing `background-color` generally repaints pixels without changing box geometry.
+  - **Compare a transform**
+    - Reset color or reload the page.
+    - Record again; click **Move** once; stop after the transition.
+    - Inspect the timeline for **Composite Layers** or compositor activity; check for layout and paint events.
+    - Why: A `transform` animation can be composited without repeated layout or paint when the browser promotes the element to a layer.
+    - Note: Layer promotion and exact trace events depend on the browser and environment.
